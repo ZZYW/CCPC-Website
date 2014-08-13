@@ -1,17 +1,92 @@
-<!--
-Notice:
-		put everything except html into static folder.
-		html files go into templates folder.
--->
-
+<!doctype html>
 <html>
 <head>
-	<title>
-	ccpc 2014
-	</title></head>
-	
-	<body>
-	
-	<img src="/static/images/test.jpg"/> 
-		 </body>
+    <meta charset="utf-8">
+    <title>CCPC 2014</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
+<body>
+<!-- div class="container" -->
+	<!-- row 1: navigation -->
+    <div class="row">
+        <nav class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" 
+                        data-target="#collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">PANELS</a></li>
+                    <li><a href="#">AGENDA</a></li>
+                    <li><a href="#">DIRECTIONS</a></li>
+                    <li><a href="#">TICKETS</a></li>
+                    <li><a href="#">SPONSORSHIP</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>  
+            </div>
+        </nav>
+    </div>
+   
+    <!-- row 2: landing page -->
+    <div class="row">
+        <img src="img/landingpage.jpg" alt="" class="img-responsive">
+    </div>
+    
+    <!-- row 3: panels -->
+    <div class="row">
+    	<img src="img/panels.jpg" alt="" class="img-responsive">
+    </div><!-- end panels -->
+    
+        <!-- row 4: agenda -->
+    <div class="row">
+    	<img src="img/agenda.jpg" alt="" class="img-responsive">
+    </div><!-- end agenda -->
+    
+        <!-- row 5: directions -->
+    <div class="row">
+    	<img src="img/directions.jpg" alt="" class="img-responsive">
+    </div><!-- end directions -->
+    
+        <!-- row 6: tickets -->
+    <div class="row">
+    	<img src="img/tickets.jpg" alt="" class="img-responsive">
+    </div><!-- end tickets -->
+    
+        <!-- row 7: sponsorship -->
+    <div class="row">
+    	<img src="img/sponsorship.jpg" alt="" class="img-responsive">
+    </div><!-- end sponsorship -->
+    
+        <!-- row 8: about -->
+    <div class="row">
+    	<img src="img/about.jpg" alt="" class="img-responsive">
+    </div><!-- end about -->
+    
+        <!-- row 9: contact -->
+    <div class="row">
+    	<img src="img/contact.jpg" alt="" class="img-responsive">
+    </div><!-- end contact -->
+    
+    <!-- row 4 -->
+    <footer class="row">
+         <p><small>FOLLOW US</small></p>
+    </footer>
+
+<!-- /div --> <!-- end container -->
+
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 </html>
