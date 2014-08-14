@@ -4,8 +4,6 @@ body {
     background-color: white;
 }
 
-
-
 footer {
     padding: 2em 0;
     margin 3em 0;
@@ -26,3 +24,5 @@ footer {
 .pull-right.img-responsive {
     margin:0 0 1em 1em;
 }
+
+
