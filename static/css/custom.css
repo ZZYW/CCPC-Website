@@ -17,6 +17,20 @@ footer {
     margin-bottom: 20px;
 }
 
+.section {
+    margin-bottom: 60px;
+}
+
+.subsection {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tb {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .row-centered {
     text-align:center;
 }
@@ -35,12 +49,6 @@ footer {
     float:none;
     /* reset the text-align */
     text-align:center;
-    /* inline-block space fix */
-    margin-right:-4px;
-/*
-    background-color: rgb(119, 119, 119);
-    background-size: auto 1px;
-*/
 }
 
 .glyphicon {
