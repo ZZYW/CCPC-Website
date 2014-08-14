@@ -1,7 +1,32 @@
-import os
-from flask import Flask, request # Retrieve Flask, our framework
-from flask import render_template
+import os, datetime
+import re
+from flask import Flask, request, render_template, redirect, abort
+from unidecode import unidecode
+
+
+# mongoengine database module
+from flask.ext.mongoengine import MongoEngine
+# connect('models')
+
 app = Flask(__name__)   # create our flask app
+app.config['CSRF_ENABLED'] = False
+
+# --------- Database Connection ---------
+# MongoDB connection to MongoLab's database
+app.config['MONGODB_SETTINGS'] = {'HOST':os.environ.get('MONGOLAB_URI'),'DB': 'CCPC2014'}
+app.logger.debug("Connecting to MongoLabs")
+db = MongoEngine(app) # connect MongoEngine with Flask App
+
+
+# import data models
+import models
+# test for speakers/teammembers
+wangshi = models.Speaker(name='wangshi',photo='url',bio='heyhey!')
+wangshi.save()
+
+
+laowang = models.TeamMember(name='wangshi',photo='url',bio='heyhey!',department='abc')
+laowang.save()
 
 # this is our main page
 @app.route("/")
