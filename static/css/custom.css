@@ -4,14 +4,43 @@ body {
     background-color: white;
 }
 
-
-
 footer {
     padding: 2em 0;
-    margin 3em 0;
+    margin: 3em 0;
     border-top: 1px solid #ddd;
     color: #999;
     text-align: center;
+}
+
+.container {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:justify;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.lab-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:center;
+    /* inline-block space fix */
+    margin-right:-4px;
+/*
+    background-color: rgb(119, 119, 119);
+    background-size: auto 1px;
+*/
 }
 
 .glyphicon {
@@ -25,4 +54,17 @@ footer {
 
 .pull-right.img-responsive {
     margin:0 0 1em 1em;
+}
+
+.brlabel {
+    height: 1px; 
+    background-color: rgb(119, 119, 119); 
+    text-align: center;
+    position: relative;
+    bottom: -1.55em;
+    z-index: -10;
+}
+
+.label-default {
+    font-weight: 300;
 }
