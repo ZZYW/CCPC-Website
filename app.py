@@ -20,13 +20,14 @@ db = MongoEngine(app) # connect MongoEngine with Flask App
 
 # import data models
 import models
-# test for speakers/teammembers
-wangshi = models.Speaker(name='wangshi',photo='url',bio='heyhey!')
-wangshi.save()
+
+# # test for speakers
+# wangshi = models.Speaker(name='wangshi',photo='url',bio='heyhey!')
+# wangshi.save()
 
 
-laowang = models.TeamMember(name='wangshi',photo='url',bio='heyhey!',department='abc')
-laowang.save()
+# laowang = models.TeamMember(name='wangshi',photo='url',bio='heyhey!',department='abc')
+# laowang.save()
 
 # this is our main page
 @app.route("/")
@@ -34,9 +35,9 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/test")
+@app.route("/add")
 def test():
-	return '''hello'''
+	return render_template("add.html")
 
 # start the webserver
 if __name__ == "__main__":

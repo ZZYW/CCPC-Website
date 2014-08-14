@@ -7,6 +7,7 @@ class Speaker(Document):
     name = StringField(required=True)
     photo = StringField(max_length=50)
     bio = StringField(max_length=50)
+    panel = StringField(required=True)
 
 
 class TeamMember(Document):
