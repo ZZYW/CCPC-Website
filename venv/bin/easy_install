@@ -1,4 +1,4 @@
-#!/Users/yang/Documents/CCPC2014/venv/bin/python
+#!/Users/yang/Documents/CCPC-Website/venv/bin/python
 # EASY-INSTALL-ENTRY-SCRIPT: 'setuptools==0.9.8','console_scripts','easy_install'
 __requires__ = 'setuptools==0.9.8'
 import sys
