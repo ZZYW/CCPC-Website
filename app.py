@@ -69,7 +69,7 @@ def getSpeakerAtr(name):
 
 # query the speaker and return the object
 @app.route('/teammember/<name>')
-def getSpeakerAtr(name):
+def getTeamMemberAtr(name):
     theMember = models.TeamMember.objects.get(name=name)
     return '''%s''' % theMember.department
 
