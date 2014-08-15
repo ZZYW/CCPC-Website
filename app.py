@@ -21,14 +21,6 @@ db = MongoEngine(app) # connect MongoEngine with Flask App
 # import data models
 import models
 
-# # test for speakers
-# wangshi = models.Speaker(name='wangshi',photo='url',bio='heyhey!')
-# wangshi.save()
-
-
-# laowang = models.TeamMember(name='wangshi',photo='url',bio='heyhey!',department='abc')
-# laowang.save()
-
 # home page
 @app.route("/")
 def index():
@@ -37,7 +29,6 @@ def index():
 # add speakers or team membaers
 @app.route("/add", methods=['GET'])
 def add():
-
 	return render_template("add.html")
 
 @app.route("/addSpeaker", methods=['POST'])
@@ -48,11 +39,10 @@ def addSpeaker():
 	speaker.photo = request.form.get('photo')
 	speaker.bio = request.form.get('bio')
 	speaker.panel = request.form.get('panel')
-
 	speaker.save() # save it
-
-	# redirect to the new idea page
+	
 	return redirect('/add')
+
 
 @app.route("/addMember", methods=['POST'])
 def addMember():
@@ -62,10 +52,8 @@ def addMember():
 	member.department = request.form.get('department')
 	member.photo = request.form.get('photo')
 	member.bio = request.form.get('bio')
-
 	member.save() # save it
 
-	# redirect to the new idea page
 	return redirect('/add')
 
 
