@@ -29,15 +29,45 @@ import models
 # laowang = models.TeamMember(name='wangshi',photo='url',bio='heyhey!',department='abc')
 # laowang.save()
 
-# this is our main page
+# home page
 @app.route("/")
 def index():
     return render_template("index.html")
 
+# add speakers or team membaers
+@app.route("/add", methods=['GET'])
+def add():
 
-@app.route("/add")
-def test():
 	return render_template("add.html")
+
+@app.route("/addSpeaker", methods=['POST'])
+def addSpeaker():
+	# get form data - create new idea
+	speaker = models.Speaker()
+	speaker.name = request.form.get('name')
+	speaker.photo = request.form.get('photo')
+	speaker.bio = request.form.get('bio')
+	speaker.panel = request.form.get('panel')
+
+	speaker.save() # save it
+
+	# redirect to the new idea page
+	return redirect('/add')
+
+@app.route("/addMember", methods=['POST'])
+def addMember():
+	# get form data - create new idea
+	member = models.TeamMember()
+	member.name = request.form.get('name')
+	member.department = request.form.get('department')
+	member.photo = request.form.get('photo')
+	member.bio = request.form.get('bio')
+
+	member.save() # save it
+
+	# redirect to the new idea page
+	return redirect('/add')
+
 
 # start the webserver
 if __name__ == "__main__":
