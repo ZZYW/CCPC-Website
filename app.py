@@ -1,6 +1,8 @@
 import os, datetime
 import re
+import json
 from flask import Flask, request, render_template, redirect, abort
+from flask import jsonify
 from unidecode import unidecode
 
 
@@ -24,6 +26,7 @@ import models
 # home page
 @app.route("/")
 def index():
+
     return render_template("index.html")
 
 # add speakers or team membaers
@@ -40,7 +43,7 @@ def addSpeaker():
 	speaker.bio = request.form.get('bio')
 	speaker.panel = request.form.get('panel')
 	speaker.save() # save it
-	
+
 	return redirect('/add')
 
 
@@ -55,6 +58,14 @@ def addMember():
 	member.save() # save it
 
 	return redirect('/add')
+
+
+# query the speaker and return the object
+@app.route('/speakers/<name>')
+def getSpeakerAtr(name):
+    theSpeaker = models.Speaker.objects.get(name=name)
+    return '''%s''' % theSpeaker.panel
+
 
 
 # start the webserver
