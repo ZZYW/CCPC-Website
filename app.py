@@ -67,6 +67,13 @@ def getSpeakerAtr(name):
     return '''%s''' % theSpeaker.panel
 
 
+# query the speaker and return the object
+@app.route('/teammember/<name>')
+def getSpeakerAtr(name):
+    theMember = models.TeamMember.objects.get(name=name)
+    return '''%s''' % theMember.department
+
+
 
 # start the webserver
 if __name__ == "__main__":
