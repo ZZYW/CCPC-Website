@@ -281,13 +281,8 @@
              </div>
         </div>
 		
-        <!-- Nav tabs -->
-<!--
-         <div class="row iconbar subsection">
-            <div  id="panel-icons" class="row-centered">
-                <div class="col-lg-3 col-sm-4 col-xs-6 col-centered">       
--->
-<!-- Nav tabs -->
+<!-- TEST FOR TABS! -->
+	<!-- Nav tabs -->
     <ul class="nav nav-tabs" id="myTab" role="tablist">
       <li class="active"><a href="#home" role="tab">Home</a></li>
       <li><a href="#profile" role="tab">Profile</a></li>
@@ -302,6 +297,8 @@
       <div class="tab-pane" id="messages">33333333333</div>
       <div class="tab-pane" id="settings">44444444444</div>
     </div>
+<!-- TEST ENDS HERE! -->
+
 
     <div class="row row-centered">
         <div class="col-lg-6 col-md-8 col-xs-10 col-centered">
@@ -585,7 +582,7 @@
         </div>
       
 
-        <!-- Follow the format -->
+        <!-- A test for getting data from our database and display them! -->
         {% for name, info in all_members.items() %}
         <img class="team-member" data-toogle="tooltip" data-html=true data-placement='auto' title="<strong>{{ name }}</strong><p>{{ info.get('bio') }}</p>" src="{{ info.get('photo') }}"/>
         {% endfor %}

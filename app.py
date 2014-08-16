@@ -37,6 +37,10 @@ for x in models.TeamMember.objects:
 	'department':'%s' % x.department
 	}
 
+all_speakers ={}
+
+for x in models.Speaker.objects:
+	all_speakers
 
 
 
