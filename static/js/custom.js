@@ -13,3 +13,16 @@ $(function() {
     }
   });
 });
+
+// agenda tabs
+
+
+$('#myTab a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+
+
+$('#myTab a[href="#messages"]').tab('show'); 
+            

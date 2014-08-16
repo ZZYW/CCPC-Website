@@ -85,8 +85,7 @@ margin-top: 1.2%;
 }
 
 .iconbar {
-    background-color: rgb(216, 216, 216); 
-    height: 100px;
+    background-color: rgb(216, 216, 216);
 }
 
 .label-default {
@@ -102,17 +101,31 @@ margin-top: 1.2%;
             border-radius: 8px;
     }
 
-p.uppercase {text-transform:uppercase;}
-p.lowercase {text-transform:lowercase;}
-p.capitalize {text-transform:capitalize;}
-
 footer {
   height: 100px;
   background-color: #212121;
   color: #dedede
 }
 
+#sponsorship .fa{
+    color: black;
+}
 
 footer .fa{
     color: #dedede;
+}
+
+footer .wrap{
+    padding-left: 3px;
+    padding-right: 6px;
+}
+
+#about a {
+    color: black;
+    text-decoration: underline;
+}
+
+#about a:hover {
+    color: rgb(119, 119, 119);
+    text-decoration: underline;
 }
