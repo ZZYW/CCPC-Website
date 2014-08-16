@@ -1,3 +1,6 @@
+//ajax dynamic data pulling
+
+
 //smooth scrolling js code
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -13,16 +16,23 @@ $(function() {
     }
   });
 });
+//smooth js ends here
+
 
 // agenda tabs
-
-
 $('#myTab a').click(function (e) {
   e.preventDefault()
   $(this).tab('show')
 })
 
-
-
 $('#myTab a[href="#messages"]').tab('show'); 
             
+//agenda tabs ends here
+
+
+
+//enable tooltip
+$(".team-member").tooltip(
+);
+
+

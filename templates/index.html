@@ -16,7 +16,6 @@
 	<script src="/static/js/jquery-2.1.1.min.js"></script>
     <script src="/static/js/respond.min.js"></script>
 	<script src="/static/js/jquery.scrollTo.min.js"></script>
-	
 </head>
       
 
@@ -582,8 +581,15 @@
                             </p>
                         </div>
                     </div>
-           
             </div>
+        </div>
+      
+
+        <!-- Follow the format -->
+        {% for name, info in all_members.items() %}
+        <img class="team-member" data-toogle="tooltip" data-html=true data-placement='auto' title="<strong>{{ name }}</strong><p>{{ info.get('bio') }}</p>" src="{{ info.get('photo') }}"/>
+        {% endfor %}
+
 
     
         
@@ -640,11 +646,14 @@
             </div>
         </div>
 	</footer>
+
 <!--</div>  end container -->
 
-<!-- javascript -->
+
+<!--/div--> <!-- end container -->
+	<!-- javascript -->
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
     <script src="/static/js/custom.js"></script>
 
 </body>
