@@ -2,6 +2,9 @@
 <!-- A New Media Studio Founded by Yang Wang & Zhenzhen Qi -->
 <!-- 2014 @ NYC -->
 
+
+
+
 <!doctype html>
 <html>
 
@@ -62,7 +65,7 @@
 
     <!-- row 2: theme -->
 
-    <section class="row section">
+    <section id="THEME" class="row section">
         <!-- section header image and section intro -->
         <div class="row">
             <div class="row sectionheader">
@@ -505,7 +508,7 @@
     
     
     <!-- row 7: sponsorship -->
-	<section id="sponsorship" class="row section">
+	<section id="SPONSORSHIP" class="row section">
         <div class="row sectionheader">
 			<img src="../static/img/sponsorship.jpg" alt="" class="img-responsive">
             <h4 class="row-centered">SPONSORSHIP</h4>
@@ -541,15 +544,13 @@
             </div>
          </div>
 
-        
-    
     </section>
     
     
 	<!-- end sponsorship -->
     
 	<!-- row 8: about -->
-	<section id="about" class="row section">
+	<section id="ABOUT" class="row section">
         <div class="row sectionheader">
 			<img src="../static/img/about.jpg" alt="" class="img-responsive">
             <h4 class="row-centered">ABOUT</h4>
@@ -583,9 +584,15 @@
       
 
         <!-- A test for getting data from our database and display them! -->
+   
         {% for name, info in all_members.items() %}
-        <img class="team-member" data-toogle="tooltip" data-html=true data-placement='auto' title="<strong>{{ name }}</strong><p>{{ info.get('bio') }}</p>" src="{{ info.get('photo') }}"/>
+        <img class="team-member" 
+        data-toogle="tooltip" 
+        data-html=true data-placement='auto' 
+        title="<h4>{{ name }}</h4>-<em>{{ info.get('department') }}</em>-</br><p>{{ info.get('bio') }}</p>" 
+        src="{{ info.get('photo') }}"/>
         {% endfor %}
+
 
 
     
