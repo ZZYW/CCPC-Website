@@ -1,3 +1,6 @@
+//ajax dynamic data pulling
+
+
 //smooth scrolling js code
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
@@ -13,3 +16,12 @@ $(function() {
     }
   });
 });
+//smooth js ends here
+
+
+
+
+$(".team-member").tooltip(
+);
+
+

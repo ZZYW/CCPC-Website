@@ -20,18 +20,35 @@ app.logger.debug("Connecting to MongoLabs")
 db = MongoEngine(app) # connect MongoEngine with Flask App
 
 
+
+
+
+
+
 # import data models
 import models
+
+all_members ={}
+#try to import data base into a dictionary
+for x in models.TeamMember.objects:
+	all_members['%s' % x.name] = {
+	'photo':'%s' % x.photo,
+	'bio':'%s' % x.bio,
+	'department':'%s' % x.department
+	}
+
+
+
 
 # home page
 @app.route("/")
 def index():
-
-    return render_template("index.html")
+	return render_template('index.html', all_members = all_members)
 
 # add speakers or team membaers
 @app.route("/add", methods=['GET'])
 def add():
+
 	return render_template("add.html")
 
 @app.route("/addSpeaker", methods=['POST'])
@@ -73,7 +90,10 @@ def getTeamMemberAtr(name):
     theMember = models.TeamMember.objects.get(name=name)
     return '''%s''' % theMember.department
 
-
+@app.route('/panels/<name>')
+def getPanelDes(name):
+	thePanel = models.Panel.objects.get(name=name)
+	return ''''''
 
 # start the webserver
 if __name__ == "__main__":

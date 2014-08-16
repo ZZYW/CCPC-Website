@@ -16,3 +16,6 @@ class TeamMember(Document):
 	photo = StringField(required=True)
 	bio = StringField(required=True)
 
+class Panel(Document):
+	name = StringField(required=True)
+	description = StringField(required=True)
