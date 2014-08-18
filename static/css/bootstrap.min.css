@@ -6214,7 +6214,6 @@ footer {
   float: none;
   /* reset the text-align */
   text-align: center;
-  margin-right: -4px;
 }
 .glyphicon {
   color: #777777;
@@ -6230,7 +6229,7 @@ footer {
   bottom: -1.55em;
   z-index: -10;
 }
-#panel-icons {
+.panel-icons {
   margin-top: 1.2%;
 }
 .iconbar {
