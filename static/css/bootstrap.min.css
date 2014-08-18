@@ -6167,6 +6167,10 @@ button.close {
 body {
   background-color: white;
 }
+#THEME ul {
+  list-style: none;
+  padding: 2em;
+}
 footer {
   padding: 2em 0;
   margin: 3em 0;
@@ -6207,7 +6211,6 @@ footer {
   /* reset the text-align */
   text-align: justify;
   /* inline-block space fix */
-  margin-right: -4px;
 }
 .lab-centered {
   display: inline-block;
@@ -6303,12 +6306,20 @@ footer .wrap {
 .custom > li > a:hover {
   background-color: #d8d8d8;
 }
-.custom > li > a:hover .fa {
-  color: black;
-}
 .custom > li.active > a {
   background-color: #d8d8d8;
 }
 .custom > li.active > a .fa {
   color: black;
+}
+#THEME .custom > li > a {
+  opacity: 0.6;
+}
+#THEME .custom > li > a:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+#THEME .custom > li.active > a {
+  opacity: 1;
+  background-color: transparent;
 }
