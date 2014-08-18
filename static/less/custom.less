@@ -1,6 +1,5 @@
 /* this is a custom css style sheet */
 body {
-//    padding-top: 30px;
     background-color: white;
 }
 
@@ -17,6 +16,16 @@ footer {
     text-align: center;
 }
 
+
+.brlabel {
+    height: 1px; 
+    background-color: rgb(119, 119, 119); 
+    text-align: center;
+    position: relative;
+    bottom: -1.55em;
+    z-index: -10;
+}
+
 .navbar.center .navbar-inner {
     text-align: center;
 }
@@ -24,6 +33,9 @@ footer {
     float: none;
     display:inline-block;
 }
+
+
+
 
 .container {
     margin-left: 5px;
@@ -76,13 +88,14 @@ footer {
  color: rgb(119, 119, 119);  
 }
 
-.brlabel {
-    height: 1px; 
-    background-color: rgb(119, 119, 119); 
-    text-align: center;
-    position: relative;
-    bottom: -1.55em;
-    z-index: -10;
+.section-name{
+	font-size: 1em;
+	position: relative;
+	bottom: 3em;
+	background: url('/static/img/ink.png') no-repeat center center;
+	background-size: 16%;
+	padding: 2em;
+	color: white;
 }
 
 .panel-icons{
@@ -152,20 +165,62 @@ footer .wrap{
     filter: grayscale(0%);
 }
 
-.navbar-inverse {
-  background-color: rgba(0,0,0,0.8);
-  background-image: none;
+//LANDING PAGE
+#landing-page{
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#landing-page .brlabel{
+	background-color: white;
+	z-index: 0;
+	position: static;
+//    bottom: -1.55em;
+}
+
+#landing-page-container{
+	padding: 17% 20% 12% 20%;
+}
+
+#hr-1{
+margin: 0 15% 0 15%;
 }
 
 #landing-page{
+
     background: url('/static/img/landingpage.jpg') no-repeat center center;
     background-size: cover;
-    height: 950px;
+    height: 800px;
+}
+#landing-page h1{
+	font-size: 4em;
+	font-weight: 900;
+	position: relative;
+	bottom: 5px;
 }
 
-#agenda-icon{
-    
+#landing-page a{
+	margin: 1em;
+	background: rgba(0,0,0,0) !important;
+	color: white;
+	border: 1px solid white;
 }
+
+#landing-page a:hover{
+	background: rgba(0,0,0,0) !important;
+	color: black;
+	border: 1px solid black;
+}
+
+//landing page ends
+
+.navbar-inverse {
+  background-color: rgba(0,0,0,0.8);
+
+  background-image: none;
+	
+}
+
 
 .custom {
     .fa {
@@ -203,6 +258,23 @@ footer .wrap{
 }
 
 
+nav{
+	margin: 0px !important;
+	border-radius: 0px !important;
+	border: none !important;
+	 
+}
+
+#nav-bar-logo{
+	max-width: 2em;
+}
+.navbar-brand{
+	padding: 1em 1em 1em 1em;
+	opacity: 0.7;
+}
+.navbar-brand:hover{
+	opacity: 1;
+}
 
 
 

@@ -1,20 +1,49 @@
-//ajax dynamic data pulling
+$(document).ready(function () {
+	// agenda tabs and highlighted speakers tabs
+	$('.myTab a').click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
 
 
 
-
-
-// agenda tabs and highlighted speakers tabs
-$('.myTab a').click(function (e) {
-    e.preventDefault();
-    $(this).tab('show');
-});
+	//enable tooltip
+	$(".team-member").tooltip();
 
 
 
-//enable tooltip
-$(".team-member").tooltip(
-);
+	var viewport_height = $(window).height();
+	$('#landing-page').css('height', viewport_height-75);
+
+
+	$(window).resize(function () {
+		var viewport_height = $(window).height();
+		$('#landing-page').css('height', viewport_height-75);
+	});
+
+	$(window).scroll(function () {
+		var langindg_page_height = $('#landing-page').height();
+		var scrollTop = $(window).scrollTop();
+
+		
+		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+			//pass
+		} else {
+			if (scrollTop >= langindg_page_height) {
+				$('nav').addClass('navbar-fixed-top');
+			}else{
+				$('nav').removeClass('navbar-fixed-top');
+			}
+		}
+
+
+
+	});
+
+
+})
+
+
 
 
 //smooth scrolling js code

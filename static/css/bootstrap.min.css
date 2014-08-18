@@ -6178,6 +6178,14 @@ footer {
   color: #999;
   text-align: center;
 }
+.brlabel {
+  height: 1px;
+  background-color: #777777;
+  text-align: center;
+  position: relative;
+  bottom: -1.55em;
+  z-index: -10;
+}
 .navbar.center .navbar-inner {
   text-align: center;
 }
@@ -6224,13 +6232,14 @@ footer {
 .fa {
   color: #777777;
 }
-.brlabel {
-  height: 1px;
-  background-color: #777777;
-  text-align: center;
+.section-name {
+  font-size: 1em;
   position: relative;
-  bottom: -1.55em;
-  z-index: -10;
+  bottom: 3em;
+  background: url('/static/img/ink.png') no-repeat center center;
+  background-size: 16%;
+  padding: 2em;
+  color: white;
 }
 .panel-icons {
   margin-top: 1.2%;
@@ -6288,14 +6297,47 @@ footer .wrap {
   -moz-filter: grayscale(0%);
   filter: grayscale(0%);
 }
-.navbar-inverse {
-  background-color: rgba(0, 0, 0, 0.8);
-  background-image: none;
+#landing-page {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+#landing-page .brlabel {
+  background-color: white;
+  z-index: 0;
+  position: static;
+}
+#landing-page-container {
+  padding: 17% 20% 12% 20%;
+}
+#hr-1 {
+  margin: 0 15% 0 15%;
 }
 #landing-page {
   background: url('/static/img/landingpage.jpg') no-repeat center center;
   background-size: cover;
-  height: 950px;
+  height: 800px;
+}
+#landing-page h1 {
+  font-size: 4em;
+  font-weight: 900;
+  position: relative;
+  bottom: 5px;
+}
+#landing-page a {
+  margin: 1em;
+  background: rgba(0, 0, 0, 0) !important;
+  color: white;
+  border: 1px solid white;
+}
+#landing-page a:hover {
+  background: rgba(0, 0, 0, 0) !important;
+  color: black;
+  border: 1px solid black;
+}
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, 0.8);
+  background-image: none;
 }
 .custom .fa {
   color: #999;
@@ -6322,4 +6364,19 @@ footer .wrap {
 #THEME .custom > li.active > a {
   opacity: 1;
   background-color: transparent;
+}
+nav {
+  margin: 0px !important;
+  border-radius: 0px !important;
+  border: none !important;
+}
+#nav-bar-logo {
+  max-width: 2em;
+}
+.navbar-brand {
+  padding: 1em 1em 1em 1em;
+  opacity: 0.7;
+}
+.navbar-brand:hover {
+  opacity: 1;
 }
