@@ -19,15 +19,11 @@ $(function() {
 //smooth js ends here
 
 
-// agenda tabs
+// agenda tabs and highlighted speakers tabs
 $('#myTab a').click(function (e) {
-  e.preventDefault()
-  $(this).tab('show')
-})
-
-$('#myTab a[href="#messages"]').tab('show'); 
-            
-//agenda tabs ends here
+    e.preventDefault();
+    $(this).tab('show');
+});
 
 
 

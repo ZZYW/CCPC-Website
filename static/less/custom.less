@@ -48,7 +48,7 @@ footer {
 
 .col-centered {
     display:inline-block;
-    float:none;
+    float: none;
     /* reset the text-align */
     text-align:justify;
     /* inline-block space fix */
@@ -120,18 +120,14 @@ footer .wrap{
     padding-right: 6px;
 }
 
-#about a {
+#ABOUT a {
     color: black;
     text-decoration: underline;
 }
 
-#about a:hover {
+#ABOUT a:hover {
     color: rgb(119, 119, 119);
     text-decoration: underline;
-}
-
-.nav-pills:active {
-    color:rgb(216, 216, 216);
 }
 
 .team-member{
@@ -161,4 +157,30 @@ footer .wrap{
     background-size: cover;
     height: 950px;
 }
+
+
+.custom {
+    .fa {
+        color: #999;
+    }
+    h6 {
+        color: black;
+    }
+}
+
+.custom > li > a:hover {
+    background-color: rgb(216, 216, 216);
+    .fa {
+        color: black;
+    }
+}
+
+.custom > li.active > a {
+    background-color: rgb(216, 216, 216);
+    .fa {
+        color: black;
+    }
+}
+
+
 
