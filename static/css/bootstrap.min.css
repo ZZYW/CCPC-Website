@@ -6171,6 +6171,10 @@ body {
   list-style: none;
   padding: 2em;
 }
+#PANELS ul {
+  list-style: none;
+  padding: 2em;
+}
 footer {
   padding: 2em 0;
   margin: 3em 0;
