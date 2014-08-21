@@ -49,10 +49,17 @@ for x in models.Speaker.objects:
 def index():
 	return render_template('index.html', all_members = all_members)
 
+@app.route("/about")
+def about():
+	return render_template('about.html')
+
+@app.route("/direction")
+def direction():
+	return render_template('direction.html')
+
 # add speakers or team membaers
 @app.route("/add", methods=['GET'])
 def add():
-
 	return render_template("add.html")
 
 @app.route("/addSpeaker", methods=['POST'])
