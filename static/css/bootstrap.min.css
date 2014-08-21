@@ -6165,7 +6165,14 @@ button.close {
 }
 /* this is a custom css style sheet */
 body {
-  background-color: white;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  background-color: #d8d8d8;
+}
+html {
+  width: 100%;
+  height: 100%;
 }
 #THEME ul {
   list-style: none;
@@ -6176,8 +6183,9 @@ body {
   padding: 2em;
 }
 footer {
+  background-size: cover;
   padding: 2em 0;
-  margin: 3em 0;
+  margin: 3em 0 0 0;
   border-top: 1px solid #ddd;
   color: #999;
   text-align: center;
@@ -6198,8 +6206,8 @@ footer {
   display: inline-block;
 }
 .container {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .section {
   padding-bottom: 120px;
@@ -6213,9 +6221,6 @@ footer {
 .tb {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.row-centered {
-  text-align: center;
 }
 .col-centered {
   display: inline-block;
@@ -6302,6 +6307,7 @@ footer .wrap {
   filter: grayscale(0%);
 }
 #landing-page {
+  position: relative;
   color: white;
   font-weight: 700;
   text-transform: uppercase;
@@ -6328,15 +6334,18 @@ footer .wrap {
   position: relative;
   bottom: 5px;
 }
-#landing-page a {
+#landing-page button {
   margin: 1em;
   background: rgba(0, 0, 0, 0) !important;
   color: white;
   border: 1px solid white;
 }
-#landing-page a:hover {
+#landing-page button:hover {
   background: rgba(0, 0, 0, 0) !important;
   color: black;
+  border: 1px solid black;
+}
+#CONTACT button {
   border: 1px solid black;
 }
 .navbar-inverse {
@@ -6370,9 +6379,14 @@ footer .wrap {
   background-color: transparent;
 }
 nav {
+  display: none;
+  font-weight: 400;
   margin: 0px !important;
   border-radius: 0px !important;
   border: none !important;
+}
+nav a:hover {
+  color: white !important;
 }
 #nav-bar-logo {
   max-width: 2em;
