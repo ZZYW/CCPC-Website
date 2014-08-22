@@ -1,11 +1,7 @@
 <!-- Designed & Developed By ZZYW.CO -->
 <!-- A New Media Studio Founded by Yang Wang & Zhenzhen Qi -->
 <!-- 2014 @ NYC -->
-
-
-
-
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -34,7 +30,7 @@
 <body>
 	<div class="container-fluid">
 		<!-- row 1: landing page -->
-		<div class="row text-center" id="landing-page">
+		<div data-0="opacity:1" data-top-center="opacity:0" class="row text-center" id="landing-page">
 
 			<div id="landing-page-container">
 				<h3>2014 cpcc • organized by cucssa</h3>
@@ -42,14 +38,14 @@
 				<h1>china's dialogue with the world</h1>
 				<div id="hr-2" class="brlabel"></div>
 				<h6>oct 4th | 5th, 2014 Ronne Auditorium | low memorial | columibia university | new york city</h6>
-				<button class="btn btn-default btn-sm" role="button">Get Ticket Now</button>
+				<button class="round-button" role="button">Get Ticket Now</button>
 			</div>
 		</div>
 
 
 		<!-- row 0: navigation -->
 
-		<nav class="navbar navbar-default navbar-inverse center navbar-fixed-top" data-0="opacity:0" data-500="opacity: 1" role="navigation">
+		<nav class="navbar navbar-default navbar-inverse center navbar-fixed-top" data-0="opacity:0" data-600="opacity: 1" role="navigation">
 
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
@@ -94,7 +90,6 @@
 			<!-- section header image and section intro -->
 			<div>
 				<div class="sectionheader">
-					<img src="../static/img/theme.jpg" alt="" class="img-responsive">
 					<h4 class="section-name text-center">THEME</h4>
 				</div>
 				<div class="sectionheader col-centered">
@@ -206,7 +201,6 @@
 
 			<!-- section header image and section intro -->
 			<div class="sectionheader">
-				<img src="../static/img/panels.jpg" alt="" class="img-responsive">
 				<h4 class="section-name text-center">PANELS</h4>
 			</div>
 			<!-- header ends -->
@@ -520,7 +514,6 @@
 
 			<!--title picture and title-->
 			<div class="sectionheader">
-				<img src="../static/img/agenda.jpg" alt="" class="img-responsive">
 				<h4 class="text-center section-name">AGENDA</h4>
 
 			</div>
@@ -690,19 +683,20 @@
 
 
 		<!-- row 6: directions -->
-		<section id="DIRECTIONS">
+		<section id="DIRECTIONS" 
+				 data-bottom-top="background-position: 50% 100%;" 
+				 data-top-bottom="background-position: 50% 0%;" 
+				 class="row">
 			<div class="in-parallax-text">
-				<div id="map-canvas"></div>
 				<p class="lead">Wonder how to get to the conference?</p>
-				<button class="btn btn-default" role="button">Check the Directions</button>
+				<button class="round-button" role="button">Check the Directions</button>
 			</div>
 		</section>
 		<!-- end directions -->
 
 
 		<!-- row 5: tickets -->
-		<section id="TICKETS" class="row section">
-			<img src="../static/img/tickets.jpg" alt="" class="img-responsive">
+		<section data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" id="TICKETS" class="row section">
 			<h4 class="text-center section-name">TICKETS</h4>
 		</section>
 		<!-- end tickets -->
@@ -710,7 +704,6 @@
 		<!-- row 7: sponsorship -->
 		<section id="SPONSORSHIP" class="row section">
 			<div class="sectionheader">
-				<img src="../static/img/sponsorship.jpg" alt="" class="img-responsive">
 				<h4 class="text-center section-name">SPONSORSHIP</h4>
 			</div>
 
@@ -750,13 +743,10 @@
 		<!-- end sponsorship -->
 
 		<!-- row 8: about -->
-		<section 
-				 data-bottom-top="background-position: 50% 100%;" 
-				 data-top-bottom="background-position: 50% 0%;" 
-				 class="row" id="ABOUT">
+		<section data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" class="row" id="ABOUT">
 			<div class="in-parallax-text">
-				<p class="lead">About the Team And CUCSSA</p>
-				<button class="btn btn-default" role="button">Learn More</button>
+				<p class="lead">About the Team</p>
+				<button class="round-button" role="button">Learn More</button>
 			</div>
 		</section>
 
