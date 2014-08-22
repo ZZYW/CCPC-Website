@@ -24,15 +24,6 @@ html {
     padding: 2em;
 }
 
-footer {
-    background-size: cover;
-    padding: 2em 0;
-    margin: 3em 0 0 0;
-    border-top: 1px solid #ddd;
-    color: #999;
-    text-align: center;
-}
-
 
 .brlabel {
     height: 1px; 
@@ -100,6 +91,11 @@ footer {
 	color: black;
 }
 
+.section-brief{
+	padding: 4em 0 4em 0;
+	background-color: #af9f8a;
+}
+
 .panel-icons{
     margin-top: 1.2%;
 }
@@ -121,22 +117,53 @@ footer {
             border-radius: 8px;
     }
 
-footer {
-  background-color: #212121;
-  color: #dedede
-}
-
 #SPONSORSHIP .fa{
     color: black;
 }
 
-footer .fa{
-    color: #dedede;
+#pre-footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(117,178,221);
+    height: 400px;
 }
 
-footer .wrap{
-    padding-left: 3px;
-    padding-right: 6px;
+#pre-footer .fa{
+    color: white;
+}
+
+#pre-footer img{
+    margin: auto;
+    width: 80px;
+}
+
+#pre-footer p{
+    padding: 1%;
+}
+
+#pre-footer .wrap{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#pre-footer div{
+    padding: 6% 0 6% 0;
+}
+
+footer {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align: center;
+    height: 200px;
+    background-color: #212121;
+    color: #fff
+}
+
+
+
+
+footer div{
+    padding: 4% 0% 4% 0%;
 }
 
 #ABOUT a {
@@ -253,7 +280,7 @@ margin: 0 15% 0 15%;
 
 /*NAV BAR!!!!*/
 nav{
-	background-color: rgb(66,80,100) !important;	
+	background-color: #000 !important;	
 	border: none !important;	 
 	text-align: center;
 }
@@ -284,6 +311,7 @@ nav a:hover{
     background: url('/static/img/cu.jpg') no-repeat top center;
     background-size: cover;
 	color: white;
+	margin-bottom: 20em;
 }
 
 #DIRECTIONS {
