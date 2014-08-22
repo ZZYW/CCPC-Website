@@ -22,15 +22,6 @@ html {
     padding: 2em;
 }
 
-footer {
-    background-size: cover;
-    padding: 2em 0;
-    margin: 3em 0 0 0;
-    border-top: 1px solid #ddd;
-    color: #999;
-    text-align: center;
-}
-
 
 .brlabel {
     height: 1px; 
@@ -129,23 +120,53 @@ footer {
             border-radius: 8px;
     }
 
-footer {
-  height: 100px;
-  background-color: #212121;
-  color: #dedede
-}
-
 #SPONSORSHIP .fa{
     color: black;
 }
 
-footer .fa{
-    color: #dedede;
+#pre-footer {
+    color: white;
+    text-align: center;
+    background-color: rgb(193, 41, 48);
+    height: 400px;
 }
 
-footer .wrap{
-    padding-left: 3px;
-    padding-right: 6px;
+#pre-footer .fa{
+    color: white;
+}
+
+#pre-footer img{
+    margin: auto;
+    width: 80px;
+}
+
+#pre-footer p{
+    padding: 1%;
+}
+
+#pre-footer .wrap{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#pre-footer div{
+    padding: 6% 0 6% 0;
+}
+
+footer {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align: center;
+    height: 200px;
+    background-color: #212121;
+    color: #fff
+}
+
+
+
+
+footer div{
+    padding: 4% 0% 4% 0%;
 }
 
 #ABOUT a {
