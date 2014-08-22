@@ -47,11 +47,11 @@ for x in models.Speaker.objects:
 # home page
 @app.route("/")
 def index():
-	return render_template('index.html', all_members = all_members)
+	return render_template('index.html')
 
 @app.route("/about")
 def about():
-	return render_template('about.html')
+	return render_template('about.html',all_members = all_members)
 
 @app.route("/direction")
 def direction():

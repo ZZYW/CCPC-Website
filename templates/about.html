@@ -1,4 +1,5 @@
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title>CCPC 2014</title>
@@ -13,10 +14,56 @@
 	<script src="/static/js/respond.min.js"></script>
 	<script src="/static/js/jquery.scrollTo.min.js"></script>
 	<script src="/static/js/custom.js"></script>
-
 </head>
-<body>
 
+
+<body>
+	<section id="ABOUT" class="row section">
+		<div class="sectionheader">
+			<img src="../static/img/about.jpg" alt="" class="img-responsive">
+			<h4 class="text-center section-name">ABOUT</h4>
+		</div>
+
+
+		<div class="row text-center sectionheader">
+			<div class="col-lg-6 col-md-8 col-xs-10 col-centered">
+				<p>The Columbia China Prospects Conference (CCPC), launched in 2010, has evolved into one of the most influential student-organized conferences on the topic of China. Both Chinese and American leaders join CCPC to inspire the young generation to make a positive impact on the world. Previous CCPC speakers include Gordon Bajnai, former Prime Minister of Hungary; Thomas Fingar, former Principal Assistant Secretary of the United States; Jeffrey Sachs, Director of the UN Millennium Project; Xiaonian Xu, renowned Chinese Economist; Jeffrey Lehman, former President of Cornell University; Shi Wang, Chairman of the Board of Directors of China Vanke Co., Ltd.; Yongchun Lang, famous CCTV host and et al. CCPC was also featured in major Chinese media, both in China and United States: CCTV, Xinhua, China Daily, China Youth Daily, Phoenix, Sina and so on. Therefore, the sparkle of CCPC has been widespread and influenced China’s structure of development strategies. For more information about past conferences, please click <a href="http://www.ccpc2013.org/">HERE</a>.
+				</p>
+			</div>
+		</div>
+		<div class="text-center">
+			<div class="row">
+				<div class="col-lg-6 col-md-8 col-xs-10 lab-centered">
+					<div>
+						<div class="brlabel"></div>
+						<h4><span class="label label-default">ABOUT ORGANIZER</span></h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-8 col-xs-10 col-centered">
+				<div>
+					<p>Founded in 1996, Columbia University Chinese Students and Scholars Association (CUCSSA) is one the most prominent non-profit Chinese organizations in the United States. Since its very first day, CUCSSA has been following its mission of promoting cultural and intellectual exchanges between China and the United States. Thanks to the support of Columbia University and its partners, CUCSSA becomes a major platform where Chinese and American students exchange ideas in economy, culture, business, education and many other
+					</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- A test for getting data from our database and display them! -->
+
+		{% for name, info in all_members.items() %}
+		<img class="team-member" data-toogle="tooltip" data-html=true data-placement='auto' title="<h4>{{ name }}</h4>-<em>{{ info.get('department') }}</em>-</br><p>{{ info.get('bio') }}</p>" src="{{ info.get('photo') }}" />{% endfor %}
+
+
+
+
+
+
+
+	</section>
+	<!-- end about -->
 
 </body>
 
