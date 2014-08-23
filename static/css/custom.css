@@ -1,9 +1,11 @@
 /* this is a custom css style sheet */
 body {
+	font-family: 'Karma', 'STSong', 'SimSun', serif;
+	font-weight: 200;
     overflow-x: hidden;
     width: 100%;
     height: 100%;
-    background-color: rgb(216, 216, 216);
+    background-color: white !important;
 }
 
 html {
@@ -32,13 +34,7 @@ html {
     z-index: -10;
 }
 
-.navbar.center .navbar-inner {
-    text-align: center;
-}
-.navbar.center .navbar-inner .nav {
-    float: none;
-    display:inline-block;
-}
+
 
 .container {
     margin-left: 0px;
@@ -70,7 +66,7 @@ html {
     /* reset the text-align */
     text-align:justify;
     /* inline-block space fix */
-//    margin-right:-4px;
+/*//    margin-right:-4px;*/
 }
 
 .lab-centered {
@@ -78,7 +74,6 @@ html {
     float:none;
     /* reset the text-align */
     text-align:center;
-//    margin-right:-4px;
 }
 
 .glyphicon {
@@ -89,14 +84,30 @@ html {
  color: rgb(119, 119, 119);  
 }
 
-.section-name{
-	font-size: 1em;
-	position: relative;
-	bottom: 3em;
-	background: url('/static/img/ink.png') no-repeat center center;
-	background-size: 16%;
-	padding: 2em;
-	color: white;
+#THEME .section-name{
+	background: url('/static/img/ink-circle.png') no-repeat center center;
+	background-size: 30%;
+	padding: 20em;
+	color: black;
+}
+
+#PANELS .section-name{
+	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
+	background-size: 60%;
+	padding: 25em;
+	color: black;
+}
+
+#AGENDA .section-name{
+	background: url('/static/img/ink-upperstroke.png') no-repeat 50% 60%;
+	background-size: 50%;
+	padding: 15em;
+	color: black;
+}
+
+.section-brief{
+	padding: 5em 0 5em 0;
+	background-color: #af9f8a;
 }
 
 .panel-icons{
@@ -127,7 +138,7 @@ html {
 #pre-footer {
     color: white;
     text-align: center;
-    background-color: rgb(193, 41, 48);
+    background-color: rgb(32, 125, 174);
     height: 400px;
 }
 
@@ -195,51 +206,49 @@ footer div{
     -moz-filter: grayscale(0%);
     filter: grayscale(0%);
 }
+/*
+LANDING PAGE
+*/
 
-//LANDING PAGE
 #landing-page{
+	background-color: rgb(192,41,48);
     position: relative;
 	color: white;
-	font-weight: 700;
 	text-transform: uppercase;
 }
-#landing-page .brlabel{
-	background-color: white;
-	z-index: 0;
-	position: static;
-//    bottom: -1.55em;
-}
+
 
 #landing-page-container{
-	padding: 17% 20% 12% 20%;
+	padding: 20%;
 }
 
 #hr-1{
 margin: 0 15% 0 15%;
 }
 
-#landing-page{
-    background: url('/static/img/landingpage.jpg') no-repeat center center;
-    background-size: cover;
-    height: 800px;
+#landing-page .brlabel{
+	background-color: white;
+	z-index: 0;
+	position: static;
 }
 
 #landing-page h1{
 	font-size: 4em;
-	font-weight: 900;
 	position: relative;
 	bottom: 5px;
 }
 
-#landing-page button{
-	margin: 1em;
-	background: rgba(0,0,0,0) !important;
+.round-button{
+	text-transform: uppercase;
+	padding: 0.5em 0.7em 0.4em 0.7em;
+	background: rgba(0,0,0,0);
 	color: white;
 	border: 1px solid white;
+	border-radius: 1em;
 }
 
 
-#landing-page button:hover{
+.round-button:hover{
 	background: rgba(0,0,0,0) !important;
 	color: black;
 	border: 1px solid black;
@@ -250,22 +259,11 @@ margin: 0 15% 0 15%;
 }
 
 
-//landing page ends
-
-.navbar-inverse {
-  background-color: rgba(0,0,0,0.8);
-  background-image: none;
-	
-}
+/*landing page ends*/
 
 
-.custom {
-    .fa {
+.custom .fa{
         color: #999;
-    }
-    h6 {
-        color: black;
-    }
 }
 
 .custom > li > a:hover {
@@ -294,14 +292,11 @@ margin: 0 15% 0 15%;
     background-color: transparent;
 }
 
-
+/*NAV BAR!!!!*/
 nav{
-    display: none;
-    font-weight: 400;
-	margin: 0px !important;
-	border-radius: 0px !important;
-	border: none !important;
-	 
+	background-color: #000 !important;	
+	border: none !important;	 
+	text-align: center;
 }
 nav a:hover{
     color: white !important;   
@@ -317,6 +312,30 @@ nav a:hover{
 }
 .navbar-brand:hover{
 	opacity: 1;
+}
+
+.navbar.center .navbar-inner .nav {
+    float: none;		
+    display:inline-block;
+}
+
+
+/* 'About' Section*/
+#ABOUT {
+    background: url('/static/img/cu.jpg') no-repeat top center;
+    background-size: cover;
+	color: white;
+	margin-bottom: 20em;
+}
+
+#DIRECTIONS {
+	background: url('/static/img/map.png') no-repeat top center;
+    background-size: cover;
+	color: white;
+}
+
+.in-parallax-text {
+	margin: 10%;
 }
 
 
