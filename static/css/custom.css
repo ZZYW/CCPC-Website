@@ -197,7 +197,7 @@ LANDING PAGE
 */
 
 #landing-page{
-	background-color: rgb(192,41,48);
+/*	background-color: rgba(0, 0, 0, 0.21);*/
     position: relative;
 	color: white;
 	text-transform: uppercase;
@@ -330,6 +330,16 @@ nav a:hover{
 	height: 20em;
 }
 */
+
+
+/*video background*/
+video#bgvid {
+position: absolute; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -1000;
+background: url(polina.jpg) no-repeat;
+background-size: cover;
+}
 
 
 
