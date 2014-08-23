@@ -84,15 +84,29 @@ html {
  color: rgb(119, 119, 119);  
 }
 
-.section-name{
+#THEME .section-name{
 	background: url('/static/img/ink-circle.png') no-repeat center center;
-	background-size: 29%;
-	padding: 10em;
+	background-size: 30%;
+	padding: 20em;
+	color: black;
+}
+
+#PANELS .section-name{
+	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
+	background-size: 60%;
+	padding: 25em;
+	color: black;
+}
+
+#AGENDA .section-name{
+	background: url('/static/img/ink-upperstroke.png') no-repeat 50% 60%;
+	background-size: 50%;
+	padding: 15em;
 	color: black;
 }
 
 .section-brief{
-	padding: 4em 0 4em 0;
+	padding: 5em 0 5em 0;
 	background-color: #af9f8a;
 }
 
@@ -124,7 +138,7 @@ html {
 #pre-footer {
     color: white;
     text-align: center;
-    background-color: rgb(117,178,221);
+    background-color: rgb(32, 125, 174);
     height: 400px;
 }
 
@@ -325,6 +339,7 @@ nav a:hover{
 }
 
 
+<<<<<<< HEAD
 /*
 #map-canvas{
 	height: 20em;
@@ -342,4 +357,6 @@ background-size: cover;
 }
 
 
+=======
+>>>>>>> 4618ee52051b2f8069d56b2c1a8411cfc2cb549a
 
