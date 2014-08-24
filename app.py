@@ -53,7 +53,7 @@ def index():
 def about():
 	return render_template('about.html',all_members = all_members)
 
-@app.route("/direction")
+@app.route("/directions")
 def direction():
 	return render_template('direction.html')
 

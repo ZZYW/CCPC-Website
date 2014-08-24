@@ -3,7 +3,6 @@
 body {
 	font-family: 'Karma', 'STSong', 'SimSun', serif;
 	font-weight: 200;
-	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
 	background-color: white !important;
@@ -186,10 +185,10 @@ nav a:hover {
 
 
 /********************THEME*********************************************/
-#THEME .section-name {
+#THEME .section-name, #history .section-name {
 	background: url('/static/img/ink-circle.png') no-repeat center center;
 	background-size: 30%;
-	padding: 20em;
+	padding: 16em;
 	color: black;
 }
 
