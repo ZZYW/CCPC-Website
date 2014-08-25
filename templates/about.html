@@ -76,30 +76,59 @@ zhenzhenqi@gmail.com
 		<!--history section-->
 		<section id="history" class="row section">
 			<h4 class="section-name text-center">About</h4>
-			<div class="container-fluid section-brief">
+			<div class="container-fluid">
 				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-					<p>The Columbia China Prospects Conference (CCPC), launched in 2010, has evolved into one of the most influential student-organized conferences on the topic of China. Both Chinese and American leaders join CCPC to inspire the young generation to make a positive impact on the world. Previous CCPC speakers include Gordon Bajnai, former Prime Minister of Hungary; Thomas Fingar, former Principal Assistant Secretary of the United States; Jeffrey Sachs, Director of the UN Millennium Project; Xiaonian Xu, renowned Chinese Economist; Jeffrey Lehman, former President of Cornell University; Shi Wang, Chairman of the Board of Directors of China Vanke Co., Ltd.; Yongchun Lang, famous CCTV host and et al. CCPC was also featured in major Chinese media, both in China and United States: CCTV, Xinhua, China Daily, China Youth Daily, Phoenix, Sina and so on. Therefore, the sparkle of CCPC has been widespread and influenced China’s structure of development strategies.
- 
-For more information about the previous Columbia China Prospects Conferences, please visit:
-<a href="http://www.ccpc2013.org/">CCPC 2013</a>, <a href="http://www.cucssa.org/ccpc2012/
+					<p>The Columbia China Prospects Conference (CCPC), launched in 2010, has evolved into one of the most influential student-ot of Cornell University; Shi Wang, Chairman of the Board of Directors of China Vanke Co., Ltd.; Yongchun Lang, famous CCTV host and et al. CCPC was also featured in major Chinese media, both in China and United States: CCTV, Xinhua, China Daily, China Youth Daily, Phoenix, Sina and so on. Therefore, the sparkle of CCPC has been widespread and influenced China’s structure of development strategies. For more information about the previous Columbia China Prospects Conferences, please visit:
+						<a href="http://www.ccpc2013.org/">CCPC 2013</a>, <a href="http://www.cucssa.org/ccpc2012/
 ">CCPC 2012</a>, <a href="http://www.cucssa.org/ccpc2011/">CCPC 2011</a>.
 
 					</p>
 				</div>
 			</div>
-
-
-
-
-
 		</section>
 		<!--history section ends-->
 
+		<!--team section-->
+		<section id="team" class="row">
 
-		<!-- A test for getting data from our database and display them! -->
-		{% for name, info in all_members.items() %}
-		<img class="team-member" data-toogle="tooltip" data-html=true data-placement='auto' title="<h4>{{ name }}</h4>-<em>{{ info.get('department') }}</em>-</br><p>{{ info.get('bio') }}</p>" src="{{ info.get('photo') }}" />{% endfor %}
+			<h4 class="section-name text-center">Team</h4>
+			<div class="container-fluid section-content">
+				<p class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">Founded in 1996, Columbia University Chinese Students and Scholars Association (CUCSSA) is one the most prominent non-profit Chinese organizations in the United States. Since its very first day, CUCSSA has been following its mission of promoting cultural and intellectual exchanges between China and the United States. Thanks to the support of Columbia University and its partners, CUCSSA becomes a major platform where Chinese and American students exchange ideas in economy, culture, business, education and many other topics.</p>
+			</div>
 
+			<div class="container-fluid" id="photo-wall">
+				{% for name, info in all_members.items() %}
+				<img class="team-member" data-toogle="tooltip" data-html=true data-placement='auto' title="<h4>{{ name }}</h4>-<em>{{ info.get('department') }}</em>-</br><h6>{{ info.get('bio') }}</h6>" src="{{ info.get('photo') }}" />{% endfor %}
+			</div>
+
+
+		</section>
+		<!--team section ends-->
+
+
+		<!-- row 9: pre-footer-->
+		<section class="row" id="pre-footer">
+			<div class="text-center">
+				<i class="fa fa-twitter"></i><span class="wrap"></span>
+				<i class="fa fa-facebook"></i><span class="wrap"></span>
+				<i class="fa fa-wechat"></i><span class="wrap"></span> 
+				<i class="fa fa-weibo"></i><span class="wrap"></span> 
+			</div>
+			<img src="../static/img/qrcode.jpg" alt="">
+			<h6> Scan to add us on Wechat</h6>
+			</p>
+		</section>
+		<!-- end pre-footer-->
+
+
+		<!-- row 10: FOLLOW US-->
+		<footer class="row">
+			<div>
+				<h6> © CCPC 2014 </h6>
+				<h6> Please direct all inquiries to contact@ccpc2014.com </h6>
+				</p>
+			</div>
+		</footer>
 
 
 
