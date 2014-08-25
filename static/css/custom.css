@@ -48,7 +48,7 @@ html {
 /************************LANDING PAGE****************************/
 
 #landing-page {
-/*	background-color: rgb(138, 25, 38);*/
+	/*	background-color: rgb(138, 25, 38);*/
 	position: relative;
 	color: white;
 	text-transform: uppercase;
@@ -88,7 +88,7 @@ html {
 /********************NAV BAR*******************************************/
 
 nav {
-	background-color: rgb(50, 62, 82) !important;
+	background-color: black !important;
 	border: none !important;
 	text-align: center;
 }
@@ -213,8 +213,8 @@ nav a:hover {
 /********************ABOUT***********************************************/
 
 #ABOUT {
-	background: url('/static/img/cu.jpg') no-repeat top center;
-	background-size: cover;
+	background: url('/static/img/whole-team.jpg') no-repeat top center;
+	background-size:  180%;
 	color: white;
 	margin-bottom: 20em;
 }
@@ -246,12 +246,15 @@ nav a:hover {
 /**************************DIRECTIONS*************************************/
 
 #DIRECTIONS {
-	background: url('/static/img/map.png') no-repeat top center;
+	background: url('/static/img/cu.jpg') no-repeat top center;
 	background-size: cover;
 	color: white;
 }
 .in-parallax-text {
 	margin: 10%;
+}
+.in-parallax-text h2 {
+	font-size: 3em;
 }
 /*
 #bgvid {
@@ -315,8 +318,6 @@ footer div {
 	padding: 15em;
 	color: black;
 }
-
-
 .team-member {
 	display: inline;
 	width: 10%;
@@ -329,14 +330,12 @@ footer div {
 	padding: 0;
 	margin: 0;
 }
-
 #photo-wall {
 	padding: 0;
 	margin-top: 5em;
 	margin-bottom: 10em;
 }
-
-.green-bg{
+.green-bg {
 	background-color: rgb(228, 230, 223);
 	padding: 4em 0 4em 0;
 }

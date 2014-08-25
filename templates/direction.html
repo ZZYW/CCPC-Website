@@ -1,92 +1,107 @@
+<!--
+designed & developed by Yang Wang & Zhenzhen Qi | 2014 @ NY
+yang.wang.dec@gmail.com
+zhenzhenqi@gmail.com
+-->
+
 <html>
+
 <head>
 	<meta charset="utf-8">
-	<title>CCPC 2014</title>
+	<title>CCPC 2014 | Directions</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- css -->
 	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
 	<link href="/static/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700' rel='stylesheet' type='text/css'>
+	<link href="/static/css/custom.css" rel="stylesheet">
+
 	<!--js-->
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 	<script src="/static/js/bootstrap.min.js"></script>
 	<script src="/static/js/respond.min.js"></script>
+	<script src="/static/js/p5.min.js"></script>
 	<script src="/static/js/jquery.scrollTo.min.js"></script>
+	<script src="/static/js/skrollr.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB0sBRkVtcxSzyYkyYqW9yrTv34kl5j0kM">
+	</script>
 	<script src="/static/js/custom.js"></script>
-
 </head>
 
 
 <body>
-		<section id="DIRECTIONS" class="row section">
-			<div class="sectionheader">
-				<img src="../static/img/directions.jpg" alt="" class="img-responsive">
-				<h4 class="text-center section-name">DIRECTIONS</h4>
+	<div class="container-fluid">
+
+
+		<nav class="navbar navbar-default navbar-inverse center navbar-fixed-top" role="navigation">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#">
+					<img id="nav-bar-logo" src="static/img/ccpc_logo.png" />
+				</a>
 			</div>
 
-			<div class="row text-center sectionheader">
-				<div class="col-lg-6 col-md-8 col-xs-10 col-centered">
-					<p>CCPC is hosted at <strong>Columbia University’s Morningside Campus</strong>. <strong>IAB417</strong> is in room 417, located in the lobby of the SIPA building. The <strong>International Affairs (SIPA) building</strong> is on the east side of the campus. The building is at 420 W. 118th Street, between Amsterdam Avenue and Morningside Avenue. <strong>Lerner Auditorium</strong> is on the west side of the campus, close to Broadway Street crossing 115th Street.
-					</p>
-					<img src="../static/img/campusmap.jpg" alt="" class="img-responsive tb">
+			<div class="collapse navbar-collapse" id="collapse">
+				<div class="navbar-inner">
+					<ul class="nav navbar-nav">
+						<li><a href="/#THEME">THEME</a>
+						</li>
+						<li><a href="/#PANELS">PANELS</a>
+						</li>
+						<li><a href="/#AGENDA">AGENDA</a>
+						</li>
+						<li><a href="/#TICKETS">TICKETS</a>
+						</li>
+						<li  class="active"><a href="/directions">DIRECTIONS</a>
+						</li>
+						<li><a href="/#SPONSORSHIP">SPONSORSHIP</a>
+						</li>
+						<li><a href="/about">ABOUT</a>
+						</li>
+					</ul>
 				</div>
 			</div>
+		</nav>
 
-			<div>
-				<div id="panel-icons" class="row text-center">
-					<div class="col-lg-6 col-md-8 col-xs-10 col-centered">
-						<P class="subsection">Please see below for addtional information about commutting to CU Morningside via <strong>NYC Subway, Train, Bus, Airplane, Car, and information regarding Wheelchair Accessibility.</strong>.
-						</P>
 
-						<div class="col-md-2 col-sm-4 col-xs-4 text-center">
-							<button id="subway" type="button" class="btn btn-default btn-xlg">
-								<i class="fa fa-arrow-circle-o-down"></i>
-							</button>
-							<h6>Subway</h6>
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4 text-center">
-							<button id="train" type="button" class="btn btn-default btn-xlg">
-								<i class="fa fa-road"></i> 
-							</button>
-							<h6>Train</h6>
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4 text-center">
-							<button id="bus" type="button" class="btn btn-default btn-xlg">
-								<i class="fa fa-bullhorn"></i>
-							</button>
-							<h6>Bus</h6>
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4 text-center">
-							<button id="airplane" type="button" class="btn btn-default btn-xlg">
-								<i class="fa fa-plane"></i>
-							</button>
-							<h6>Air</h6>
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4 text-center">
-							<button id="car" type="button" class="btn btn-default btn-xlg">
-								<i class="fa fa-car"></i>
-							</button>
-							<h6>Car</h6>
-						</div>
-						<div class="col-md-2 col-sm-4 col-xs-4 text-center">
-							<button id="wheelchair" type="button" class="btn btn-default btn-xlg">
-								<i class="fa fa-wheelchair"></i> 
-							</button>
-							<h6>Wheelchair Access</h6>
-						</div>
-					</div>
-				</div>
+
+
+
+
+		<!-- row 9: pre-footer-->
+		<section class="row" id="pre-footer">
+			<div class="text-center">
+				<i class="fa fa-twitter"></i><span class="wrap"></span>
+				<i class="fa fa-facebook"></i><span class="wrap"></span>
+				<i class="fa fa-wechat"></i><span class="wrap"></span> 
+				<i class="fa fa-weibo"></i><span class="wrap"></span> 
 			</div>
-
-			<div class="row text-center">
-				<div class="col-lg-6 col-md-8 col-xs-10 col-centered">
-					<p>The #1 subway train stops at the Columbia University station at West 116th Street and Broadway. If you are boarding at Penn Station (Seventh Avenue and 33rd Street) or the Port Authority Bus Terminal (between Eighth and Ninth Avenues & 40th and 42nd Streets) you can take the #1 local Uptown or the #2 or #3 express Uptown. If you board an express train, you’ll need to transfer to the #1 local at the express (#2 & #3) train stop at the 96th Street station. Just cross the platform to board the local #1 to West 116th Street and Broadway. If you are coming from Grand Central Station you will need to take the Shuttle train S across to Broadway and 42nd Street and then proceed as above.
-					</p>
-				</div>
-			</div>
-
+			<img src="../static/img/qrcode.jpg" alt="">
+			<h6> Scan to add us on Wechat</h6>
 		</section>
+		<!-- end pre-footer-->
 
+
+		<!-- row 10: FOLLOW US-->
+		<footer class="row">
+			<div>
+				<h6> © CCPC 2014 </h6>
+				<h6> Please direct all inquiries to contact@ccpc2014.com </h6>
+			</div>
+		</footer>
+
+
+
+
+	</div>
 </body>
 
 
