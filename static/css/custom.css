@@ -87,6 +87,15 @@ html {
 #CONTACT button {
     border: 1px solid black;
 }
+
+video#bgvid {
+position: absolute; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -10000;
+background-size: cover;
+}
+
+
 /********************NAV BAR*******************************************/
 
 nav {
@@ -242,7 +251,7 @@ nav a:hover {
 #agenda-icon {
     padding: 3em;
 }
-/********************ABOUT***********************************************/
+/********************ABOUT SECTION***********************************************/
 
 #ABOUT {
 
@@ -251,31 +260,13 @@ nav a:hover {
 	color: white;
 	margin-bottom: 20em;
 }
-#ABOUT a {
-    color: black;
-    text-decoration: underline;
+
+#ABOUT .in-parallax-text {
+    padding-left: 40%;
+    margin: 10%;
+    text-align: right;
 }
-#ABOUT a:hover {
-    color: rgb(119, 119, 119);
-    text-decoration: underline;
-}
-.team-member {
-    display: inline-block;
-    ;
-    width: 10%;
-    margin-right: 0;
-    padding: 0;
-    opacity: 0.8;
-    -webkit-filter: grayscale(40%);
-    -moz-filter: grayscale(40%);
-    filter: grayscale(40%);
-}
-.team-member:hover {
-    opacity: 1;
-    -webkit-filter: grayscale(0%);
-    -moz-filter: grayscale(0%);
-    filter: grayscale(0%);
-}
+
 /**************************DIRECTIONS*************************************/
 
 #DIRECTIONS {
@@ -284,26 +275,23 @@ nav a:hover {
 	background-size: cover;
 	color: white;
 }
-.in-parallax-text {
+#DIRECTIONS .in-parallax-text {
     margin: 10%;
+    padding-right: 34%;
 }
-.in-parallax-text h2 {
-	font-size: 3em;
-}
-/*
-#bgvid {
-position: absolute; right: 0; bottom: 0;
 
-}
-*/
+
 
 /************************SPONSORSHIP***********************************/
 
 #SPONSORSHIP {
-    margin-bottom: 20em;
+    margin-bottom: 10em;
 }
 #SPONSORSHIP .fa {
     color: black;
+}
+#SPONSORSHIP h1{
+    padding: 2em 2em 1em 2em;
 }
 /***********************PRE_FOOTER************************************/
 
