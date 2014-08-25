@@ -1,257 +1,285 @@
 /* this is a custom css style sheet */
 
 body {
-	font-family: 'Gentium Basic', 'STSong', 'SimSun', serif;
-	width: 100%;
-	height: 100%;
-	line-height: normal;
-	background-color: white !important;
+    font-family: 'Gentium Basic', 'STSong', 'SimSun', serif;
+    width: 100%;
+    height: 100%;
+    line-height: normal;
+    background-color: white !important;
 }
 p {
-	text-align: justify;
+    text-align: justify;
 }
 html {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 }
 #p5canvas {
-	position: absolute;
-	padding: 0;
-	min-width: 100%;
-	min-height: 100%;
-	width: auto;
-	height: auto;
-	z-index: -1000;
+    position: absolute;
+    padding: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
 }
 .container {
-	margin-left: 0px;
-	margin-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .section {
-	padding-bottom: 120px;
+    padding-bottom: 120px;
 }
 .sectionheader {
-	padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 .subsection {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 .fa {
-	color: rgb(119, 119, 119);
+    color: rgb(119, 119, 119);
 }
 .panel-icons {
-	margin-top: 1.2%;
+    margin-top: 1.2%;
 }
 .iconbar {
-	background-color: rgb(216, 216, 216);
+    background-color: rgb(216, 216, 216);
 }
 /************************LANDING PAGE****************************/
 
 #landing-page {
-/*	background-color: rgb(138, 25, 38);*/
-	position: relative;
-	color: white;
-	text-transform: uppercase;
+    /*	background-color: rgb(138, 25, 38);*/
+    position: relative;
+    color: white;
+    text-transform: uppercase;
 }
 #landing-page-container {
-	padding: 20%;
+    padding: 20%;
 }
 #hr-1 {
-	margin: 0 15% 0 15%;
+    margin: 0 15% 0 15%;
 }
 #landing-page .brlabel {
-	background-color: white;
-	z-index: 0;
-	position: static;
+    background-color: white;
+    z-index: 0;
+    position: static;
 }
 #landing-page h1 {
-	font-size: 4em;
-	position: relative;
-	bottom: 5px;
+    font-size: 4em;
+    position: relative;
+    bottom: 5px;
 }
 .round-button {
-	text-transform: uppercase;
-	padding: 0.5em 0.7em 0.4em 0.7em;
-	background: rgba(0, 0, 0, 0);
-	color: white;
-	border: 1px solid white;
-	border-radius: 1em;
+    text-transform: uppercase;
+    padding: 0.5em 0.7em 0.4em 0.7em;
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: 1px solid white;
+    border-radius: 1em;
 }
 .round-button:hover {
-	background: rgba(0, 0, 0, 0) !important;
-	color: black;
-	border: 1px solid black;
+    background: rgba(0, 0, 0, 0) !important;
+    color: black;
+    border: 1px solid black;
 }
 #CONTACT button {
-	border: 1px solid black;
+    border: 1px solid black;
 }
 /********************NAV BAR*******************************************/
 
 nav {
-	background-color: rgb(50, 62, 82) !important;
-	border: none !important;
-	text-align: center;
+    background-color: rgb(50, 62, 82) !important;
+    border: none !important;
+    text-align: center;
 }
 nav a:hover {
-	color: rgb(240, 247, 237) !important;
+    color: rgb(240, 247, 237) !important;
 }
 #nav-bar-logo {
-	max-width: 2em;
+    max-width: 2em;
 }
 .navbar-brand {
-	padding: 0;
+    padding: 0;
 }
 .navbar-brand:hover {
-	opacity: 0.8;
+    opacity: 0.8;
 }
 .navbar.center .navbar-inner .nav {
-	float: none;
-	display: inline-block;
+    float: none;
+    display: inline-block;
 }
 /********************THEME*********************************************/
 
 #THEME .section-brief {
-	padding: 5em 0 5em 0;
-	background-color: #af9f8a;
+    padding: 5em 0 5em 0;
+    background-color: #af9f8a;
 }
 #THEME .section-content {
-	padding: 0em 0 5em 0;
-	background-color: rgb(228, 230, 223);
+    padding: 0em 0 5em 0;
+    background-color: rgb(228, 230, 223);
 }
 #THEME .section-name {
-	background: url('/static/img/ink-circle.png') no-repeat center center;
-	background-size: 30%;
-	padding: 15em;
-	color: black;
+    background: url('/static/img/ink-circle.png') no-repeat center center;
+    background-size: 30%;
+    padding: 15em;
+    color: black;
 }
 #THEME ul {
-	list-style: none;
-	padding: 2em;
+    list-style: none;
+    padding: 2em;
 }
 #THEME .custom > li > a {
-	opacity: 0.6;
+    opacity: 0.6;
 }
 #THEME .custom > li > a:hover {
-	background-color: transparent;
-	opacity: 1;
+    background-color: transparent;
+    opacity: 1;
 }
 #THEME .custom > li.active > a {
-	opacity: 1;
-	background-color: transparent;
+    opacity: 1;
+    background-color: transparent;
 }
 #THEME h5 {
-	color: white;
-	padding: 4em 0 3em 0;
-	background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
-	background-size: 60%;
+    color: white;
+    padding: 4em 0 3em 0;
+    background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
+    background-size: 60%;
 }
 /*******************PANELS*********************************************/
 
 #PANELS .section-name {
-	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
-	background-size: 60%;
-	padding: 15em;
-	color: black;
+    background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
+    background-size: 60%;
+    padding: 15em;
+    color: black;
 }
 #PANELS ul {
-	list-style: none;
-	padding: 2em;
+    list-style: none;
+    padding: 2em;
 }
 #PANELS .section-brief {
-	background-color: #af9f8a;
+    background-color: #af9f8a;
 }
 #PANELS .section-content {
-	background-color: rgb(228, 230, 223);
+    background-color: rgb(228, 230, 223);
 }
 #panel-top {
-	padding-top: 3em;
+    padding-top: 3em;
 }
 #panel-bottom {
-	padding-bottom: 3em;
+    padding-bottom: 3em;
 }
-#PANELS .fa {
-	color: rgb(212, 212, 212);
-}
-#PANELS .fa:hover {
-	color: rgb(174, 183, 152);
 }
 #PANELS li.active .fa {
-	color: rgb(174, 183, 152);
+    color: rgb(174, 183, 152);
 }
 #PANELS li a {
-	background-color: transparent;
+    background-color: transparent;
 }
 #PANELS li a:hover {
-	background-color: transparent;
+    background-color: transparent;
+}
+#PANELS li a h6 {
+    color: black;
+}
+#PANELS li a:hover h6 {
+    color: rgb(174, 183, 152);
+}
+#PANELS li.active h6 {
+    color: rgb(174, 183, 152);
+}
+#PANELS img {
+    margin: auto;
+}
+.uppercase {
+    text-transform: uppercase;
 }
 /*********************AGENDA********************************************/
 
 #AGENDA .section-name {
-	background: url('/static/img/ink-upperstroke.png') no-repeat 50% 100%;
-	background-size: 50%;
-	padding: 20em 0em 14em 0em;
-	color: black;
+    background: url('/static/img/ink-upperstroke.png') no-repeat 50% 100%;
+    background-size: 50%;
+    padding: 20em 0em 14em 0em;
+    color: black;
 }
 #AGENDA .fa {
-	color: rgb(212, 212, 212);
+    color: rgb(212, 212, 212);
 }
 #AGENDA .fa:hover {
-	color: rgb(174, 183, 152);
+    color: rgb(174, 183, 152);
 }
 #AGENDA li.active .fa {
-	color: rgb(174, 183, 152);
+    color: rgb(174, 183, 152);
 }
 #AGENDA li a {
-	background-color: transparent;
+    background-color: transparent;
 }
 #AGENDA li a:hover {
-	background-color: transparent;
+    background-color: transparent;
+}
+#AGENDA li a h5 {
+    color: black;
+}
+#AGENDA li a:hover h5 {
+    color: rgb(132, 57, 0);
+}
+#AGENDA li.active h5 {
+    color: rgb(132, 57, 0);
+}
+#AGENDA li {
+    opacity: 0.3;
+}
+#AGENDA li:hover {
+    opacity: 1;
+}
+#AGENDA li.active {
+    opacity: 1;
 }
 #agenda-icon {
-	padding: 3em;
+    padding: 3em;
 }
 /********************ABOUT***********************************************/
 
 #ABOUT {
-	background: url('/static/img/cu.jpg') no-repeat top center;
-	background-size: cover;
-	color: white;
-	margin-bottom: 20em;
+    background: url('/static/img/cu.jpg') no-repeat top center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 20em;
 }
 #ABOUT a {
-	color: black;
-	text-decoration: underline;
+    color: black;
+    text-decoration: underline;
 }
 #ABOUT a:hover {
-	color: rgb(119, 119, 119);
-	text-decoration: underline;
+    color: rgb(119, 119, 119);
+    text-decoration: underline;
 }
 .team-member {
-	display: inline-block;
-	;
-	width: 10%;
-	margin-right: 0;
-	padding: 0;
-	opacity: 0.8;
-	-webkit-filter: grayscale(40%);
-	-moz-filter: grayscale(40%);
-	filter: grayscale(40%);
+    display: inline-block;
+    ;
+    width: 10%;
+    margin-right: 0;
+    padding: 0;
+    opacity: 0.8;
+    -webkit-filter: grayscale(40%);
+    -moz-filter: grayscale(40%);
+    filter: grayscale(40%);
 }
 .team-member:hover {
-	opacity: 1;
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%);
-	filter: grayscale(0%);
+    opacity: 1;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    filter: grayscale(0%);
 }
 /**************************DIRECTIONS*************************************/
 
 #DIRECTIONS {
-	background: url('/static/img/map.png') no-repeat top center;
-	background-size: cover;
-	color: white;
+    background: url('/static/img/map.png') no-repeat top center;
+    background-size: cover;
+    color: white;
 }
 .in-parallax-text {
-	margin: 10%;
+    margin: 10%;
 }
 /*
 #bgvid {
@@ -263,80 +291,76 @@ position: absolute; right: 0; bottom: 0;
 /************************SPONSORSHIP***********************************/
 
 #SPONSORSHIP {
-	margin-bottom: 20em;
+    margin-bottom: 20em;
 }
 #SPONSORSHIP .fa {
-	color: black;
+    color: black;
 }
 /***********************PRE_FOOTER************************************/
 
 #pre-footer {
-	color: white;
-	text-align: center;
-	background-color: rgb(32, 125, 174);
-	height: 400px;
+    color: white;
+    text-align: center;
+    background-color: rgb(32, 125, 174);
+    height: 400px;
 }
 #pre-footer .fa {
-	color: white;
+    color: white;
 }
 #pre-footer img {
-	margin: auto;
-	width: 80px;
-	padding-bottom: 0.5em;
+    margin: auto;
+    width: 80px;
+    padding-bottom: 0.5em;
 }
 #pre-footer p {
-	padding: 1%;
+    padding: 1%;
 }
 #pre-footer .wrap {
-	padding-left: 5px;
-	padding-right: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 #pre-footer div {
-	padding: 6% 0 6% 0;
+    padding: 6% 0 6% 0;
 }
 /***********************FOOTER******************************************/
 
 footer {
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
-	text-align: center;
-	height: 200px;
-	background-color: #212121;
-	color: #fff
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    text-align: center;
+    height: 200px;
+    background-color: #212121;
+    color: #fff
 }
 footer div {
-	padding: 4% 0% 4% 0%;
+    padding: 4% 0% 4% 0%;
 }
 /***********************About Page******************************************/
 
 #history .section-name {
-	background: url('/static/img/ink-circle.png') no-repeat center center;
-	background-size: 30%;
-	padding: 15em;
-	color: black;
+    background: url('/static/img/ink-circle.png') no-repeat center center;
+    background-size: 30%;
+    padding: 15em;
+    color: black;
 }
-
-
 .team-member {
-	display: inline;
-	width: 10%;
-	padding: 0;
-	margin: 0;
-	opacity: 0.8;
+    display: inline;
+    width: 10%;
+    padding: 0;
+    margin: 0;
+    opacity: 0.8;
 }
 .team-member:hover {
-	opacity: 1;
-	padding: 0;
-	margin: 0;
+    opacity: 1;
+    padding: 0;
+    margin: 0;
 }
-
 #photo-wall {
-	padding: 0;
-	margin-top: 5em;
-	margin-bottom: 10em;
+    padding: 0;
+    margin-top: 5em;
+    margin-bottom: 10em;
 }
-
-.green-bg{
-	background-color: rgb(228, 230, 223);
-	padding: 4em 0 4em 0;
+.green-bg {
+    background-color: rgb(228, 230, 223);
+    padding: 4em 0 4em 0;
 }
