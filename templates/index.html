@@ -191,7 +191,8 @@
 		<!-- end theme -->
 
 		<!-- row 3: panels -->
-		<section id="PANELS" class="row section">
+
+		<section id="PANELS" class="container-fluid">
 			<!-- section header image and section intro -->
 			<div class="section-name">
 				<h4 class="text-center">PANELS</h4>
@@ -200,56 +201,44 @@
 
 
 			<!-- Nav tabs -->
-			<div class="text-center">
+			<div class="row text-center">
 				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
-					<ul class="nav nav-pills custom myTab" role="tablist">
+					<ul class="nav nav-pills nav-justified custom myTab" role="tablist">
 						<li class="active">
 							<a href="#investment" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-bank"></i>
-								</button>
+								<i class="fa fa-bank fa-5x"></i>
 							</a>
 							<h6>Investment</h6>
 						</li>
 
 						<li>
 							<a href="#education" class="cus-tab" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-graduation-cap"></i>
-								</button>
+								<i class="fa fa-graduation-cap fa-5x"></i>
 							</a>
 							<h6>Education</h6>
 						</li>
 						<li>
 							<a href="#business" class="cus-tab" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-suitcase"></i>
-								</button>
+								<i class="fa fa-suitcase fa-5x"></i>
 							</a>
 							<h6>Business</h6>
 						</li>
 						<li>
 							<a href="#technology" class="cus-tab" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-qrcode"></i>
-								</button>
+								<i class="fa fa-qrcode fa-5x"></i>
 							</a>
 							<h6>Technology</h6>
 						</li>
 						<li>
 							<a href="#media" class="cus-tab" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-photo"></i>
-								</button>
+								<i class="fa fa-photo fa-5x"></i>
 							</a>
 							<h6>Media</h6>
 						</li>
 						<li>
 							<a href="#literature" class="cus-tab" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-pencil"></i>
-								</button>
+								<i class="fa fa-pencil fa-5x"></i>
 							</a>
 							<h6>Literature</h6>
 						</li>
@@ -260,10 +249,10 @@
 			<!--nav tabs end here-->
 
 			<!--tab content --->
-			<div class="tab-content">
+			<div class="row tab-content">
 				<div class="tab-pane active" id="investment">
 					<!-- investment panel title/brief/speakers-->
-					<div class="text-center">
+					<div class="row text-center section-content" id="panel-top">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<h4>The Chinese Economy: Investment opportunities in the New Era</h4>
@@ -274,11 +263,8 @@
 						</div>
 					</div>
 
-					<div class="text-center">
+					<div class="row text-center section-content" id="panel-bottom">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-							<div class="row">
-								<h5>INVESTMENT • PANEL SPEAKERS</h5>
-							</div>
 
 							<!-- guest speaker tabs -->
 							<div class="row">
@@ -357,28 +343,28 @@
 
 				</div>
 				<div class="tab-pane" id="education">
-					education/education/education/education/education/education/education/education
+
+					<p>education/education/education/education/education/education/education/education</p>
 
 				</div>
-
 				<!----------business panel info starts ----------------------------------------------------------------------->
 				<div class="tab-pane" id="business">
-					BusinessBusinessBusinessBusinessBusinessBusiness
+					<p>BusinessBusinessBusinessBusinessBusinessBusinessBusinessBusinessBusinessBusiness</p>
 				</div>
 				<!----------business panel info ends ------------------------------------------------------------------------->
 				<!----------technology panel info starts --------------------------------------------------------------------->
 				<div class="tab-pane" id="technology">
-					TechnologyTechnologyTechnologyTechnologyTechnology
+					<p>TechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnology</p>
 				</div>
 				<!----------technology panel info ends------------------------------------------------------------------------>
 				<!----------media panel info starts -------------------------------------------------------------------------->
 				<div class="tab-pane" id="media">
-					MediaMediaMediaMediaMediaMediaMediaMediaMediaMedia
+					<p>MediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMedia</p>
 				</div>
 				<!----------media panel info ends ---------------------------------------------------------------------------->
 				<!----------literature panel info starts --------------------------------------------------------------------->
 				<div class="tab-pane" id="literature">
-					LiteratureLiteratureLiteratureLiteratureLiterature
+					<p>LiteratureLiteratureLiteratureLiteratureLiteratureLiteratureLiteratureLiterature</p>
 				</div>
 				<!----------literature panel info ends ----------------------------------------------------------------------->
 
@@ -393,37 +379,26 @@
 		<!-- row 4: agenda -->
 		<section id="AGENDA" class="row section">
 
-			<!--title picture and title-->
-			<div class="sectionheader">
-				<h4 class="text-center section-name">AGENDA</h4>
-
-			</div>
-			<!-- title section ends -->
+			<h4 class="text-center section-name">AGENDA</h4>
 
 			<!-- Nav tabs -->
-			<div class="iconbar subsection text-center">
-				<div class="lab-centered panel-icons">
-
-					<ul class="nav nav-pills custom col-centered myTab" role="tablist">
-						<li class="active lab-centered">
+			<div class="row text-center" id="agenda-icon">
+				<div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
+					<ul class="nav nav-pills nav-justified custom myTab" role="tablist">
+						<li class="active">
 							<a href="#oct2" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-calendar"></i>
-								</button>
+								<i class="fa fa-calendar fa-5x"></i>
 							</a>
-							<h6>Oct 2, 2014</h6>
+							<h5>Oct 2, 2014</h5>
 						</li>
 
-						<li class="lab-centered">
+						<li>
 							<a href="#oct3" class="cus-tab" role="tab">
-								<button type="button" class="btn btn-default btn-xlg">
-									<i class="fa fa-calendar"></i>
-								</button>
+								<i class="fa fa-calendar fa-5x"></i>
 							</a>
-							<h6>Oct 3, 2014</h6>
+							<h5>Oct 3, 2014</h5>
 						</li>
 					</ul>
-
 				</div>
 			</div>
 			<!--nav tabs end here-->
@@ -432,10 +407,11 @@
 			<!-- Tab panes -->
 			<div class="tab-content">
 				<div class="tab-pane active" id="oct2">
-					<div class="text-center">
-						<div class="col-lg-6 col-md-8 col-xs-10 col-centered">
+					<div>
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 							<div class="table-responsive">
 								<table class="table table-striped ">
+									<!--
 									<thead>
 										<tr>
 											<th>START</th>
@@ -444,6 +420,7 @@
 											<th>LOCATION</th>
 										</tr>
 									</thead>
+-->
 
 									<tbody>
 										<tr>
@@ -494,10 +471,11 @@
 					</div>
 				</div>
 				<div class="tab-pane" id="oct3">
-					<div class="text-center">
-						<div class="col-lg-6 col-md-8 col-xs-10">
+					<div>
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 							<div class="table-responsive">
-								<table class="table table-striped ">
+								<table class="table table-striped">
+									<!--
 									<thead>
 										<tr>
 											<th>START</th>
@@ -506,6 +484,7 @@
 											<th>LOCATION</th>
 										</tr>
 									</thead>
+-->
 
 									<tbody>
 										<tr>

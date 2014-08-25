@@ -23,6 +23,10 @@ html {
 	height: auto;
 	z-index: -1000;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> f7cf1bf326a6bdcf8279ad329b23d66759aad85d
 .container {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -36,57 +40,20 @@ html {
 .subsection {
 	margin-bottom: 30px;
 }
-.tb {
-	margin-top: 20px;
-	margin-bottom: 20px;
-}
-/*
-.col-centered {
-	display: inline-block;
-	float: none;
-	text-align: justify;
-}
-.lab-centered {
-	display: inline-block;
-	float: none;
-	text-align: center;
-}
-*/
 
-.glyphicon {
-	color: rgb(119, 119, 119);
-}
+
+
 .fa {
 	color: rgb(119, 119, 119);
-}
-.section-brief {
-	padding: 5em 0 5em 0;
-	background-color: #af9f8a;
-}
-.section-content {
-	padding: 5em 0 5em 0;
-	background-color: rgb(228, 230, 223);
 }
 .panel-icons {
 	margin-top: 1.2%;
 }
+
 .iconbar {
 	background-color: rgb(216, 216, 216);
 }
-.label-default {
-	font-weight: 300;
-}
-.btn-xlg {
-	padding: 18px 28px;
-	font-size: 22px;
-	line-height: normal;
-	-webkit-border-radius: 8px;
-	-moz-border-radius: 8px;
-	border-radius: 8px;
-}
-#SPONSORSHIP .fa {
-	color: black;
-}
+
 /************************LANDING PAGE****************************/
 
 #landing-page {
@@ -127,24 +94,11 @@ html {
 #CONTACT button {
 	border: 1px solid black;
 }
-/***********************landing page ends****************************/
 
-.custom .fa {
-	color: #999;
-}
-.custom > li > a:hover {
-	background-color: rgb(216, 216, 216);
-}
-.custom > li.active > a {
-	background-color: rgb(216, 216, 216);
-	.fa {
-		color: black;
-	}
-}
 /********************NAV BAR*******************************************/
 
 nav {
-	background-color: #000 !important;
+	background-color: #000;
 	border: none !important;
 	text-align: center;
 }
@@ -167,11 +121,20 @@ nav a:hover {
 }
 /********************THEME*********************************************/
 
-#THEME .section-name,
-#history .section-name {
+#THEME .section-brief {
+	padding: 5em 0 5em 0;
+	background-color: #af9f8a;
+}
+
+#THEME .section-content {
+	padding: 0em 0 5em 0;
+	background-color: rgb(228, 230, 223);
+}
+
+#THEME .section-name {
 	background: url('/static/img/ink-circle.png') no-repeat center center;
 	background-size: 30%;
-	padding: 16em;
+	padding: 15em;
 	color: black;
 }
 #THEME ul {
@@ -189,38 +152,104 @@ nav a:hover {
 	opacity: 1;
 	background-color: transparent;
 }
-#THEME h5 {
-	color: white;
-	padding: 6em 0 3em 0;
-	background: url('/static/img/ink-flat.png') no-repeat 60% 10%;
-	background-size: 60%;
+
+
+#THEME h5{
+    color: white;
+    padding: 4em 0 3em 0;
+    background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
+    background-size: 60%;
 }
 /*******************PANELS*********************************************/
 
 #PANELS .section-name {
 	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
 	background-size: 60%;
-	padding: 25em;
+	padding: 15em;
 	color: black;
 }
 #PANELS ul {
 	list-style: none;
 	padding: 2em;
 }
+
 #PANELS h5 {
 	color: white;
 	padding: 4em 0 3em 0;
 	background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
 	background-size: 60%;
+
+
+#PANELS .section-brief {
+	background-color: #af9f8a;
+}
+
+#PANELS .section-content{
+	background-color: rgb(228, 230, 223);
+}
+
+#panel-top{
+    padding-top: 3em;
+}
+
+#panel-bottom{
+    padding-bottom: 3em;
+}
+
+#PANELS .fa{
+    color: rgb(212, 212, 212);
+}
+
+#PANELS .fa:hover{
+    color: rgb(174, 183, 152);
+}
+
+#PANELS li.active .fa{
+    color: rgb(174, 183, 152);
+}
+
+#PANELS li a{
+    background-color: transparent;
+}
+
+#PANELS li a:hover{
+    background-color: transparent;
 }
 /*********************AGENDA********************************************/
 
 #AGENDA .section-name {
-	background: url('/static/img/ink-upperstroke.png') no-repeat 50% 60%;
+	background: url('/static/img/ink-upperstroke.png') no-repeat 50% 100%;
 	background-size: 50%;
-	padding: 15em;
+	padding: 20em 0em 14em 0em;
 	color: black;
 }
+
+    
+#AGENDA .fa{
+    color: rgb(212, 212, 212);
+}
+
+#AGENDA .fa:hover{
+    color: rgb(174, 183, 152);
+}
+
+#AGENDA li.active .fa{
+    color: rgb(174, 183, 152);
+}
+
+#AGENDA li a{
+    background-color: transparent;
+}
+
+#AGENDA li a:hover{
+    background-color: transparent;
+}
+
+#agenda-icon {
+        padding: 3em;
+}
+
+
 /********************ABOUT***********************************************/
 
 #ABOUT {
@@ -260,6 +289,14 @@ position: absolute; right: 0; bottom: 0;
 #SPONSORSHIP {
 	margin-bottom: 20em;
 }
+
+#SPONSORSHIP .fa {
+	color: black;
+}
+
+
+
+
 /***********************PRE_FOOTER************************************/
 
 #pre-footer {
