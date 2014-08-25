@@ -3,17 +3,21 @@
 body {
 	font-family: 'Karma', 'STSong', 'SimSun', serif;
 	font-weight: 200;
+	overflow-x: hidden;
 	width: 100%;
 	height: 100%;
 	background-color: white !important;
 }
+
 p {
-	text-align: justify;
+    text-align: justify;
 }
+
 html {
 	width: 100%;
 	height: 100%;
 }
+
 #p5canvas {
 	position: absolute;
 	padding: 0;
@@ -23,10 +27,7 @@ html {
 	height: auto;
 	z-index: -1000;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> f7cf1bf326a6bdcf8279ad329b23d66759aad85d
 .container {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -42,10 +43,10 @@ html {
 }
 
 
-
 .fa {
 	color: rgb(119, 119, 119);
 }
+
 .panel-icons {
 	margin-top: 1.2%;
 }
@@ -54,10 +55,14 @@ html {
 	background-color: rgb(216, 216, 216);
 }
 
-/************************LANDING PAGE****************************/
 
+
+
+
+
+/************************LANDING PAGE****************************/
 #landing-page {
-	/*	background-color: #b25c43;*/
+	background-color: #b25c43;
 	position: relative;
 	color: white;
 	text-transform: uppercase;
@@ -70,7 +75,7 @@ html {
 }
 #landing-page .brlabel {
 	background-color: white;
-	z-index: 10;
+	z-index: 0;
 	position: static;
 }
 #landing-page h1 {
@@ -94,6 +99,7 @@ html {
 #CONTACT button {
 	border: 1px solid black;
 }
+
 
 /********************NAV BAR*******************************************/
 
@@ -119,8 +125,10 @@ nav a:hover {
 	float: none;
 	display: inline-block;
 }
-/********************THEME*********************************************/
 
+
+
+/********************THEME*********************************************/
 #THEME .section-brief {
 	padding: 5em 0 5em 0;
 	background-color: #af9f8a;
@@ -137,10 +145,12 @@ nav a:hover {
 	padding: 15em;
 	color: black;
 }
+
 #THEME ul {
 	list-style: none;
 	padding: 2em;
 }
+
 #THEME .custom > li > a {
 	opacity: 0.6;
 }
@@ -153,32 +163,25 @@ nav a:hover {
 	background-color: transparent;
 }
 
-
 #THEME h5{
     color: white;
     padding: 4em 0 3em 0;
     background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
     background-size: 60%;
 }
-/*******************PANELS*********************************************/
 
+/*******************PANELS*********************************************/
 #PANELS .section-name {
 	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
 	background-size: 60%;
 	padding: 15em;
 	color: black;
 }
+
 #PANELS ul {
 	list-style: none;
 	padding: 2em;
 }
-
-#PANELS h5 {
-	color: white;
-	padding: 4em 0 3em 0;
-	background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
-	background-size: 60%;
-
 
 #PANELS .section-brief {
 	background-color: #af9f8a;
@@ -215,15 +218,14 @@ nav a:hover {
 #PANELS li a:hover{
     background-color: transparent;
 }
-/*********************AGENDA********************************************/
 
+/*********************AGENDA********************************************/
 #AGENDA .section-name {
 	background: url('/static/img/ink-upperstroke.png') no-repeat 50% 100%;
 	background-size: 50%;
 	padding: 20em 0em 14em 0em;
 	color: black;
 }
-
     
 #AGENDA .fa{
     color: rgb(212, 212, 212);
@@ -249,15 +251,14 @@ nav a:hover {
         padding: 3em;
 }
 
-
 /********************ABOUT***********************************************/
-
 #ABOUT {
 	background: url('/static/img/cu.jpg') no-repeat top center;
 	background-size: cover;
 	color: white;
 	margin-bottom: 20em;
 }
+
 #ABOUT a {
 	color: black;
 	text-decoration: underline;
@@ -266,9 +267,26 @@ nav a:hover {
 	color: rgb(119, 119, 119);
 	text-decoration: underline;
 }
+.team-member {
+	display: inline-block;
+	;
+	width: 10%;
+	margin-right: 0;
+	padding: 0;
+	opacity: 0.8;
+	-webkit-filter: grayscale(40%);
+	-moz-filter: grayscale(40%);
+	filter: grayscale(40%);
+}
+.team-member:hover {
+	opacity: 1;
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+}
+
 
 /**************************DIRECTIONS*************************************/
-
 #DIRECTIONS {
 	background: url('/static/img/map.png') no-repeat top center;
 	background-size: cover;
@@ -277,6 +295,8 @@ nav a:hover {
 .in-parallax-text {
 	margin: 10%;
 }
+
+
 /*
 #bgvid {
 position: absolute; right: 0; bottom: 0;
@@ -285,9 +305,8 @@ position: absolute; right: 0; bottom: 0;
 */
 
 /************************SPONSORSHIP***********************************/
-
 #SPONSORSHIP {
-	margin-bottom: 20em;
+    margin-bottom: 20em;
 }
 
 #SPONSORSHIP .fa {
@@ -298,7 +317,6 @@ position: absolute; right: 0; bottom: 0;
 
 
 /***********************PRE_FOOTER************************************/
-
 #pre-footer {
 	color: white;
 	text-align: center;
@@ -311,7 +329,7 @@ position: absolute; right: 0; bottom: 0;
 #pre-footer img {
 	margin: auto;
 	width: 80px;
-	padding-bottom: 0.5em;
+    padding-bottom: 0.5em;
 }
 #pre-footer p {
 	padding: 1%;
@@ -323,8 +341,8 @@ position: absolute; right: 0; bottom: 0;
 #pre-footer div {
 	padding: 6% 0 6% 0;
 }
-/***********************FOOTER******************************************/
 
+/***********************FOOTER******************************************/
 footer {
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
@@ -333,17 +351,30 @@ footer {
 	background-color: #212121;
 	color: #fff
 }
+
 footer div {
 	padding: 4% 0% 4% 0%;
 }
+
+
+
+
 /***********************About Page******************************************/
 
+#history .section-name {
+	background: url('/static/img/ink-circle.png') no-repeat center center;
+	background-size: 30%;
+	padding: 15em;
+	color: black;
+}
 #photo-wall{
 	padding: 0;
+	margin-top: 5em;
 	margin-bottom: 10em;
 }
 
 .team-member {
+	display: inline;
 	width: 10%;
 	padding: 0;
 	margin: 0;
