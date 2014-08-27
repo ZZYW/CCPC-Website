@@ -5,626 +5,628 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <title>CCPC 2014</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css -->
-    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/static/css/font-awesome.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
-    <link href="/static/css/custom.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<title>CCPC 2014</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- css -->
+	<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/static/css/font-awesome.min.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+	<link href="/static/css/custom.css" rel="stylesheet">
 
-    <!--js-->
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
-    <script src="/static/js/bootstrap.min.js"></script>
-    <script src="/static/js/respond.min.js"></script>
-    <script src="/static/js/p5.min.js"></script>
-    <script src="/static/js/jquery.scrollTo.min.js"></script>
-    <script src="/static/js/skrollr.min.js"></script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB0sBRkVtcxSzyYkyYqW9yrTv34kl5j0kM">
-    </script>
-    <script src="/static/js/custom.js"></script>
+	<!--js-->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+	<script src="/static/js/bootstrap.min.js"></script>
+	<script src="/static/js/respond.min.js"></script>
+	<script src="/static/js/p5.min.js"></script>
+	<script src="/static/js/jquery.scrollTo.min.js"></script>
+	<script src="/static/js/skrollr.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB0sBRkVtcxSzyYkyYqW9yrTv34kl5j0kM">
+	</script>
+	<script src="/static/js/custom.js"></script>
 </head>
 
 
 <body>
-    <div class="container-fluid">
-        <!-- row 1: landing page -->
-        <div data-0="opacity:1" data-top-center="opacity:0" class="row text-center" id="landing-page">
+	<div class="container-fluid">
+		<!-- row 1: landing page -->
+		<div data-0="opacity:1" data-top-center="opacity:0" class="row text-center" id="landing-page">
 
-            <!--VIDEO BACKGROUND-->
+			<!--VIDEO BACKGROUND-->
 
-            			<video autoplay loop id="bgvid">
-            					<source src="/static/img/bg-video.mp4" type="video/mp4">
-            			</video>
+			<video autoplay loop id="bgvid">
+				<source src="/static/img/bg-video.mp4" type="video/mp4">
+			</video>
 
-<!--            <div id='p5canvas'></div>-->
-<!--            <script src="/static/js/p5canvas.js"></script>-->
-
-
-
-            <div id="landing-page-container">
-                <h3>2014 cpcc • organized by cucssa</h3>
-                <div id="hr-1" class="brlabel"></div>
-                <h1>china's dialogue with the world</h1>
-                <div id="hr-2" class="brlabel"></div>
-                <h6>oct 4th | 5th, 2014 Ronne Auditorium | low memorial | columibia university | new york city</h6>
-                <button class="round-button" role="button">Get Ticket Now</button>
-            </div>
-        </div>
-
-
-        <!-- row 0: navigation -->
-
-        <nav class="navbar navbar-default navbar-inverse center navbar-fixed-top" data-0="opacity:0" data-600="opacity: 1" role="navigation">
-
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-
-                <a class="navbar-brand" href="#">
-                    <img id="nav-bar-logo" src="/static/img/ccpc_logo.png" />
-                </a>
-
-
-            </div>
-
-            <div class="collapse navbar-collapse" id="collapse">
-                <div class="navbar-inner">
-                    <ul class="nav navbar-nav">
-                        <li><a href="/#THEME">THEME</a>
-                        </li>
-                        <li><a href="/#PANELS">PANELS</a>
-                        </li>
-                        <li><a href="/#AGENDA">AGENDA</a>
-                        </li>
-                        <li><a href="/#TICKETS">TICKETS</a>
-                        </li>
-                        <li><a href="/directions">DIRECTIONS</a>
-                        </li>
-                        <li><a href="/#SPONSORSHIP">SPONSORSHIP</a>
-                        </li>
-                        <li><a href="/about">ABOUT</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <!-- row 2: theme -->
-
-        <section id="THEME" class="row section">
-            <!-- section header image and section intro -->
-
-            <h1 class="section-name text-center">THEME</h1>
-            <div class="container-fluid section-brief">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-                    <p class="chinese">为了更好地服务哥大在校学生以及大纽约地区的华人华侨,联谊会于 2010 年 创办了“哥伦比亚大学中国展望论坛”。学联以世界著名高等学府哥伦比亚大学以及 大都会纽约为依托,创建了一个集中而有效的平台,聚焦于中国当前的发展状况, 着眼于中国未来的发展前景,探索中国未来的发展道路。论坛现已发展成为美东地 区规模最大,最具影响力的中国问题论坛之一。美国前首席助理国务卿 Thomas Fingar、匈牙利前国家首相 Gordon Bajnai、中国著名经济学家许小年,中国地产第 一品牌万科地产董事长王石等各界嘉宾都曾出席过往届论坛。每年论坛都吸引了近 千名来自美国知名高校的莘莘学子以及社会各界人士参加,并受到中国日报、光明 网、中国青年报、新华社、新浪、凤凰网等多家媒体的密切关注。 在传承与发展往届论坛精髓的基础上,本届论坛也将继续从多个角度探讨中国 在当今世界时局下所选择的发展道路, 并思考其中的意义与可能面临的挑战。在过 去的数年内,中国与世界各国的沟通不断加强,“走出去,走进来”已经不再是一个 愿景,而是一条已经在被实践的道路。中国从此之中收益颇多,但是不可否认的是 中国也受到了许多挫折。在这样的情况下,深层次的全球对话显得迫切重要。只有 通过对话,中国的声音才会被听到,被理解;通过对话,世界才能与中国求同存异, 寻求共赢。 在此,哥伦比亚大学中国学生学者联谊会诚挚地邀请您参与第五届哥伦比亚大学 “中国展望论坛”,期待您与不同行业、不同背景的知名演讲嘉宾以及社会精英人士 一起开启中国与世界的对话。
-                    </p>
-                </div>
-            </div>
-            <div class="container-fluid text-center section-content">
-                <div id="speaker-tab" class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-                    <!--				    <h4><span class="label label-default">HIGHTED SPEAKERS</span></h4>-->
-                    <h5>HIGHTED SPEAKERS</h5>
-                    <!-- Nav tabs -->
-                    <div class="row">
-                        <div id="agenda-icon">
-
-                            <ul class="row myTab" role="tablist">
-
-                                <li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                    <a href="#speaker1" role="tab">
-                                        <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-
-                                <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                    <a href="#speaker2" role="tab">
-                                        <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                    <a href="#speaker3" role="tab">
-                                        <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                    <a href="#speaker4" role="tab">
-                                        <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                    <a href="#speaker5" role="tab">
-                                        <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                                <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                    <a href="#speaker6" role="tab">
-                                        <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                    </a>
-                                </li>
-                            </ul>
-
-                        </div>
-                    </div>
-                    <!--nav tabs end here-->
-
-                    <!--tab content starts here--->
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" id="speaker1">
-                            <p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="speaker2">
-                            <p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="speaker3">
-                            <p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="speaker4">
-                            <p>Speaker Four is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="speaker5">
-                            <p>Speaker Five is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                            </p>
-                        </div>
-                        <div class="tab-pane fade" id="speaker6">
-                            <p>Speaker Six is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                            </p>
-                        </div>
-                    </div>
-                    <!--tab content ends here-->
-                </div>
-            </div>
-        </section>
-
-        <!-- end theme -->
-
-        <!-- row 3: panels -->
-        <section id="PANELS" class="container-fluid">
-
-
-            <!-- section header image and section intro -->
-            <div class="section-name">
-                <h1 class="text-center">PANELS</h1>
-            </div>
-            <!-- header ends -->
-
-
-            <!-- Nav tabs -->
-            <div class="row">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-
-                    <ul class="nav nav-pills nav-justified uppercase myTab" role="tablist">
-                        <li class="active">
-                            <a href="#investment" id="rong" role="tab">
-                                <img src="/static/img/rong.png" width="80%" alt="" class="img-responsive">
-                                <h6>Investment</h6>
-                            </a>
-
-                        </li>
-
-                        <li>
-                            <a href="#education" id="jiao" role="tab">
-                                <img src="/static/img/jiao.png" width="100%" alt="" class="img-responsive">
-                                <h6>Education</h6>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="#business" id="shang" role="tab">
-                                <img src="/static/img/shang.png" width="100%" alt="" class="img-responsive">
-                                <h6>Business</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#technology" id="ke" role="tab">
-                                <img src="/static/img/ke.png" width="90%" alt="" class="img-responsive">
-                                <h6>Technology</h6>
-                            </a>
-
-                        </li>
-                        <li>
-                            <a href="#media" id="mei" role="tab">
-                                <img src="/static/img/mei.png" width="100%" alt="" class="img-responsive">
-                                <h6>&nbsp&nbsp&nbspMedia&nbsp&nbsp&nbsp</h6>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#literature" id="wen" role="tab">
-                                <img src="/static/img/wen.png" width="90%" alt="" class="img-responsive">
-                                <h6>Literature</h6>
-                            </a>
-
-                        </li>
-                    </ul>
-
-                </div>
-            </div>
-            <!--nav tabs end here-->
-
-            <!--tab content --->
-            <div class="row tab-content">
-                <div class="tab-pane fade in active" id="investment">
-                    <!-- investment panel title/brief/speakers-->
-                    <div class="row text-center section-content" id="panel-top">
-                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-
-                            <h4>The Chinese Economy: Investment opportunities in the New Era</h4>
-                            <div class="row">
-                                <p class="chinese">XXXXXXXXX 投资 XXXXXXXXX，与此同时，毕业生人数也增加了四倍，预计到2020年将有1.95亿大专院校毕业生,即中国总人口的十分之一。然而，与之相对应的是与日俱增的出国留学人数。截止2013年，中国留学生总人数已达305.86万人；仅2013年一年中国就有41.29万人出国留学。海外高校先进的知识技术、多样的专业选择、多元的文化交流以及其国际化的教学视野成为中国学生渴望留学的主要因素。鉴于此，中国应如何在增加高校数量的同时也提升其教育质量？高校应如何培养出一个鼓励学生创造与创新的教育环境？而中国毕业生又如何成为国际公司冀求的人才资源，拥有国际竞争力？ 纵观全球教育体系，通才教育(General Education)和专才教育(Specialized Education)为两大主流模式。什么样的教育才能更好的让中国学生适应瞬息万变的现今社会？在教育资源紧缺的中国，高等教育在未来应以何种模式发展？是培养“能领兵者”，独当一面的将才？还是培养“能将将者”，统筹全局的帅才？本次教育板块，我们将邀请教育界及相关业界的领军人物，以其独特的视角聚焦中国高等教育，比较通才和专才这两大教育模式，探讨如何取海外高校之长，补中国教育之短。因地制宜，为下一个“中国梦”规划蓝图。
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row text-center section-content" id="panel-bottom">
-                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-
-                            <!-- guest speaker tabs -->
-                            <div class="row">
-                                <div>
-
-                                    <ul class=" row text-center myTab" role="tablist">
-                                        <li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                            <a href="#investment1" role="tab">
-                                                <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </li>
-                                        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                            <a href="#investment2" role="tab">
-                                                <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </li>
-                                        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                            <a href="#investment3" role="tab">
-                                                <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </li>
-                                        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                            <a href="#investment4" role="tab">
-                                                <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </li>
-                                        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                            <a href="#investment5" role="tab">
-                                                <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </li>
-                                        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-                                            <a href="#investment6" role="tab">
-                                                <img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
-                                            </a>
-                                        </li>
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <!--nav tabs end here-->
-
-                            <!--tab content starts here--->
-                            <div class="tab-content">
-                                <div class="tab-pane fade active  " id="investment1">
-                                    <p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade  " id="investment2">
-                                    <p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade  " id="investment3">
-                                    <p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade  " id="investment4">
-                                    <p>Speaker Four is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade  " id="investment5">
-                                    <p>Speaker Five is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                                    </p>
-                                </div>
-                                <div class="tab-pane fade  " id="investment6">
-                                    <p>Speaker Six is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-                                    </p>
-                                </div>
-                            </div>
-                            <!--tab content ends here-->
-
-                        </div>
-
-                    </div>
-                    <!--tab content bar ends here-->
-
-                </div>
-                <div class="tab-pane fade" id="education">
-                    <p>education/education/education/education/education/education/education/education</p>
-                </div>
-                <!----------business panel info starts ----------------------------------------------------------------------->
-                <div class="tab-pane fade" id="business">
-                    <p>BusinessBusinessBusinessBusinessBusinessBusinessBusinessBusinessBusinessBusiness</p>
-                </div>
-                <!----------business panel info ends ------------------------------------------------------------------------->
-                <!----------technology panel info starts --------------------------------------------------------------------->
-                <div class="tab-pane fade" id="technology">
-                    <p>TechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnology</p>
-                </div>
-                <!----------technology panel info ends------------------------------------------------------------------------>
-                <!----------media panel info starts -------------------------------------------------------------------------->
-                <div class="tab-pane fade" id="media">
-                    <p>MediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMedia</p>
-                </div>
-                <!----------media panel info ends ---------------------------------------------------------------------------->
-                <!----------literature panel info starts --------------------------------------------------------------------->
-                <div class="tab-pane fade" id="literature">
-                    <p>LiteratureLiteratureLiteratureLiteratureLiteratureLiteratureLiteratureLiterature</p>
-                </div>
-                <!----------literature panel info ends ----------------------------------------------------------------------->
-
-            </div>
-            <!--end of all tab-content-->
+			<!--            <div id='p5canvas'></div>-->
+			<!--            <script src="/static/js/p5canvas.js"></script>-->
 
 
 
+			<div id="landing-page-container">
+				<h3>2014 cpcc • organized by cucssa</h3>
+				<div id="hr-1" class="brlabel"></div>
+				<h1>china's dialogue with the world</h1>
+				<div id="hr-2" class="brlabel"></div>
+				<h6>oct 4th | 5th, 2014 Ronne Auditorium | low memorial | columibia university | new york city</h6>
+				<button class="round-button" role="button">Get Ticket Now</button>
+			</div>
+		</div>
 
 
-        </section>
-        <!-- end panels -->
+		<!-- row 0: navigation -->
+
+		<nav class="navbar navbar-default navbar-inverse center navbar-fixed-top" data-0="opacity:0" data-600="opacity: 1" role="navigation">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a class="navbar-brand" href="#">
+					<img id="nav-bar-logo" src="/static/img/ccpc_logo.png" />
+				</a>
+
+
+			</div>
+
+			<div class="collapse navbar-collapse" id="collapse">
+				<div class="navbar-inner">
+					<ul class="nav navbar-nav">
+						<li><a href="/#THEME">THEME</a>
+						</li>
+						<li><a href="/#PANELS">PANELS</a>
+						</li>
+						<li><a href="/#AGENDA">AGENDA</a>
+						</li>
+						<li><a href="/#TICKETS">TICKETS</a>
+						</li>
+						<li><a href="/directions">DIRECTIONS</a>
+						</li>
+						<li><a href="/#SPONSORSHIP">SPONSORSHIP</a>
+						</li>
+						<li><a href="/about">ABOUT</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- row 2: theme -->
+
+		<section id="THEME" class="row section">
+			<!-- section header image and section intro -->
+
+			<h1 class="section-name text-center">THEME</h1>
+			<div class="container-fluid section-brief">
+				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+
+					<p class="english">In recent years, the communication between China and the rest of the world has achieved an unprecedented horizon, both in width and depth. During this course, China has been exploring opportunities from all over the world; at the same time, China has also been reciprocating the world with its own values and opportunities. However, inevitably, it has been full of doubts and critiques thus far. In light of such challenges, it is now vitally important to have a heart-to-heart dialogue between China and the world — How should China and the world listen to each other to achieve “win-win”? To answer this question, we hereby proudly announce the theme of 2014 Columbia China Prospects Conference (CCPC) — China’s Dialogue with the World. Refining key elements from the previous four conferences, 2014 CCPC aims to further shed light on the opportunities and challenges China may confront when it balances between its own national transformation and the international standards.</p>
+
+					<p class="chinese">近年来，中国与世界各国交流的广度和深度有了大幅度提升。“让中国梦携手世界梦”已经不仅仅是一个愿景，而是一个正在被践行的诺言。交流之中，中国发现了来自于全世界的机遇，也为全世界创造了源自于中国的价值。然而，在此过程之中，中国也不可避免地遭遇了质疑、碰撞与挑战。此时此刻，开展一场中国与全球的深度对话，显得尤为重要 —— 如何让世界理解中国寻求共赢的声音？中国特色是否是向多元的世界体系提出了另一种可能性？有鉴于此，本届<strong>“中国展望论坛”</strong>以<strong>“聆听中国·对话全球”</strong>为主题，将着眼于发掘转型中的中国在适应并融入当今国际体系的新模式过程中所蕴含的机遇与挑战。</p>
+				</div>
+			</div>
+			<div class="container-fluid text-center section-content">
+				<div id="speaker-tab" class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+					<!--				    <h4><span class="label label-default">HIGHTED SPEAKERS</span></h4>-->
+					<h5>HIGHTED SPEAKERS</h5>
+					<!-- Nav tabs -->
+					<div class="row">
+						<div id="agenda-icon">
+
+							<ul class="row myTab" role="tablist">
+
+								<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
+									<a href="#speaker1" role="tab">
+										<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+									</a>
+								</li>
+
+								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+									<a href="#speaker2" role="tab">
+										<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+									</a>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+									<a href="#speaker3" role="tab">
+										<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+									</a>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+									<a href="#speaker4" role="tab">
+										<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+									</a>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+									<a href="#speaker5" role="tab">
+										<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+									</a>
+								</li>
+								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+									<a href="#speaker6" role="tab">
+										<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+									</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<!--nav tabs end here-->
+
+					<!--tab content starts here--->
+					<div class="tab-content">
+						<div class="tab-pane fade in active" id="speaker1">
+							<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+							</p>
+						</div>
+						<div class="tab-pane fade" id="speaker2">
+							<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+							</p>
+						</div>
+						<div class="tab-pane fade" id="speaker3">
+							<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+							</p>
+						</div>
+						<div class="tab-pane fade" id="speaker4">
+							<p>Speaker Four is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+							</p>
+						</div>
+						<div class="tab-pane fade" id="speaker5">
+							<p>Speaker Five is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+							</p>
+						</div>
+						<div class="tab-pane fade" id="speaker6">
+							<p>Speaker Six is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+							</p>
+						</div>
+					</div>
+					<!--tab content ends here-->
+				</div>
+			</div>
+		</section>
+
+		<!-- end theme -->
+
+		<!-- row 3: panels -->
+		<section id="PANELS" class="container-fluid">
+
+
+			<!-- section header image and section intro -->
+			<div class="section-name">
+				<h1 class="text-center">PANELS</h1>
+			</div>
+			<!-- header ends -->
+
+
+			<!-- Nav tabs -->
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+
+					<ul class="nav nav-pills nav-justified uppercase myTab" role="tablist">
+						<li class="active">
+							<a href="#investment" id="rong" role="tab">
+								<img src="/static/img/rong.png" width="80%" alt="" class="img-responsive">
+								<h6>Investment</h6>
+							</a>
+
+						</li>
+
+						<li>
+							<a href="#education" id="jiao" role="tab">
+								<img src="/static/img/jiao.png" width="100%" alt="" class="img-responsive">
+								<h6>Education</h6>
+							</a>
+
+						</li>
+						<li>
+							<a href="#business" id="shang" role="tab">
+								<img src="/static/img/shang.png" width="100%" alt="" class="img-responsive">
+								<h6>Business</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#technology" id="ke" role="tab">
+								<img src="/static/img/ke.png" width="90%" alt="" class="img-responsive">
+								<h6>Technology</h6>
+							</a>
+
+						</li>
+						<li>
+							<a href="#media" id="mei" role="tab">
+								<img src="/static/img/mei.png" width="100%" alt="" class="img-responsive">
+								<h6>&nbsp&nbsp&nbspMedia&nbsp&nbsp&nbsp</h6>
+							</a>
+						</li>
+						<li>
+							<a href="#literature" id="wen" role="tab">
+								<img src="/static/img/wen.png" width="90%" alt="" class="img-responsive">
+								<h6>Literature</h6>
+							</a>
+
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!--nav tabs end here-->
+
+			<!--tab content --->
+			<div class="row tab-content">
+				<div class="tab-pane fade in active" id="investment">
+					<!-- investment panel title/brief/speakers-->
+					<div class="row text-center section-content" id="panel-top">
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+
+							<h4>The Chinese Economy: Investment opportunities in the New Era</h4>
+							<div class="row">
+								<p class="chinese">XXXXXXXXX 投资 XXXXXXXXX，与此同时，毕业生人数也增加了四倍，预计到2020年将有1.95亿大专院校毕业生,即中国总人口的十分之一。然而，与之相对应的是与日俱增的出国留学人数。截止2013年，中国留学生总人数已达305.86万人；仅2013年一年中国就有41.29万人出国留学。海外高校先进的知识技术、多样的专业选择、多元的文化交流以及其国际化的教学视野成为中国学生渴望留学的主要因素。鉴于此，中国应如何在增加高校数量的同时也提升其教育质量？高校应如何培养出一个鼓励学生创造与创新的教育环境？而中国毕业生又如何成为国际公司冀求的人才资源，拥有国际竞争力？ 纵观全球教育体系，通才教育(General Education)和专才教育(Specialized Education)为两大主流模式。什么样的教育才能更好的让中国学生适应瞬息万变的现今社会？在教育资源紧缺的中国，高等教育在未来应以何种模式发展？是培养“能领兵者”，独当一面的将才？还是培养“能将将者”，统筹全局的帅才？本次教育板块，我们将邀请教育界及相关业界的领军人物，以其独特的视角聚焦中国高等教育，比较通才和专才这两大教育模式，探讨如何取海外高校之长，补中国教育之短。因地制宜，为下一个“中国梦”规划蓝图。
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="row text-center section-content" id="panel-bottom">
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+
+							<!-- guest speaker tabs -->
+							<div class="row">
+								<div>
+
+									<ul class=" row text-center myTab" role="tablist">
+										<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#investment1" role="tab">
+												<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+											</a>
+										</li>
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#investment2" role="tab">
+												<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+											</a>
+										</li>
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#investment3" role="tab">
+												<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+											</a>
+										</li>
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#investment4" role="tab">
+												<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+											</a>
+										</li>
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#investment5" role="tab">
+												<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+											</a>
+										</li>
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#investment6" role="tab">
+												<img src="/static/img/speaker1.jpg" alt="" class="img-responsive">
+											</a>
+										</li>
+									</ul>
+
+								</div>
+							</div>
+							<!--nav tabs end here-->
+
+							<!--tab content starts here--->
+							<div class="tab-content">
+								<div class="tab-pane fade active  " id="investment1">
+									<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									</p>
+								</div>
+								<div class="tab-pane fade  " id="investment2">
+									<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									</p>
+								</div>
+								<div class="tab-pane fade  " id="investment3">
+									<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									</p>
+								</div>
+								<div class="tab-pane fade  " id="investment4">
+									<p>Speaker Four is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									</p>
+								</div>
+								<div class="tab-pane fade  " id="investment5">
+									<p>Speaker Five is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									</p>
+								</div>
+								<div class="tab-pane fade  " id="investment6">
+									<p>Speaker Six is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									</p>
+								</div>
+							</div>
+							<!--tab content ends here-->
+
+						</div>
+
+					</div>
+					<!--tab content bar ends here-->
+
+				</div>
+				<div class="tab-pane fade" id="education">
+					<p>education/education/education/education/education/education/education/education</p>
+				</div>
+				<!----------business panel info starts ----------------------------------------------------------------------->
+				<div class="tab-pane fade" id="business">
+					<p>BusinessBusinessBusinessBusinessBusinessBusinessBusinessBusinessBusinessBusiness</p>
+				</div>
+				<!----------business panel info ends ------------------------------------------------------------------------->
+				<!----------technology panel info starts --------------------------------------------------------------------->
+				<div class="tab-pane fade" id="technology">
+					<p>TechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnologyTechnology</p>
+				</div>
+				<!----------technology panel info ends------------------------------------------------------------------------>
+				<!----------media panel info starts -------------------------------------------------------------------------->
+				<div class="tab-pane fade" id="media">
+					<p>MediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMediaMedia</p>
+				</div>
+				<!----------media panel info ends ---------------------------------------------------------------------------->
+				<!----------literature panel info starts --------------------------------------------------------------------->
+				<div class="tab-pane fade" id="literature">
+					<p>LiteratureLiteratureLiteratureLiteratureLiteratureLiteratureLiteratureLiterature</p>
+				</div>
+				<!----------literature panel info ends ----------------------------------------------------------------------->
+
+			</div>
+			<!--end of all tab-content-->
 
 
 
 
-        <!-- row 4: agenda -->
-        <section id="AGENDA" class="row section">
+
+		</section>
+		<!-- end panels -->
+
+
+
+
+		<!-- row 4: agenda -->
+		<section id="AGENDA" class="row section">
 
 
 			<h1 class="text-center section-name">AGENDA</h1>
 
-            <!-- Nav tabs -->
-            <div class="row text-center" id="agenda-icon">
-                <div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
-                    <ul class="nav nav-pills nav-justified custom myTab" role="tablist">
-                        <li class="active">
-                            <a href="#oct2" role="tab">
-                                <img src="/static/img/yi.png" alt="" width="120%" class="img-responsive">
-                                <h5>Oct 2, 2014</h5>
-                            </a>
-                        </li>
+			<!-- Nav tabs -->
+			<div class="row text-center" id="agenda-icon">
+				<div class="col-lg-2 col-lg-offset-5 col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3">
+					<ul class="nav nav-pills nav-justified custom myTab" role="tablist">
+						<li class="active">
+							<a href="#oct2" role="tab">
+								<img src="/static/img/yi.png" alt="" width="120%" class="img-responsive">
+								<h5>Oct 2, 2014</h5>
+							</a>
+						</li>
 
-                        <li>
-                            <a href="#oct3" role="tab">
-                                <img src="/static/img/er.png" alt="" width="120%" class="img-responsive">
-                                <h5>Oct 3, 2014</h5>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!--nav tabs end here-->
-
-
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div class="tab-pane fade in active" id="oct2">
-                    <div>
-                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-                            <div class="table-responsive">
-                                <table class="table table-striped ">
+						<li>
+							<a href="#oct3" role="tab">
+								<img src="/static/img/er.png" alt="" width="120%" class="img-responsive">
+								<h5>Oct 3, 2014</h5>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--nav tabs end here-->
 
 
-                                    <tbody>
-                                        <tr>
-                                            <td>9:00AM</td>
-                                            <td>10:00PM</td>
-                                            <td>Day1: Investment Policy</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>10:00AM</td>
-                                            <td>11:00AM</td>
-                                            <td>Establishing Subsidiaries within Greater China</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>11:00AM</td>
-                                            <td>12:00PM</td>
-                                            <td>Taxation</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>12:00PM</td>
-                                            <td>1:00PM</td>
-                                            <td>Lunch Break</td>
-                                            <td>University Avenue</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>1:00PM</td>
-                                            <td>2:00PM</td>
-                                            <td>Chinese Arts and Literature in the Past Decade</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>2:00PM</td>
-                                            <td>3:00PM</td>
-                                            <td>Closing Remark</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="oct3">
-                    <div>
-                        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div class="tab-pane fade in active" id="oct2">
+					<div>
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+							<div class="table-responsive">
+								<table class="table table-striped ">
 
 
+									<tbody>
+										<tr>
+											<td>9:00AM</td>
+											<td>10:00PM</td>
+											<td>Day1: Investment Policy</td>
+											<td>Lowe Auditorium</td>
+										</tr>
 
-                                    <tbody>
-                                        <tr>
-                                            <td>9:00AM</td>
-                                            <td>10:00PM</td>
-                                            <td>Day2: Investment Policy</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
+										<tr>
+											<td>10:00AM</td>
+											<td>11:00AM</td>
+											<td>Establishing Subsidiaries within Greater China</td>
+											<td>Lowe Auditorium</td>
+										</tr>
 
-                                        <tr>
-                                            <td>10:00AM</td>
-                                            <td>11:00AM</td>
-                                            <td>Establishing Subsidiaries within Greater China</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
+										<tr>
+											<td>11:00AM</td>
+											<td>12:00PM</td>
+											<td>Taxation</td>
+											<td>Lowe Auditorium</td>
+										</tr>
 
-                                        <tr>
-                                            <td>11:00AM</td>
-                                            <td>12:00PM</td>
-                                            <td>Taxation</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
+										<tr>
+											<td>12:00PM</td>
+											<td>1:00PM</td>
+											<td>Lunch Break</td>
+											<td>University Avenue</td>
+										</tr>
 
-                                        <tr>
-                                            <td>12:00PM</td>
-                                            <td>1:00PM</td>
-                                            <td>Lunch Break</td>
-                                            <td>University Avenue</td>
-                                        </tr>
+										<tr>
+											<td>1:00PM</td>
+											<td>2:00PM</td>
+											<td>Chinese Arts and Literature in the Past Decade</td>
+											<td>Lowe Auditorium</td>
+										</tr>
 
-                                        <tr>
-                                            <td>1:00PM</td>
-                                            <td>2:00PM</td>
-                                            <td>Chinese Arts and Literature in the Past Decade</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>2:00PM</td>
-                                            <td>3:00PM</td>
-                                            <td>Closing Remark</td>
-                                            <td>Lowe Auditorium</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--end tab content-->
-
-
-        </section>
-        <!-- end agenda -->
+										<tr>
+											<td>2:00PM</td>
+											<td>3:00PM</td>
+											<td>Closing Remark</td>
+											<td>Lowe Auditorium</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane fade" id="oct3">
+					<div>
+						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+							<div class="table-responsive">
+								<table class="table table-striped">
 
 
-        <!-- row 6: directions -->
-        <section id="DIRECTIONS" data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" class="row">
-            <div class="in-parallax-text">
-                <h1>Direction & Logistics </h1>
-                <h4>Detailed information to help you navigate to Columbia University Morning Side Campus from New York City and other parts of the country
+
+
+									<tbody>
+										<tr>
+											<td>9:00AM</td>
+											<td>10:00PM</td>
+											<td>Day2: Investment Policy</td>
+											<td>Lowe Auditorium</td>
+										</tr>
+
+										<tr>
+											<td>10:00AM</td>
+											<td>11:00AM</td>
+											<td>Establishing Subsidiaries within Greater China</td>
+											<td>Lowe Auditorium</td>
+										</tr>
+
+										<tr>
+											<td>11:00AM</td>
+											<td>12:00PM</td>
+											<td>Taxation</td>
+											<td>Lowe Auditorium</td>
+										</tr>
+
+										<tr>
+											<td>12:00PM</td>
+											<td>1:00PM</td>
+											<td>Lunch Break</td>
+											<td>University Avenue</td>
+										</tr>
+
+										<tr>
+											<td>1:00PM</td>
+											<td>2:00PM</td>
+											<td>Chinese Arts and Literature in the Past Decade</td>
+											<td>Lowe Auditorium</td>
+										</tr>
+
+										<tr>
+											<td>2:00PM</td>
+											<td>3:00PM</td>
+											<td>Closing Remark</td>
+											<td>Lowe Auditorium</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--end tab content-->
+
+
+		</section>
+		<!-- end agenda -->
+
+
+		<!-- row 6: directions -->
+		<section id="DIRECTIONS" data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" class="row">
+			<div class="in-parallax-text">
+				<h1>Direction & Logistics </h1>
+				<h4>Detailed information to help you navigate to Columbia University Morning Side Campus from New York City and other parts of the country
                 </h4>
-                <button class="round-button" role="button">Check the Directions</button>
-            </div>
-        </section>
-        <!-- end directions -->
+				<button class="round-button" role="button">Check the Directions</button>
+			</div>
+		</section>
+		<!-- end directions -->
 
 
-        <!-- row 5: tickets -->
-        <section data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" id="TICKETS" class="row section">
-<!--            <h1 class="text-center section-name">TICKETS</h1>-->
-        </section>
-        <!-- end tickets -->
+		<!-- row 5: tickets -->
+		<section data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" id="TICKETS" class="row section">
+			<!--            <h1 class="text-center section-name">TICKETS</h1>-->
+		</section>
+		<!-- end tickets -->
 
-        <!-- row 7: sponsorship -->
-        <section id="SPONSORSHIP" class="container-fluid">
-            <div class="row text-center">
-                <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-                    <h1 class="text-capitalize">The 5th CCPC is made possible through the generous support of
+		<!-- row 7: sponsorship -->
+		<section id="SPONSORSHIP" class="container-fluid">
+			<div class="row text-center">
+				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
+					<h1 class="text-capitalize">The 5th CCPC is made possible through the generous support of
 						</h1>
-                    <div class="row">
-                        <div class="col-md-2 col-sm-4 col-xs-4 tb">
-                            <i class="fa fa-google fa-5x"></i> 
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-4 tb">
-                            <i class="fa fa-linux fa-5x"></i>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-4 tb">
-                            <i class="fa fa-apple fa-5x"></i>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-4 tb">
-                            <i class="fa fa-ge fa-5x"></i>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-4 tb">
-                            <i class="fa fa-dropbox fa-5x"></i>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-4 tb">
-                            <i class="fa fa-windows fa-5x"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+					<div class="row">
+						<div class="col-md-2 col-sm-4 col-xs-4 tb">
+							<i class="fa fa-google fa-5x"></i> 
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-4 tb">
+							<i class="fa fa-linux fa-5x"></i>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-4 tb">
+							<i class="fa fa-apple fa-5x"></i>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-4 tb">
+							<i class="fa fa-ge fa-5x"></i>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-4 tb">
+							<i class="fa fa-dropbox fa-5x"></i>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-4 tb">
+							<i class="fa fa-windows fa-5x"></i>
+						</div>
+					</div>
+				</div>
+			</div>
 
-        </section>
-
-
-        <!-- end sponsorship -->
-
-        <!-- row 8: about -->
-        <section data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" class="row" id="ABOUT">
-            <div class="in-parallax-text">
-                <h1>About the Organizer</h1>
-                <h4>Information on past event agenda and speakers, and the team of Columbia faculty, staff and students organizing each panel session</h4>
-                <button class="round-button" role="button">Learn More</button>
-            </div>
-        </section>
+		</section>
 
 
-        <!-- row 9: pre-footer-->
-        <section class="row" id="pre-footer">
-            <div class="text-center">
-                <i class="fa fa-twitter"></i><span class="wrap"></span>
-                <i class="fa fa-facebook"></i><span class="wrap"></span>
-                <i class="fa fa-wechat"></i><span class="wrap"></span> 
-                <i class="fa fa-weibo"></i><span class="wrap"></span> 
-            </div>
-            <img src="../static/img/qrcode.jpg" alt="">
-            <h6> Scan to add us on Wechat</h6>
-        </section>
-        <!-- end pre-footer-->
+		<!-- end sponsorship -->
+
+		<!-- row 8: about -->
+		<section data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;" class="row" id="ABOUT">
+			<div class="in-parallax-text">
+				<h1>About the Organizer</h1>
+				<h4>Information on past event agenda and speakers, and the team of Columbia faculty, staff and students organizing each panel session</h4>
+				<button class="round-button" role="button">Learn More</button>
+			</div>
+		</section>
 
 
-        <!-- row 10: FOLLOW US-->
-        <footer class="row">
-            <div>
-                <h6> © CCPC 2014 </h6>
-                <h6> Please direct all inquiries to contact@ccpc2014.com </h6>
-            </div>
-        </footer>
+		<!-- row 9: pre-footer-->
+		<section class="row" id="pre-footer">
+			<div class="text-center">
+				<i class="fa fa-twitter"></i><span class="wrap"></span>
+				<i class="fa fa-facebook"></i><span class="wrap"></span>
+				<i class="fa fa-wechat"></i><span class="wrap"></span> 
+				<i class="fa fa-weibo"></i><span class="wrap"></span> 
+			</div>
+			<img src="../static/img/qrcode.jpg" alt="">
+			<h6> Scan to add us on Wechat</h6>
+		</section>
+		<!-- end pre-footer-->
+
+
+		<!-- row 10: FOLLOW US-->
+		<footer class="row">
+			<div>
+				<h6> © CCPC 2014 </h6>
+				<h6> Please direct all inquiries to contact@ccpc2014.com </h6>
+			</div>
+		</footer>
 
 
 
-    </div>
-    <!-- end container -->
+	</div>
+	<!-- end container -->
 
-    <!-- javascript -->
+	<!-- javascript -->
 
 
 </body>

@@ -7,6 +7,10 @@ body {
     line-height: normal;
     background-color: white !important;
 }
+
+.chinese{
+	display: none;
+}
 p {
     text-align: justify;
 }
