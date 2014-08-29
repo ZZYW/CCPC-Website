@@ -75,7 +75,7 @@ html {
 .round-button:hover {
 	background: white !important;
 	color: black;
-	border: none;
+	border: 1px solid rgba(0,0,0,0);
 }
 video#bgvid {
 	position: absolute;
@@ -271,15 +271,25 @@ nav a:hover {
 /**************************DIRECTION*************************************/
 
 #DIRECTIONS {
-	margin: 12em;
+	margin: 19em;
 	0em;
-	12em;
+	19em;
 	0em;
 }
-#DIRECTIONS button {
-	border: 1px solid black;
+#DIRECTIONS .round-button {
+	text-transform: uppercase;
+	padding: 0.5em 0.7em 0.4em 0.7em;
+	background: rgba(0, 0, 0, 0);
 	color: black;
+	border: 1px solid black;
+	border-radius: 1em;
 }
+#DIRECTIONS .round-button:hover {
+	background: black !important;
+	color: white;
+	border: 1px solid rgba(0,0,0,0);
+}
+
 #DIRECTIONS h4 {
 	padding: 0em 0em 2em 0em;
 }
