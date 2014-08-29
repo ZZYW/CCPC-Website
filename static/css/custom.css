@@ -51,7 +51,8 @@ html {
 /************************LANDING PAGE****************************/
 
 #landing-page {
-	/*	background-color: rgb(138, 25, 38);*/
+	background: url('/static/img/nyc.jpg') no-repeat center center;
+	background-size: cover;
 	position: relative;
 	color: white;
 	text-transform: uppercase;
