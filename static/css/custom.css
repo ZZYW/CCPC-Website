@@ -1,7 +1,7 @@
 /* this is a custom css style sheet */
 
 body {
-	font-family: 'Gentium Basic', 'STSong', 'SimSun', serif;
+	font-family: 'Karma', 'STSong', 'SimSun', serif;
 	width: 100%;
 	height: 100%;
 	line-height: normal;
@@ -12,7 +12,6 @@ body {
 }
 p {
 	text-align: justify;
-	font-size: 1.1em;
 }
 html {
 	width: 100%;
@@ -58,18 +57,10 @@ html {
 	text-transform: uppercase;
 }
 #landing-page-container {
-	padding: 20%;
-}
-#hr-1 {
-	margin: 0 15% 0 15%;
-}
-#landing-page .brlabel {
-	background-color: white;
-	z-index: 0;
-	position: static;
+	padding: 20% 15%;
 }
 #landing-page h1 {
-	font-size: 4em;
+	font-size: 5em;
 	position: relative;
 	bottom: 5px;
 }
@@ -82,9 +73,9 @@ html {
 	border-radius: 1em;
 }
 .round-button:hover {
-	background: rgba(0, 0, 0, 0) !important;
+	background: white !important;
 	color: black;
-	border: 1px solid black;
+	border: none;
 }
 video#bgvid {
 	position: absolute;
@@ -138,7 +129,7 @@ nav a:hover {
 }
 #THEME ul {
 	list-style: none;
-	padding: 2em;
+	padding: 1em;
 }
 #THEME .custom > li > a {
 	opacity: 0.6;
@@ -167,13 +158,10 @@ nav a:hover {
 }
 #PANELS ul {
 	list-style: none;
-	padding: 2em;
-}
-#PANELS .section-brief {
-	background-color: #af9f8a;
+	padding: 1em 0;
 }
 #PANELS .section-content {
-	background-color: rgb(228, 230, 223);
+	background: url('/static/img/green-bg.png') repeat;
 }
 #panel-top {
 	padding-top: 3em;
@@ -276,7 +264,6 @@ nav a:hover {
 	position: relative;
 	margin: 25% 0 20% 0;
 	text-align: left;
-	
 }
 #TICKETS h4 {
 	padding: 0em 0em 2em 0em;
