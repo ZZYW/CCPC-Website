@@ -1,5 +1,9 @@
 $(document).ready(function () {
 
+//    if("the top of the element gets the bottom of viewport"){
+//    $('#THEME .section-name').addClass('animated bounceOutLeft');
+//    }
+    
     var s = skrollr.init();
 
     // agenda tabs and highlighted speakers tabs
