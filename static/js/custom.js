@@ -61,57 +61,6 @@ $(window).resize(function () {
 });
 
 
-$(window).scroll(function () {
-
-});
-
-$('#wen').mousemove(function () {
-    $('#wen img').attr('src', '/static/img/wen-green.png');
-});
-$('#wen').mouseout(function () {
-    $('#wen img').attr('src', '/static/img/wen.png');
-});
-
-
-$('#rong').mousemove(function () {
-    $('#rong img').attr('src', '/static/img/rong-green.png');
-});
-$('#rong').mouseout(function () {
-    $('#rong img').attr('src', '/static/img/rong.png');
-});
-
-
-$('#ke').mousemove(function () {
-    $('#ke img').attr('src', '/static/img/ke-green.png');
-});
-$('#ke').mouseout(function () {
-    $('#ke img').attr('src', '/static/img/ke.png');
-});
-
-
-$('#jiao').mousemove(function () {
-    $('#jiao img').attr('src', '/static/img/jiao-green.png');
-});
-$('#jiao').mouseout(function () {
-    $('#jiao img').attr('src', '/static/img/jiao.png');
-});
-
-
-$('#mei').mousemove(function () {
-    $('#mei img').attr('src', '/static/img/mei-green.png');
-});
-$('#mei').mouseout(function () {
-    $('#mei img').attr('src', '/static/img/mei.png');
-});
-
-$('#shang').mousemove(function () {
-    $('#shang img').attr('src', '/static/img/shang-green.png');
-});
-$('#shang').mouseout(function () {
-    $('#shang img').attr('src', '/static/img/shang.png');
-});
-
-
 
 
 animateWhenReachIn('#THEME .section-name', 'animate fadeIn', '5s', 300, 0);
@@ -125,8 +74,10 @@ animateWhenReachIn('#AGENDA .cali-list', 'animate fadeIn', '3s', 0, 0);
 animateWhenReachIn('#AGENDA table', 'animate fadeInUp', '1s', 0, 0);
 animateWhenReachIn('#TICKETS .in-parallax-text', 'animate fadeInLeft', '1s', 0, 0);
 animateWhenReachIn('#DIRECTIONS', 'animate fadeIn', '2s', 200, 0);
+animateWhenReachIn('#map-canvas', 'animate fadeInRight', '2s', 200, 0);
+animateWhenReachIn('#address-info', 'animate fadeInLeft', '2s', 200, 0);
 animateWhenReachIn('#ABOUT .in-parallax-text', 'animate fadeInRight', '1s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP h1', 'animate fadeIn', '2s', 0, 0);
+animateWhenReachIn('#SPONSORSHIP h1', 'animate zoomIn', '2s', 0, 0);
 animateWhenReachIn('#SPONSORSHIP .fa-google', 'animate zoomIn', '0.5s', 0, 0);
 animateWhenReachIn('#SPONSORSHIP .fa-linux', 'animate zoomIn', '0.5s', 0, 0);
 animateWhenReachIn('#SPONSORSHIP .fa-apple', 'animate zoomIn', '0.5s', 0, 0);
