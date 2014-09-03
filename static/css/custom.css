@@ -10,6 +10,9 @@ body {
 .chinese {
     display: none;
 }
+.english{
+    display: block;
+}
 p {
     text-align: justify;
 }
@@ -89,7 +92,36 @@ video#bgvid {
     z-index: -10000;
     background-size: cover;
 }
+
+
+
 /********************NAV BAR*******************************************/
+#chinese-english{
+    text-align: right;
+}
+
+#chinese-button{
+    width: 50%;
+}
+
+#english-button{
+    width: 50%;
+}
+
+
+#chinese-english img{
+    opacity: 0.3;
+}
+
+#chinese-english img:hover{
+    opacity: 1;
+}
+
+#chinese-english img:active{
+    opacity: 1;
+}
+
+
 
 nav {
     background-color: black !important;

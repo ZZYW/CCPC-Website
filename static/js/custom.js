@@ -1,11 +1,21 @@
-
 // calls functions when html is setup.
 $(document).ready(function () {
 
 
     var s = skrollr.init();
 
-
+    $('#chinese-button').click(function () {
+        $('.english').css('display', 'none');
+        $('.chinese').css('display', 'block');
+    });
+    
+    
+    $('#english-button').click(function () {
+        $('.english').css('display', 'block');
+        $('.chinese').css('display', 'none');
+    });
+    
+    
     // agenda tabs and highlighted speakers tabs
     $('.myTab a').click(function (e) {
         e.preventDefault();
@@ -16,25 +26,25 @@ $(document).ready(function () {
     //	load google map API
     var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
     var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);
-    
+
     var mapOptions = {
         zoom: 16,
         center: new google.maps.LatLng(40.80735, -73.9615)
     };
-    
+
     var map = new google.maps.Map(document.getElementById('map-canvas'),
         mapOptions);
 
     var marker = new google.maps.Marker({
-      position: myLatlng_LA,
-      map: map,
-      title: 'Lerner Auditorium'
+        position: myLatlng_LA,
+        map: map,
+        title: 'Lerner Auditorium'
     });
-    
+
     var marker = new google.maps.Marker({
-      position: myLatlng_IAB,
-      map: map,
-      title: 'IAB 417'
+        position: myLatlng_IAB,
+        map: map,
+        title: 'IAB 417'
     });
 
 
@@ -44,6 +54,7 @@ $(document).ready(function () {
     $(".team-member").tooltip();
     var viewport_height = $(window).height();
     $('#landing-page').css('height', viewport_height);
+
 
 });
 
@@ -55,6 +66,12 @@ $(document).ready(function () {
 
 
 //  event listeners start here
+
+
+
+
+
+
 $(window).resize(function () {
     var viewport_height = $(window).height();
     $('#landing-page').css('height', viewport_height);
@@ -89,14 +106,14 @@ animateWhenReachIn('footer', 'animate fadeInUp', '1s', 0, 0);
 
 
 
-    
+
 
 
 
 
 //  function definitions start here 
-    
-    
+
+
 
 function animateWhenReachIn(selector, effect, duration, offset, delay) {
     $(document).ready(function () {
