@@ -29,6 +29,13 @@ $(document).ready(function () {
     });
 
 
+    
+
+    //agenda tabs and highlighted speakers tabs
+    $('.myTab a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    });
 
 
     //enable tooltip
@@ -76,13 +83,6 @@ $(window).resize(function () {
 });
 
 
-
-
-//agenda tabs and highlighted speakers tabs
-$('.myTab a').click(function (e) {
-    e.preventDefault();
-    $(this).tab('show');
-});
 
 
 
