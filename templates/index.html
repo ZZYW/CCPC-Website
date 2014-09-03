@@ -29,7 +29,6 @@
 	<script src="/static/js/custom.js"></script>
 </head>
 
-
 <body>
 	<div class="container-fluid">
 		<!-- row 1: landing page -->
@@ -37,11 +36,11 @@
 
 			<!--VIDEO BACKGROUND-->
 
-<!--
-			<video autoplay loop id="bgvid">
+
+			<video autoplay loop poster="/static/img/nyc.jpg" id="bgvid">
 				<source src="/static/img/bg-video.mp4" type="video/mp4">
 			</video>
--->
+
 
 			<!--            <div id='p5canvas'></div>-->
 			<!--            <script src="/static/js/p5canvas.js"></script>-->
@@ -760,7 +759,7 @@
 
 						<li>
 							<a href="#oct3" role="tab">
-								<img src="/static/img/er.png" alt="two" >
+								<img src="/static/img/er.png" alt="two">
 								<h5>&nbsp;&nbsp;&nbsp;Oct 3, 2014</h5>
 							</a>
 						</li>
@@ -907,37 +906,42 @@
 
 		<!-- row 6: directions -->
 		<section id="DIRECTIONS" data-bottom-top="background-position: 50% 100%;" data-top-bottom="background-position: 50% 0%;">
+
 			<div class="container-fluid">
-                <div class="col-lg-5 col-lg-offset-1" id="address-info">
-                    <div class="row text-center">
-                        <h1>Getting to Columbia University</h1>
-                    </div>
-                    <div class="row text-center" id="address-bar">
-                        <address>
+				<div class="col-lg-5 col-lg-offset-1" id="address-info">
+					<div class="row text-center">
+						<h1>Getting to Columbia University</h1>
+					</div>
+					<div class="row text-center" id="address-bar">
+						<address>
                           <strong>Lerner Auditorium</strong><br>
                           Alfred Lerner Hall<br> 
                           2920 Broadway<br>
                           New York, NY 10027<br>
                           <abbr title="Phone">P:</abbr> (212) 854-9067
                         </address>
-                        <address>
+						<address>
                           <strong>IAB 417 (Altschul Auditorium)</strong><br>
                           The International Affairs Building<br>
                           420 W 118th St #1<br>
                           New York, NY 10027<br>
                           <abbr title="Phone">P:</abbr> (800) 627-3999
                         </address>
-                    </div>
-                    <div class="row text-center">
-                    <a href="/directions"><button class="round-button" role="button">MORE INFORMATION</button></a>
-                    </div>
-                </div>       
-					
-                <div class="col-lg-5">
-                    <div><br></div>
-                    <div id="map-canvas"></div>
-                </div>
-            </div>
+					</div>
+					<div class="row text-center">
+						<a href="/directions">
+							<button class="round-button" role="button">MORE INFORMATION</button>
+						</a>
+					</div>
+				</div>
+
+				<div class="col-lg-5">
+					<div>
+						<br>
+					</div>
+					<div id="map-canvas"></div>
+				</div>
+			</div>
 		</section>
 		<!-- end directions -->
 
@@ -948,7 +952,9 @@
 				<div class="in-parallax-text">
 					<h1>About the Organizer</h1>
 					<h4>Information on past event agenda and speakers, and the team of Columbia faculty, staff and students organizing each panel session</h4>
-					<a href="/about"><button class="round-button" role="button">Learn More</button></a>
+					<a href="/about">
+						<button class="round-button" role="button">Learn More</button>
+					</a>
 				</div>
 			</div>
 		</section>
