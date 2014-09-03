@@ -96,32 +96,6 @@ video#bgvid {
 
 
 /********************NAV BAR*******************************************/
-#chinese-english{
-    text-align: right;
-}
-
-#chinese-button{
-    width: 50%;
-}
-
-#english-button{
-    width: 50%;
-}
-
-
-#chinese-english img{
-    opacity: 0.3;
-}
-
-#chinese-english img:hover{
-    opacity: 1;
-}
-
-#chinese-english img:active{
-    opacity: 1;
-}
-
-
 
 nav {
     background-color: black !important;
@@ -145,6 +119,38 @@ nav a:hover {
     display: inline-block;
 }
 /********************THEME*********************************************/
+/********language switch button******/
+#chinese-english{
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+#chinese-english img:hover{
+    opacity: 1;
+}
+
+#chinese-button{
+    width: 50%;
+    opacity: 0.2;
+}
+
+#english-button{
+    width: 50%;
+    opacity: 1;
+}
+
+.o2{
+    opacity: 0.2 !important;
+}
+
+.o1{
+    opacity: 1 !important;
+}
+
+
+
+
+
 
 #THEME .section-brief {
     padding: 5em 0 5em 0;
