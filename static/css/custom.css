@@ -149,6 +149,23 @@ nav a:hover {
     background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
     background-size: 60%;
 }
+
+#THEME li a {
+    background-color: transparent;
+    color: rgb(153, 163, 126);
+}
+
+#THEME li{
+    opacity: 0.4;
+}
+#THEME li:hover, 
+#THEME li.active  {
+    opacity: 1;
+}
+
+#PANELS img {
+    margin: auto;
+}
 /*******************PANELS*********************************************/
 
 #PANELS .section-name {
