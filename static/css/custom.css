@@ -431,26 +431,36 @@ footer div {
     padding: 8em;
     color: black;
 }
+
+#ABOUTPAGE #TEAM{
+    padding: 15em 0;
+}
+
 #ABOUTPAGE .team-member {
-    display: inline;
-    width: 147px;
-    height: 197px;
-    padding: 0;
-    margin: 0;
-    opacity: 0.5;
+    float: left;
+    width: 100%;
+    opacity: 0.4;
+    border: none;
 }
+
+
+#photo-wall span{
+    border: none;
+    display: block;
+    float: left;
+    width: 10%;
+/*    display: inline-block;*/
+    background: rgb(155, 42, 53);
+}
+
 #ABOUTPAGE .team-member:hover {
-    width: 147px;
-    height: 197px;
+    border: none;
     opacity: 1;
-    padding: 0;
-    margin: 0;
-    background: #f00;
-}
-
-
-#photo-wall {
-    padding: 0;
+/*
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+*/
 }
 
 #ABOUTPAGE .section-brief {
@@ -474,7 +484,12 @@ footer div {
     color: #6c6c6c;
 }
 
-
+.tooltip-inner {
+    width: 100%; 
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(155, 42, 53);
+}
 
 /************************* Directions Page **************************/
 
@@ -501,3 +516,17 @@ footer div {
     .cali-list img {
         display: none;
     }
+    
+    #ABOUTPAGE .team-member {
+        diplay: none;
+    }
+    
+
+@media (max-width: 992px) { 
+    #ABOUTPAGE span{
+        width: 16.66%;
+    }
+    
+
+    
+    
