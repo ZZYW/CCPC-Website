@@ -3,7 +3,8 @@ $(document).ready(function () {
 
 
     var s = skrollr.init();
-
+    //enable tooltip
+    $(".team-member").tooltip();
     //	load google map API
     var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
     var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);
@@ -38,9 +39,11 @@ $(document).ready(function () {
     });
 
 
-    //enable tooltip
-    $(".team-member").tooltip();
+
+    
     var viewport_height = $(window).height();
+    
+    
     $('#landing-page').css('height', viewport_height);
 
     
