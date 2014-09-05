@@ -491,6 +491,10 @@ footer div {
     background-color: rgb(155, 42, 53);
 }
 
+.tooltip.top .tooltip-arrow{
+    display: none;
+}
+
 /************************* Directions Page **************************/
 
 #directions-content h5 {
