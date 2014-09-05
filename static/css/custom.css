@@ -48,8 +48,8 @@ html {
 .iconbar {
     background-color: rgb(216, 216, 216);
 }
-/************************LANDING PAGE****************************/
 
+/************************LANDING PAGE****************************/
 #landing-page {
 /*    background: url('/static/img/nyc.jpg') no-repeat center center;*/
     background-size: cover;
