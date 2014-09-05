@@ -1,49 +1,73 @@
-
 // calls functions when html is setup.
 $(document).ready(function () {
 
 
     var s = skrollr.init();
+    //enable tooltip
+    $(".team-member").tooltip();
+    //	load google map API
+    var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
+    var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);
+
+    var mapOptions = {
+        zoom: 16,
+        center: new google.maps.LatLng(40.80735, -73.9615)
+    };
+
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng_LA,
+        map: map,
+        title: 'Lerner Auditorium'
+    });
+
+    var marker = new google.maps.Marker({
+        position: myLatlng_IAB,
+        map: map,
+        title: 'IAB 417'
+    });
 
 
-    // agenda tabs and highlighted speakers tabs
+    
+
+    //agenda tabs and highlighted speakers tabs
     $('.myTab a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
     });
 
 
-    //	load google map API
-    var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
-    var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);
+
     
-    var mapOptions = {
-        zoom: 16,
-        center: new google.maps.LatLng(40.80735, -73.9615)
-    };
-    
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myLatlng_LA,
-      map: map,
-      title: 'Lerner Auditorium'
-    });
-    
-    var marker = new google.maps.Marker({
-      position: myLatlng_IAB,
-      map: map,
-      title: 'IAB 417'
-    });
-
-
-
-
-    //enable tooltip
-    $(".team-member").tooltip();
     var viewport_height = $(window).height();
+    
+    
     $('#landing-page').css('height', viewport_height);
+
+    
+    //language switch buttons
+    $("#english-button").click(function () {
+        if ($(this).hasClass('o2')) {
+            $(this).toggleClass('o2');
+            $("#chinese-button").toggleClass('o1');
+
+            $('.english').css('display', 'block');
+            $('.chinese').css('display', 'none');
+        } else {}
+    });
+
+    $("#chinese-button").click(function () {
+        if ($(this).hasClass('o1')) {} else {
+            $(this).toggleClass('o1');
+            $("#english-button").toggleClass('o2');
+
+            $('.english').css('display', 'none');
+            $('.chinese').css('display', 'block');
+        }
+    });
+
 
 });
 
@@ -54,11 +78,14 @@ $(document).ready(function () {
 
 
 
-//  event listeners start here
+////////////////////////////////////////////////event listeners start here
+
 $(window).resize(function () {
     var viewport_height = $(window).height();
     $('#landing-page').css('height', viewport_height);
 });
+
+
 
 
 
@@ -89,14 +116,14 @@ animateWhenReachIn('footer', 'animate fadeInUp', '1s', 0, 0);
 
 
 
-    
+
 
 
 
 
 //  function definitions start here 
-    
-    
+
+
 
 function animateWhenReachIn(selector, effect, duration, offset, delay) {
     $(document).ready(function () {

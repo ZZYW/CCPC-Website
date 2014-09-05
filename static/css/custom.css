@@ -10,6 +10,9 @@ body {
 .chinese {
     display: none;
 }
+.english{
+    display: block;
+}
 p {
     text-align: justify;
 }
@@ -89,6 +92,9 @@ video#bgvid {
     z-index: -10000;
     background-size: cover;
 }
+
+
+
 /********************NAV BAR*******************************************/
 
 nav {
@@ -113,21 +119,56 @@ nav a:hover {
     display: inline-block;
 }
 /********************THEME*********************************************/
+/********language switch button******/
+#chinese-english{
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+#chinese-english img:hover{
+    opacity: 1;
+}
+
+#chinese-button{
+    width: 50%;
+    opacity: 0.2;
+}
+
+#english-button{
+    width: 50%;
+    opacity: 1;
+}
+
+.o2{
+    opacity: 0.2 !important;
+}
+
+.o1{
+    opacity: 1 !important;
+}
+
+
+
+
+
 
 #THEME .section-brief {
     padding: 5em 0 5em 0;
     background-color: #af9f8a;
 }
+
 #THEME .section-content {
     padding: 0em 0 5em 0;
     background: url('/static/img/green-bg.png') repeat;
 }
+
 #THEME .section-name {
     background: url('/static/img/ink-circle.png') no-repeat center center;
     background-size: 30%;
     padding: 8em;
     color: black;
 }
+
 #THEME ul {
     list-style: none;
     padding: 1em;
@@ -148,6 +189,23 @@ nav a:hover {
     padding: 4em 0 3em 0;
     background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
     background-size: 60%;
+}
+
+#THEME li a {
+    background-color: transparent;
+    color: rgb(153, 163, 126);
+}
+
+#THEME li{
+    opacity: 0.4;
+}
+#THEME li:hover, 
+#THEME li.active  {
+    opacity: 1;
+}
+
+#PANELS img {
+    margin: auto;
 }
 /*******************PANELS*********************************************/
 
@@ -367,33 +425,72 @@ footer div {
 }
 /***********************About Page******************************************/
 
-#history .section-name {
+#ABOUTPAGE .section-name {
     background: url('/static/img/ink-circle.png') no-repeat center center;
     background-size: 30%;
-    padding: 15em;
+    padding: 8em;
     color: black;
 }
-.team-member {
-    display: inline;
+
+#ABOUTPAGE #TEAM{
+    padding: 15em 0;
+}
+
+#ABOUTPAGE .team-member {
+    float: left;
+    width: 100%;
+    opacity: 0.4;
+    border: none;
+}
+
+
+#photo-wall span{
+    border: none;
+    display: block;
+    float: left;
     width: 10%;
-    padding: 0;
-    margin: 0;
-    opacity: 0.8;
+/*    display: inline-block;*/
+    background: rgb(155, 42, 53);
 }
-.team-member:hover {
+
+#ABOUTPAGE .team-member:hover {
+    border: none;
     opacity: 1;
-    padding: 0;
-    margin: 0;
+/*
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+*/
 }
-#photo-wall {
-    padding: 0;
-    margin-top: 5em;
-    margin-bottom: 10em;
+
+#ABOUTPAGE .section-brief {
+    padding: 5em 0 5em 0;
+    background-color: #af9f8a;
 }
-.green-bg {
-    background-color: rgb(228, 230, 223);
-    padding: 4em 0 4em 0;
+
+#ABOUTPAGE .section-content {
+    padding: 5em 0;
+    background: url('/static/img/green-bg.png') repeat;
 }
+
+#ABOUTPAGE .section-name {
+    background: url('/static/img/ink-circle.png') no-repeat center center;
+    background-size: 30%;
+    padding: 8em;
+    color: black;
+}
+
+#ABOUTPAGE a {
+    color: #6c6c6c;
+}
+
+.tooltip-inner {
+    width: 100%; 
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background-color: rgb(155, 42, 53);
+}
+
 /************************* Directions Page **************************/
 
 #directions-content h5 {
@@ -419,3 +516,17 @@ footer div {
     .cali-list img {
         display: none;
     }
+    
+    #ABOUTPAGE .team-member {
+        diplay: none;
+    }
+    
+
+@media (max-width: 992px) { 
+    #ABOUTPAGE span{
+        width: 16.66%;
+    }
+    
+
+    
+    
