@@ -7,6 +7,12 @@ body {
     line-height: normal;
     background-color: white !important;
 }
+
+.section-name {
+    font-family: 'Averia Libre';
+    font-weight: 300;
+}
+
 .chinese {
     display: none;
 }
@@ -65,7 +71,8 @@ html {
 }
 
 #landing-page-container button{
-    margin: 2em;
+    margin: 4em;
+    padding: 0.5em 2em 0.4em 2em;
 }
 
 #landing-page h1 {
@@ -190,10 +197,8 @@ nav a:hover {
     background-color: transparent;
 }
 #THEME h5 {
-    color: white;
+    color: black;
     padding: 4em 0 3em 0;
-    background: url('/static/img/ink-zigzag.png') no-repeat 50% 40%;
-    background-size: 60%;
 }
 
 #THEME li a {
@@ -278,11 +283,6 @@ nav a:hover {
 #AGENDA .navpills-collapse.collapse {
     display: block!important;
 }
-/*
-#AGENDA .navpills-nav>li, .navbar-nav {
-    float: left !important;
-}
-*/
 
 #AGENDA li a h5 {
     color: black;
@@ -306,8 +306,13 @@ nav a:hover {
 #agenda-icon {
     margin: 0 auto;
 }
+
 #AGENDA img {
     width: 120%;
+}
+
+#AGENDA #one-two {
+    margin-bottom: 3em;
 }
 /********************ABOUT SECTION***********************************************/
 
@@ -315,6 +320,7 @@ nav a:hover {
     background: url('/static/img/whole-team.jpg') no-repeat top center;
     background-size: 180%;
     color: white;
+    opacity: 0.9;
 }
 #ABOUT .in-parallax-text {
     position: relative;
@@ -329,6 +335,7 @@ nav a:hover {
 #TICKETS {
     background: url('/static/img/cu.jpg') no-repeat top center;
     background-size: cover;
+    opacity: 0.9;
     color: white;
 }
 #TICKETS .in-parallax-text {
@@ -342,7 +349,7 @@ nav a:hover {
 /**************************DIRECTION*************************************/
 
 #DIRECTIONS {
-    margin: 10em 0em;
+    margin: 15em 0em;
 }
 #DIRECTIOBS h1 {
     padding-top: 0;
@@ -378,15 +385,13 @@ address {
 /************************SPONSORSHIP***********************************/
 
 #SPONSORSHIP {
-    margin: 12em;
-    0em;
-    10em;
-    0em;
+    margin: 20em 0;
 }
+
 #SPONSORSHIP .fa {
     color: black;
 }
-#SPONSORSHIP h1 {
+#SPONSORSHIP h2 {
     padding-bottom: 3em;
 }
 /***********************PRE_FOOTER************************************/

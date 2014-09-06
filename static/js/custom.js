@@ -102,7 +102,7 @@ animateWhenReachIn('#DIRECTIONS', 'animate fadeIn', '2s', 200, 0);
 animateWhenReachIn('#map-canvas', 'animate fadeInRight', '2s', 200, 0);
 animateWhenReachIn('#address-info', 'animate fadeInLeft', '2s', 200, 0);
 animateWhenReachIn('#ABOUT .in-parallax-text', 'animate fadeInRight', '1s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP h1', 'animate zoomIn', '2s', 0, 0);
+animateWhenReachIn('#SPONSORSHIP h2', 'animate zoomIn', '2s', 0, 0);
 animateWhenReachIn('#SPONSORSHIP .fa-google', 'animate zoomIn', '0.5s', 0, 0);
 animateWhenReachIn('#SPONSORSHIP .fa-linux', 'animate zoomIn', '0.5s', 0, 0);
 animateWhenReachIn('#SPONSORSHIP .fa-apple', 'animate zoomIn', '0.5s', 0, 0);
