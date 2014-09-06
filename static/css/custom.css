@@ -63,6 +63,11 @@ html {
 #landing-page-container {
     padding: 20% 15%;
 }
+
+#landing-page-container button{
+    margin: 2em;
+}
+
 #landing-page h1 {
     font-size: 5em;
     position: relative;

@@ -28,8 +28,6 @@ $(document).ready(function () {
         map: map,
         title: 'IAB 417'
     });
-
-
     
 
     //agenda tabs and highlighted speakers tabs
@@ -122,9 +120,6 @@ animateWhenReachIn('footer', 'animate fadeInUp', '1s', 0, 0);
 
 
 //  function definitions start here 
-
-
-
 function animateWhenReachIn(selector, effect, duration, offset, delay) {
     $(document).ready(function () {
         $(selector).css('visibility', 'hidden');
