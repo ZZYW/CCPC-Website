@@ -6,7 +6,9 @@ body {
 	height: 100%;
 	line-height: normal;
 	background-color: white !important;
+	font-size: 12px;
 }
+
 .section-name {
 	font-family: 'Averia Libre';
 	font-weight: 300;
@@ -232,6 +234,7 @@ nav a:hover {
 #PANELS img {
 	margin: auto;
 }
+
 #PANELS .section-name {
 	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
 	background-size: 60%;
@@ -521,6 +524,8 @@ footer div {
 /************************ mobile layout ****************************/
 
 @media (max-width: 768px) {
+
+	
 	#landing-page-container {
 		padding: 10vh 15%;
 	}

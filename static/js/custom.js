@@ -1,12 +1,16 @@
+var viewportWidth, viewportHeight;
 // calls functions when html is setup.
 $(document).ready(function () {
 	//videoembeder
 	vimeoEmbedder();
 
 
+	viewportHeight = $(window).height();
+	viewportWidth = $(window).width();
 
-
-	var s = skrollr.init();
+	if (viewportWidth > 992) {
+		var s = skrollr.init();
+	}
 	//enable tooltip
 	$(".team-member").tooltip();
 	//	load google map API
@@ -42,11 +46,7 @@ $(document).ready(function () {
 
 
 
-
-	var viewport_height = $(window).height();
-
-
-	$('#landing-page').css('height', viewport_height);
+	$('#landing-page').css('height', viewportHeight);
 
 
 	//language switch buttons
@@ -83,8 +83,11 @@ $(document).ready(function () {
 ////////////////////////////////////////////////event listeners start here
 
 $(window).resize(function () {
-	var viewport_height = $(window).height();
-	$('#landing-page').css('height', viewport_height);
+	viewportHeight = $(window).height();
+	viewportWidth = $(window).width();
+	$('#landing-page').css('height', viewportHeight);
+
+
 });
 
 
@@ -106,13 +109,8 @@ animateWhenReachIn('#DIRECTIONS', 'animate fadeIn', '2s', 200, 0);
 animateWhenReachIn('#map-canvas', 'animate fadeInRight', '2s', 200, 0);
 animateWhenReachIn('#address-info', 'animate fadeInLeft', '2s', 200, 0);
 animateWhenReachIn('#ABOUT .in-parallax-text', 'animate fadeInRight', '1s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP h2', 'animate zoomIn', '2s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP .fa-google', 'animate zoomIn', '0.5s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP .fa-linux', 'animate zoomIn', '0.5s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP .fa-apple', 'animate zoomIn', '0.5s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP .fa-ge', 'animate zoomIn', '0.5s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP .fa-dropbox', 'animate zoomIn', '0.5s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP .fa-windows', 'animate zoomIn', '0.5s', 0, 0);
+animateWhenReachIn('#SPONSORSHIP h3', 'animate zoomIn', '2s', 0, 0);
+animateWhenReachIn('#SPONSORSHIP img', 'animate zoomIn', '0.5s', 0, 0);
 animateWhenReachIn('#pre-footer', 'animate fadeInUp', '1s', 0, 0);
 animateWhenReachIn('footer', 'animate fadeInUp', '1s', 0, 0);
 
@@ -170,4 +168,3 @@ vimeoEmbedder = function () {
 	else $("html").removeClass("hideScroll");
 
 }
-
