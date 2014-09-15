@@ -74,8 +74,9 @@ html {
 /************************LANDING PAGE****************************/
 
 #landing-page {
-	background: url('/static/img/xKNCBEgSTUGbgBoYgJ90_Skyline.jpg') no-repeat center center;
-	background-size: cover;
+	background: rgba(0,0,0,0);
+/*	background: url('/static/img/xKNCBEgSTUGbgBoYgJ90_Skyline.jpg') no-repeat center center;*/
+/*	background-size: cover;*/
 	position: relative;
 	color: #fff;
 	text-transform: uppercase;
