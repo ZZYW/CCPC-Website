@@ -526,7 +526,6 @@ footer div {
 		background-size: cover;
 		font-size: 80%;
 	}
-	
 	#ABOUTPAGE span {
 		width: 16.66%;
 	}
@@ -534,6 +533,13 @@ footer div {
 /************************ mobile layout ****************************/
 
 @media (max-width: 768px) {
+	p {
+		text-align: left;
+	}
+	.section-name {
+		/*	font-family: 'Averia Libre';*/
+		font-weight: 300;
+	}
 	#landing-page {
 		background: url('/static/img/mobilelandingpagebackgroundpic.jpg') no-repeat center center;
 		background-size: cover;
