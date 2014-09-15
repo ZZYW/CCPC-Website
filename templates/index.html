@@ -15,8 +15,8 @@ zhenzhenqi@gmail.com
 	<link href="/static/css/font-awesome.min.css" rel="stylesheet">
 	<link href='http://fonts.googleapis.com/css?family=Karma:400,500,300,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Averia+Libre:700,400,300' rel='stylesheet' type='text/css'>
-    
+	<link href='http://fonts.googleapis.com/css?family=Averia+Libre:700,400,300' rel='stylesheet' type='text/css'>
+	<link href="/static/css/vimeoEmbedder.css" rel="stylesheet">
 	<link href="/static/css/animate.css" rel="stylesheet">
 	<link href="/static/css/custom.css" rel="stylesheet">
 
@@ -28,6 +28,7 @@ zhenzhenqi@gmail.com
 	<script src="/static/js/p5.min.js"></script>
 	<script src="/static/js/jquery.scrollTo.min.js"></script>
 	<script src="/static/js/skrollr.min.js"></script>
+	<script src="/static/js/jquery.vimeoEmbedder.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB0sBRkVtcxSzyYkyYqW9yrTv34kl5j0kM">
 	</script>
 	<script src="/static/js/custom.js"></script>
@@ -41,8 +42,8 @@ zhenzhenqi@gmail.com
 			<!--VIDEO BACKGROUND-->
 
 
-<!--			<video autoplay loop poster="/static/img/nyc.jpg" id="bgvid">-->
-            <video autoplay loop id="bgvid">
+			<!--			<video autoplay loop poster="/static/img/nyc.jpg" id="bgvid">-->
+			<video autoplay loop id="bgvid">
 				<source src="/static/img/bg-video.mp4" type="video/mp4">
 			</video>
 
@@ -53,20 +54,24 @@ zhenzhenqi@gmail.com
 
 
 			<div id="landing-page-container">
-				<h2>2014 ccpc • organized by cucssa</h2>
+				<h2>2014 Columbia China Prospects Conference<br>PRESENTED BY COLUMBIA UNIVERSITY CHINESE STUDENTS AND SCHOLARS ASSOCIATION</h2>
 				<h1>china's dialogue with<br> the world</h1>
 				<h4>oct 4th | 5th 2014 </h4>
-                <h4> columibia university</h4>
-                <h4> new york city</h4>
-				<a href="https://web.ovationtix.com/trs/pe/9730935">
+				<h4>columibia university</h4>
+				<h4>new york city</h4>
+				
+				
+				<a href="http://www.cucssa.org/index.php?m=event&a=detail&id=11" target="_blank">
 					<button class="round-button" role="button">Get Ticket Now</button>
 				</a>
-                
+				
+				<h4><a href="/#THEME"><i class="fa fa-arrow-circle-down"></i></a></h4>
+
 			</div>
 		</div>
 
-        
-        
+
+
 
 		<!-- row 1: navigation -->
 
@@ -108,7 +113,7 @@ zhenzhenqi@gmail.com
 				</div>
 			</div>
 		</nav>
-        
+
 
 
 		<!-- row 2: theme -->
@@ -117,70 +122,52 @@ zhenzhenqi@gmail.com
 			<!-- section header image and section intro -->
 
 			<h1 class="section-name text-center">THEME</h1>
-            
-            <!-- chinese english switch button ------------------------------------->
-            <div class="row" id="chinese-english">
-                <div class="col-lg-1 col-lg-offset-10 col-xs-2 col-xs-offset-10">
-                    <img id="english-button" src="/static/img/ying.png" alt="" class="img-responsive">
-                    <img id="chinese-button" src="/static/img/zhong.png" alt="" class="img-responsive">
-                </div>
-            </div>
-            <!-- chinese english switch button ends here --------------------------->
-            
+
+			<!-- chinese english switch button ------------------------------------->
+			<div class="row" id="chinese-english">
+				<div class="col-lg-1 col-lg-offset-10 col-xs-2 col-xs-offset-10">
+					<img id="english-button" src="/static/img/ying.png" alt="" class="img-responsive">
+					<img id="chinese-button" src="/static/img/zhong.png" alt="" class="img-responsive">
+				</div>
+			</div>
+			<!-- chinese english switch button ends here --------------------------->
+
 			<div class="container-fluid section-brief">
 				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 					<p class="english">In recent years, the communication between China and the rest of the world has achieved an unprecedented horizon, both in width and depth. During this course, China has been exploring opportunities from all over the world; at the same time, China has also been reciprocating the world with its own values and opportunities. However, inevitably, it has been full of doubts and critiques thus far. In light of such challenges, it is now vitally important to have a heart-to-heart dialogue between China and the world — How should China and the world listen to each other to achieve “win-win”? To answer this question, we hereby proudly announce the theme of 2014 Columbia China Prospects Conference (CCPC) — China’s Dialogue with the World. Refining key elements from the previous four conferences, 2014 CCPC aims to further shed light on the opportunities and challenges China may confront when it balances between its own national transformation and the international standards.</p>
 
 					<p class="chinese">近年来，中国与世界各国交流的广度和深度有了大幅度提升。“让中国梦携手世界梦”已经不仅仅是一个愿景，而是一个正在被践行的诺言。交流之中，中国发现了来自于全世界的机遇，也为全世界创造了源自于中国的价值。然而，在此过程之中，中国也不可避免地遭遇了质疑、碰撞与挑战。此时此刻，开展一场中国与全球的深度对话，显得尤为重要 —— 如何让世界理解中国寻求共赢的声音？中国特色是否是向多元的世界体系提出了另一种可能性？有鉴于此，本届<strong>“中国展望论坛”</strong>以<strong>“聆听中国·对话全球”</strong>为主题，将着眼于发掘转型中的中国在适应并融入当今国际体系的新模式过程中所蕴含的机遇与挑战。</p>
-				<br>
+					<br>
+
 					<div class="video-wrapper">
-					
-					<iframe src="//player.vimeo.com/video/104462702?byline=0&amp;portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-						
+						<iframe src="//player.vimeo.com/video/104462702?byline=0&amp;portrait=0" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
 					</div>
+
 				</div>
 			</div>
 			<div class="container-fluid text-center section-content">
 				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
-					<h5>HIGHTED SPEAKERS</h5>
+					<h5>KEYNOTE SPEAKERS</h5>
 					<!-- Nav tabs -->
 					<div class="row">
 						<div id="agenda-icon">
 
 							<ul class="row myTab" role="tablist">
 
-								<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
+								<li class="active col-lg-3 col-lg-offset-3 col-md-2 col-md-offset-4 col-sm-2 col-sm-offset-4 col-xs-6">
 									<a href="#speaker1" role="tab">
-										<img src="/static/img/speakers/KeynoteSpeaker/edmund_phelps.jpg" alt="" class="img-responsive">
+										<img src="/static/img/speakers/KeynoteSpeaker/edmund_phelps.jpg" alt="" class="img-responsive img-rounded">
 									</a>
 								</li>
 
-								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+								<li class="col-lg-3 col-md-2 col-sm-2 col-xs-6">
 									<a href="#speaker2" role="tab">
-										<img src="/static/img/speakers/KeynoteSpeaker/yangxuelan.jpg" alt="" class="img-responsive">
+										<img src="/static/img/speakers/KeynoteSpeaker/yangxuelan.jpg" alt="" class="img-responsive img-rounded">
 									</a>
 								</li>
-								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-									<a href="#speaker3" role="tab">
-										<img src="/static/img/speakers/KeynoteSpeaker/yangxuelan.jpg" alt="" class="img-responsive">
-									</a>
-								</li>
-								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-									<a href="#speaker4" role="tab">
-										<img src="/static/img/speakers/KeynoteSpeaker/yangxuelan.jpg" alt="" class="img-responsive">
-									</a>
-								</li>
-								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-									<a href="#speaker5" role="tab">
-										<img src="/static/img/speakers/KeynoteSpeaker/yangxuelan.jpg" alt="" class="img-responsive">
-									</a>
-								</li>
-								<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-									<a href="#speaker6" role="tab">
-										<img src="/static/img/speakers/KeynoteSpeaker/yangxuelan.jpg" alt="" class="img-responsive">
-									</a>
-								</li>
+
 							</ul>
 
 						</div>
@@ -190,29 +177,19 @@ zhenzhenqi@gmail.com
 					<!--tab content starts here--->
 					<div class="tab-content">
 						<div class="tab-pane fade in active" id="speaker1">
-							<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+							<h4>Edmund Phelps</h4>
+							<h6>9:15AM - 9:45AM OCTOBER 4TH, IAB 417</h6>
+							<p>Mr. Edmund Phelps is the 2006 Nobel Laureate in Economics, the Director of Columbia’s Center on Capitalism and Society, and the McVickar Professor of Political Economy at Columbia University. Also Prof. Phelps is a Fellow of the National Academy of Science and a Distinguished Fellow of the American Economic Association, and in 2001 a Festschrift conference was held in his honor. In 2008, he was named Chevalier de la Légion d’Honneur and awarded the Premio Pico della Mirandola and the Kiel Global Economy Prize. The same year the UBA Law School established the Catedra Phelps and the Phelps Medal for Innovation. In 2010, he was appointed Dean of New Huadu Business School at Minjiang University in Fuzhou. In 2011, Professor Phelps received the Louise Blouin Creative Leadership Award and was named a Full Foreign Member of the Russian Academy of Sciences. In 2012, Professor Phelps was elected an Honorary Patron of the University Philosophical Society of Trinity College and was awarded the Mendeleev Medal for Achievement in the Sciences and the President’s Medal of the National University of Ireland, Galway
 							</p>
 						</div>
 						<div class="tab-pane fade" id="speaker2">
-							<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+
+							<h4>Shirley Young</h4>
+							<h6>8:30AM - 9:005AM OCTOBER 5TH, ROONE ARLEDGE AUDITORIUM</h6>
+							<p>Shirley Young is President of Shirley Young Associates, LLC, a business advisory company and serves as senior advisor to General Motors, China. From 1988 until December 31, 1999, she served as Corporate Vice President of General Motors Corp. As Vice President for China Strategic Development and Asia Pacific Counselor, she had key involvement with General Motors' two billion dollar investment in China's auto industry particularly with Shanghai GM building Buick cars. Subsequently her responsibilities included operational responsibility for marketing, distribution and sales in China. Prior to this, she served as Vice President for Consumer Market Development at General Motors' headquarters, working across the various marketing divisions of the company. Also, Ms. Young is Governor and ex-Chairman of the Committee of 100, a national Chinese-American leadership resource, and serves as chairman of the US-China Cultural Institute, formerly Committee of 100 Cultural Institute.
 							</p>
 						</div>
-						<div class="tab-pane fade" id="speaker3">
-							<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-							</p>
-						</div>
-						<div class="tab-pane fade" id="speaker4">
-							<p>Speaker Four is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-							</p>
-						</div>
-						<div class="tab-pane fade" id="speaker5">
-							<p>Speaker Five is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-							</p>
-						</div>
-						<div class="tab-pane fade" id="speaker6">
-							<p>Speaker Six is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-							</p>
-						</div>
+
 					</div>
 					<!--tab content ends here-->
 				</div>
@@ -237,20 +214,20 @@ zhenzhenqi@gmail.com
 				<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 
 					<ul class="cali-list nav nav-pills nav-justified uppercase myTab" role="tablist">
-				        <li  class="active">
+						<li>
 							<a href="#technology" id="ke" role="tab">
 								<img src="/static/img/ke-green.png" width="80%" alt="" class="img-responsive">
 								<h6>Technology</h6>
 							</a>
 						</li>
-                        <li>
+						<li>
 							<a href="#education" id="jiao" role="tab">
 								<img src="/static/img/jiao-green.png" width="95%" alt="" class="img-responsive">
 								<h6>Education</h6>
 							</a>
 
 						</li>
-                        <li>
+						<li  class="active">
 							<a href="#investment" id="rong" role="tab">
 								<img src="/static/img/rong-green.png" width="98%" alt="" class="img-responsive">
 								<h6>Economy</h6>
@@ -262,7 +239,7 @@ zhenzhenqi@gmail.com
 								<h6>Enterprise</h6>
 							</a>
 						</li>
-                        <li>
+						<li>
 							<a href="#literature" id="wen" role="tab">
 								<img src="/static/img/wen-green.png" width="90%" alt="" class="img-responsive">
 								<h6>Literature</h6>
@@ -282,23 +259,23 @@ zhenzhenqi@gmail.com
 
 			<!--tab content --->
 			<div class="row tab-content">
-                <!----------technology panel info starts --------------------------------------------------------------------->
+				<!----------technology panel info starts --------------------------------------------------------------------->
 				<div class="tab-pane fade in panel-content" id="technology">
-				
-                    <div class="row text-center section-content" id="panel-top">
+
+					<div class="row text-center section-content" id="panel-top">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<h4>Entrepreneurship in China: Integrating Technology and Market</h4>
 							<div class="row">
 								<p class="english">With the steady growth of the economy and the extended market potential in China, high-tech start-ups have sprung up everywhere. Meanwhile, the investment market is stronger than ever, and more and more people are devoting themselves to the start-up market. However, there are several problems that we should pay attention to, such as- how a start-up company can go through crisis and be stronger; how to introduce overseas high-tech business into the Chinese market; how to import the innovative business model to develop local firms, and how private capital can be matchedwith better start-up teams. The topic of this year forum is China’s Dialogue with the World and we would love to invite entrepreneurs and investors from different culture backgrounds to get together and express their own thoughts about issues above.
-                                </p>
-                                <p class="chinese">纵观近半个世纪,不仅是科技日新月异飞速发展的时代,更是铸就了背后一个又一个创业投资奇迹的时代。越来越多的风险投资和天使投资把高新技术雏形公司孕育成了飞速生长的旗帜型企业。其中,以海外归国人员为代表的创业成功人士比比皆是,堪称中流砥柱。近几年,以互联网,新能源与材料和生物医疗等方面为代表的高新技术产业一直受到风险投资的青睐。创业团队如何突破重围,发展成为参天大树,投资方面会在乎创业团队的哪些素质?近年来,随着中国经济实力的稳步增长,市场潜力也进一步被挖掘,越来越多的人积极投身于创业投资的热潮中,期待成为新时代中国商业发展的领跑者.在众多创业项目中,以互联网,新能源与材料和生物医疗等方面为代表的高新技术产业一直备受瞩目,而随着国际化进程的加速,更多的创业者和投资人把目光投向技术领先、商业思维新颖的欧美国家,谋求科技、模式、市场三位一体的完美融合。在此过程中,有很多问题值得我们思考,例如:海外高新技术如何与中国市场相结合,成功实现本土化?国内本土企业应如何借助海外高新技术及新颖的商业模式,实现二次发展?国内民间资本如何与海外高新技术创业项目进行对接,看好或看衰的标准是什么?本届哥大中国展望论坛以“聆听中国,对话全球”为主题,我们希望能够在创业投资板块中实现来自不同领域、不同国家的创业者及投资人之间的深入交流,对上述问题做出简要而明确的前瞻性解答。
-                                </p>
+								</p>
+								<p class="chinese">纵观近半个世纪,不仅是科技日新月异飞速发展的时代,更是铸就了背后一个又一个创业投资奇迹的时代。越来越多的风险投资和天使投资把高新技术雏形公司孕育成了飞速生长的旗帜型企业。其中,以海外归国人员为代表的创业成功人士比比皆是,堪称中流砥柱。近几年,以互联网,新能源与材料和生物医疗等方面为代表的高新技术产业一直受到风险投资的青睐。创业团队如何突破重围,发展成为参天大树,投资方面会在乎创业团队的哪些素质?近年来,随着中国经济实力的稳步增长,市场潜力也进一步被挖掘,越来越多的人积极投身于创业投资的热潮中,期待成为新时代中国商业发展的领跑者.在众多创业项目中,以互联网,新能源与材料和生物医疗等方面为代表的高新技术产业一直备受瞩目,而随着国际化进程的加速,更多的创业者和投资人把目光投向技术领先、商业思维新颖的欧美国家,谋求科技、模式、市场三位一体的完美融合。在此过程中,有很多问题值得我们思考,例如:海外高新技术如何与中国市场相结合,成功实现本土化?国内本土企业应如何借助海外高新技术及新颖的商业模式,实现二次发展?国内民间资本如何与海外高新技术创业项目进行对接,看好或看衰的标准是什么?本届哥大中国展望论坛以“聆听中国,对话全球”为主题,我们希望能够在创业投资板块中实现来自不同领域、不同国家的创业者及投资人之间的深入交流,对上述问题做出简要而明确的前瞻性解答。
+								</p>
 							</div>
 						</div>
 					</div>
-                    
-                    <div class="row text-center section-content" id="panel-bottom">
+
+					<div class="row text-center section-content" id="panel-bottom">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<!-- guest speaker tabs -->
@@ -308,19 +285,15 @@ zhenzhenqi@gmail.com
 									<ul class=" row text-center myTab" role="tablist">
 										<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#entrepreneurship1" role="tab">
-												<img src="/static/img/speakers/Entrepreneurship/dinghe_hu.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/entrepreneurship_and_investment/louisChuangLi/louisLi.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#entrepreneurship2" role="tab">
-												<img src="/static/img/speakers/Entrepreneurship/hejun_li.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/entrepreneurship_and_investment/xiangshuangShan/xiangshuangShan.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
-										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-											<a href="#entrepreneurship3" role="tab">
-												<img src="/static/img/speakers/Entrepreneurship/xiangshuang_shan.jpg" alt="" class="img-responsive">
-											</a>
-										</li>
+
 									</ul>
 
 								</div>
@@ -330,15 +303,15 @@ zhenzhenqi@gmail.com
 							<!--tab content starts here--->
 							<div class="tab-content">
 								<div class="tab-pane fade in active  " id="entrepreneurship1">
-									<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
+									<h4>Louis Li</h4>
+									<h6>Founder and CEO of Pacific Founder and PacificPay</h6>
+									<p>Mr. Louis Li is the founder and CEO of Pacific Founder and Pacific Pay. He is also a professional manager born in the age of 85s. Meanwhile, he is the Vice President of Chinese largest on-line personal traveling community—Breadtrip. From 2011 to 2013, he was the General Strategic Director of Didi Taxi, Chief Operating Officer of iBoxPay, Chief Inspector of Operations of Groupon in China and Hong Kong, which is the youngest high-level manager for Groupon all over the world.</p>
 								</div>
 								<div class="tab-pane fade  " id="entrepreneurship2">
-									<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
-								</div>
-								<div class="tab-pane fade  " id="entrepreneurship3">
-									<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Xiangshuang SHAN</h4>
+									<h6>CEO of China Science & Merchants Venture Capita
+</h6>
+									<p>Mr. Xiangshuang Shan is the Founder, Chief Executive Officer, President, and Chairman of China Science and Merchants Capital Management Co., Ltd. He has also worked at China Communications Import And Export Corp. Mr. Shan has personally invested in over 40 companies in China and has a proven track record of creating value for LPs. He is also the Chairman of GSM Capital International. Mr. Shan is widely regarded as a pioneer of venture capitalists in China. Prior to founding GSM, he has worked at the State Education Commission of China, the Ministry of Communication of China, and as a Senior Banker at China Merchants Securities. He has received numerous awards and honors for his contribution to China's venture capital and private equity industries. Mr. Shan was voted by major business journals and associations as China's Top 10 Venture Entrepreneur, China's New Economy Annual Figure, China's Outstanding Venture Capitalist, China Top 10 Most Influential Venture Capitalist (Rank #1), and China Top 10 Entrepreneurial Leader.
 									</p>
 								</div>
 							</div>
@@ -347,26 +320,26 @@ zhenzhenqi@gmail.com
 
 					</div>
 					<!--tab content bar ends here-->
-                    
+
 				</div>
 				<!----------technology panel info ends------------------------------------------------------------------------>
-                <!-----------education panel starts -------------------------------------------------------------------------->
-                <div class="tab-pane fade in panel-content" id="education">
-	
-                    <div class="row text-center section-content" id="panel-top">
+				<!-----------education panel starts -------------------------------------------------------------------------->
+				<div class="tab-pane fade in panel-content" id="education">
+
+					<div class="row text-center section-content" id="panel-top">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<h4>The Future Trajectory of China’s Higher Education: Liberal Arts Education vs. Specialized Education</h4>
 							<div class="row">
 								<p class="english">In her book Not For Profit: Why Democracy Needs the Humanities (2010), Martha Nussbaum argues that the tough choice between specialized education and liberal arts education is the call to arms for all avid stakeholders of a global education community. Indeed, the theme of this year’s CCPC Education Panel is pertinent not only to China, but also to the world at large. It will provide an exceptional platform for the speakers to voice their opinions, shed light on current and future trends, and inspire potential cross-border collaborations in the field of higher education. Needless to say, it will be an intellectual feast for the audience, whether they are CU or non-CU students, engineering undergraduates or J.D. candidates. China, the most populous country in the world, has been growing at an unprecedented speed for the past decades. Education is undoubtedly one of the greatest driving forces behind the engine of the Chinese economy. Specialized Education, focused on particular subjects and training to prepare students for the workplace, has been credited for its instrumental role in China's rise by some pundits. Yet others argue that if China continues en route with such an education system, it would be producing generations of mercenary, docile, and technically trained "machines", rather than versatile citizens who can introspect, think critically, and more importantly, innovate. Liberal Arts Education, as they claim, would help nurture creativity, civic participation, and democracy among its citizens. With inspiring intellectuals and prominent leaders, this two-hour panel seeks to discuss questions beyond the simple equation about economic growth, and to conceptualize the key elements of higher education— whether specialized or liberal arts— that would sustain the “Great China Dream.”
-                                </p>
-								<p class="chinese"> 随着中国经济的迅猛发展，在过去的十年间，高等院校数量增加了一倍，达到2409所；与此同时，毕业生人数也增加了四倍，预计到2020年将有1.95亿大专院校毕业生,即中国总人口的十分之一。然而，与之相对应的是与日俱增的出国留学人数。截止2013年，中国留学生总人数已达305.86万人；仅2013年一年中国就有41.29万人出国留学。海外高校先进的知识技术、多样的专业选择、多元的文化交流以及其国际化的教学视野成为中国学生渴望留学的主要因素。鉴于此，中国应如何在增加高校数量的同时也提升其教育质量？高校应如何培养出一个鼓励学生创造与创新的教育环境？而中国毕业生又如何成为国际公司冀求的人才资源，拥有国际竞争力？纵观全球教育体系，通才教育(General Education)和专才教育(Specialized Education)为两大主流模式。什么样的教育才能更好的让中国学生适应瞬息万变的现今社会？在教育资源紧缺的中国，高等教育在未来应以何种模式发展？是培养“能领兵者”，独当一面的将才？还是培养“能将将者”，统筹全局的帅才？本次教育板块，我们将邀请教育界及相关业界的领军人物，以其独特的视角聚焦中国高等教育，比较通才和专才这两大教育模式，探讨如何取海外高校之长，补中国教育之短。因地制宜，为下一个“中国梦”规划蓝图。
-                                </p>
+								</p>
+								<p class="chinese">随着中国经济的迅猛发展，在过去的十年间，高等院校数量增加了一倍，达到2409所；与此同时，毕业生人数也增加了四倍，预计到2020年将有1.95亿大专院校毕业生,即中国总人口的十分之一。然而，与之相对应的是与日俱增的出国留学人数。截止2013年，中国留学生总人数已达305.86万人；仅2013年一年中国就有41.29万人出国留学。海外高校先进的知识技术、多样的专业选择、多元的文化交流以及其国际化的教学视野成为中国学生渴望留学的主要因素。鉴于此，中国应如何在增加高校数量的同时也提升其教育质量？高校应如何培养出一个鼓励学生创造与创新的教育环境？而中国毕业生又如何成为国际公司冀求的人才资源，拥有国际竞争力？纵观全球教育体系，通才教育(General Education)和专才教育(Specialized Education)为两大主流模式。什么样的教育才能更好的让中国学生适应瞬息万变的现今社会？在教育资源紧缺的中国，高等教育在未来应以何种模式发展？是培养“能领兵者”，独当一面的将才？还是培养“能将将者”，统筹全局的帅才？本次教育板块，我们将邀请教育界及相关业界的领军人物，以其独特的视角聚焦中国高等教育，比较通才和专才这两大教育模式，探讨如何取海外高校之长，补中国教育之短。因地制宜，为下一个“中国梦”规划蓝图。
+								</p>
 							</div>
 						</div>
 					</div>
-                    
-                    <div class="row text-center section-content" id="panel-bottom">
+
+					<div class="row text-center section-content" id="panel-bottom">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<!-- guest speaker tabs -->
@@ -376,22 +349,27 @@ zhenzhenqi@gmail.com
 									<ul class=" row text-center myTab" role="tablist">
 										<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#education1" role="tab">
-												<img src="/static/img/speakers/Education/dawson_steven_lin.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/education/kate_wang/kate%20wang.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#education2" role="tab">
-												<img src="/static/img/speakers/Education/kenn_ross.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/education/kenn_ross/kenn%20ross.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#education3" role="tab">
-												<img src="/static/img/speakers/Education/richard_billows.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/education/steven_lin/dawson%20steven%20lin.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#education4" role="tab">
-												<img src="/static/img/speakers/education/xiaoyang_wang.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/education/richard_billows/richard%20billows.jpg" alt="" class="img-responsive img-rounded">
+											</a>
+										</li>
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#education5" role="tab">
+												<img src="/static/img/speakers/education/xiaoyang_wang/wang%20xiaoyang.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 									</ul>
@@ -403,20 +381,37 @@ zhenzhenqi@gmail.com
 							<!--tab content starts here--->
 							<div class="tab-content">
 								<div class="tab-pane fade in active  " id="education1">
-									<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
+									<h4>Kate Wang</h4>
+									<h6>Vice President of MyCOS</h6>
+									<p>Kate Wang is Vice President of MyCOS responsible for international business development. At MyCOS, Kate is leading the development of business partnerships with international consulting firms to introduce world-class strategic higher education consulting services to China, and also collaborating with these firms and international research organizations to bring MyCOS' deep survey expertise abroad to foreign universities and institutions. Her work in the nonprofit and higher education sectors has spanned Paris, Beijing, Chicago, Boston and New York.
+										<br>Prior to joining MyCOS, Kate was at CCS, an international fundraising consulting firm, where she worked with clients in higher education and healthcare, and contributed to one of the firm's most significant projects: fundraising $100 million in under six months for Schwarzman Scholars, an elite academic program at Tsinghua University seed-funded by the Co-Founder, Chairman, and CEO of the Blackstone Group, Stephen A. Schwarzman. Kate managed operations for an innovative microfinance not-for-profit with programs in Mexico and Tanzania, and worked at the Harvard China Fund and at the Clinton Foundation in China. She holds a bachelors degree in Psychology and French from Harvard College, a master’s degree in education policy from the Harvard Graduate School of Education and speaks English, French, and Mandarin, and Spanish. She has also been a board member of the Harvard Clubs of Paris and Chicago.</p>
 								</div>
 								<div class="tab-pane fade  " id="education2">
-									<p>Kenn Ross is widely recognized in China for his involvement in international education and for his passionate desire to develop future generations of leaders and innovators with a global mindset. Kenn is the Managing Director for Asia at the Minerva Project, a reimagined university experience for the world's brightest and most motivated students.
-                                    </p>
+									<h4>Kenn Ross</h4>
+									<h6>Managing Director (Asia) of Minerva Schools</h6>
+									<p>Kenn Ross is widely recognized in China for his involvement in international education and for his passionate desire to develop future generations of leaders and innovators with a global mindset. 
+										<br>Kenn is the Managing Director for Asia at the Minerva Project, a reimagined university experience for the world's brightest and most motivated students. Seed-funded with USD 25 million by Silicon Valley VC Benchmark Capital (which also funded Instagram, Ebay and Twitter) and academically headed by the former Harvard Dean of Social Sciences, Minerva's unique educational model is touted as one of the boldest experiments in higher education today. 
+										<br>Kenn is also the founder of InLight Education (formerly HFR Veritas), a platform promoting non-cognitive skills-based education in China. In addition, Kenn also founded the International Foundation for the Promotion of Academic Soft Skills (IFPASS), a US-based nonprofit. He is a regular figure on Chinese TV (CCTV, China Business Network, ICS) and has been interviewed by dozens of Chinese online and print media (Sina, Youth Daily, Netease), where he speaks and provides commentary on issues involving international education. Prior to this, Kenn held executive positions in Fortune 30 and mid-sized multinational companies in the clean energy, technology, and consulting industries.
+										<br>Originally from the United States, Kenn has lived in China for 20 years, is fluent in Mandarin Chinese, and has traveled extensively to countries in the region. He holds degrees from Middlebury college, John Hopkins University, and Harvard Business School.</p>
 								</div>
 								<div class="tab-pane fade  " id="education3">
-									<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
+									<h4>Steve Lin</h4>
+									<h6>President & CEO, North Asia Operation of Laureate International Universities
+</h6>
+									<p>Steve Lin is the President and CEO – North Asia of Laureate International Universities. He currently serves on the Board of Xi’an Jiaotong-Liverpool University, Hunan International Economics University, and Les Roches Jin Jiang International Hotel Management College.
+										<br>Prior to joining Laureate in 2010, Steven served as the Chairman of Hands On Tokyo, a non-profit organization he co-founded to accelerate the growth of volunteerism in Japan. From 2002 to 2008, Steven was the President and CEO - Asia of Capmark Financial Group, Inc., a privately held real estate company which was formerly GMAC Commercial Holding Corp. and was renamed after being sold to a consortium of private equity investors including KKR and Goldman Sachs. Prior to Capmark, Steve was an Executive Director in the Merchant Banking Division at Goldman Sachs in Hong Kong and Tokyo from 1994 to 2002 where he invested in private companies as well as real estate and distressed debt. Prior to Goldman Sachs, Steven was a financial analyst at Morgan Stanley's Investment Banking Division in New York and Taiwan from 1991 to 1994.
+										<br>Steve graduated with a B.A. in Economics from Harvard College in 1991. He co-founded the Exeter Association of Japan and served on the Board of the General Alumni Association of Phillips Exeter Academy.</p>
 								</div>
 								<div class="tab-pane fade  " id="education4">
-									<p>Xiaoyang Wang, Director of Higher Educational Research Institute, Tsinghua University, Supervisor for Ph.D. Candidate, professor and Ph.D. in international and comparative higher education. Dr Xiaoyang Wang got his bachelor of science degree from Sun Yat-sen University in Guangzhou, in southern China, in 1984 and PhD degree from Beijing Normal University in 2001.
-                                    </p>
+									<p>INFORMATION MISSING</p>
+								</div>
+								<div class="tab-pane fade  " id="education5">
+									<h4>Xiaoyang Wang</h4>
+									<h6>Director of Higher Education Research Institute, Professor of International and Comparative Higher Education, Tsinghua University</h6>
+									<p>Xiaoyang Wang, Director of Higher Educational Research Institute, Tsinghua University, Supervisor for Ph.D. Candidate, professor and Ph.D. in international and comparative higher education.
+										<br>Dr Xiaoyang Wang got his bachelor of science degree from Sun Yat-sen University in Guangzhou, in southern China, in 1984 and PhD degree from Beijing Normal University in 2001.
+										<br>From January to December of 2004, he did research in University of Illinois, Champaign Urbana,USA as a visiting scholar. After came back to China in 2005, he was appointed as a Secondary Secretary in Educational Office, Chinese Embassy in U.S., stationed in Washing DC.
+										<br>He returned to Tsinghua in July, 2009 and was appointed as director of Higher Education Research Institute. He now supervised 6 master degree students and 6 doctor degree students. His major research focus now is higher education institutional culture, comparing U.S. and China higher education systems, international education, etc.</p>
 								</div>
 							</div>
 							<!--tab content ends here-->
@@ -424,12 +419,13 @@ zhenzhenqi@gmail.com
 
 					</div>
 					<!--tab content bar ends here-->
-                    
+
 				</div>
 				<!-----------education panel ends ---------------------------------------------------------------------------->
-                <!----------investment panel start---------------------------------------------------------------------------->
-				<div class="tab-pane fade in active panel-content" id="investment"><!-- investment section starts here-->
-	
+				<!----------investment panel start---------------------------------------------------------------------------->
+				<div class="tab-pane fade in active panel-content" id="investment">
+					<!-- investment section starts here-->
+
 					<div class="row text-center section-content" id="panel-top">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
@@ -452,34 +448,25 @@ zhenzhenqi@gmail.com
 									<ul class=" row text-center myTab" role="tablist">
 										<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#investment1" role="tab">
-												<img src="/static/img/speakers/economy/bin_xia.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/economy/chongen_bai/chongen%20bai1.jpg" alt="" class="img-responsive  img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#investment2" role="tab">
-												<img src="/static/img/speakers/economy/bruno_di_leo.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/economy/pan_dong/pan%20dong.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#investment3" role="tab">
-												<img src="/static/img/speakers/economy/chongen_bai.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/economy/qian_liu/icon%0D" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#investment4" role="tab">
-												<img src="/static/img/speakers/economy/danny_quah.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/economy/savio_tung/savio%20tung.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
-										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-											<a href="#investment5" role="tab">
-												<img src="/static/img/speakers/economy/pan_dong.jpg" alt="" class="img-responsive">
-											</a>
-										</li>
-                                        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-											<a href="#investment6" role="tab">
-												<img src="/static/img/speakers/economy/savio_tung.jpg" alt="" class="img-responsive">
-											</a>
-										</li>
+
 									</ul>
 
 								</div>
@@ -489,27 +476,35 @@ zhenzhenqi@gmail.com
 							<!--tab content starts here--->
 							<div class="tab-content">
 								<div class="tab-pane fade in active  " id="investment1">
-									<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
+									<h4>Chongen BAI</h4>
+									<h6>Mansfield Freeman Chair Professor in Economics of Tsinghua University
+</h6>
+									<p>Dr. Chong-En Bai, Associate dean of the School of Economics and Management; Director of National Institute for Fiscal Studies; Deputy Director of Institute of Low Carbon Economy; Department chair of the department of economics, and Mansfield Freeman Chair Professor of Economics in Tsinghua University.
+										<br>Dr. Bai received a bachelor degree in mathematics from University of Science and Technology, and studied in the Chinese Academy of Sciences. Later, he received a PhD in mathematics at University of California San Diego and a second PhD in economics at Harvard University.
+										<br>Dr. Bai started professorship at Boston College in 1992, and joined the University of Hong Kong in 1999. In 2002, Dr. Bai served as a special-term professor at Tsinghua University and has stayed at Tsinghua since. He also spent a year as visiting professor at Stanford.
+										<br>Dr. Bai has received numerous awards, and was selected Tencent’s Most Closely Watched Economist in China. He also served as a member of the executive committee of the International Economics Association. In addition, Dr. Bai has editorship and board membership at numerous prestigious academic journals.
+										<br>Dr. Bai participates extensively in public services and consultancies. He is a member of the 13th Five-Year Plan National Development Planning Expert Committee, and member of the National Committee of the Chinese People’s Political Consultative Conference. Dr. Bai also consulted for Asian Development Bank and the World Bank.</p>
 								</div>
 								<div class="tab-pane fade  " id="investment2">
-									<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Pan DONG</h4>
+									<h6>Professor and Director of the Real Estate Research Center of the Beijing Normal University</h6>
+									<p>Professor Dong Fan is the director of the Real Estate Research Center at Beijing Normal University. He is also a visiting professor at Peking University, Tsinghua University, Shanghai Jiaotong University, and other world-class universities.
+										<br>Promoted to be an associate professor directly after his master graduation at 26 years old, Professor Dong became the youngest associate professor of social sciences in China. At the age of 32, he became the youngest full professor in social sciences in the country.
+										<br>He has published more than 300 papers and review articles and more than 20 teaching materials. His suggestions for the development of China have been adopted by China’s leaders more than 60 times and have been used to facilitate regulations and policies more than 50 times.
+										<br>Dr. Dong has been an influential figure in the field of real estate, particularly with respect to the country’s decision-making and social public opinion. He has been rated as "China's controversial figure of the year", "China's real estate person of the year", "sensational figure of China’s internet real estate", etc. couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
 									</p>
 								</div>
 								<div class="tab-pane fade  " id="investment3">
-									<p>Professor Bai is the Mansfield Freeman Chair Professor in Economics, Associate Dean of the School of Economics and Management of Tsinghua University, and Chair of the Department of Economics. Professor Bai earned his Bachelor in Mathematics from University of Science and Technology of China in 1983 where he won Guo Mo-ruo Prize, which is awarded to the top graduate of each department in the university. Professor Bai received his Ph.D. in Economics from Harvard University in 1993, after earning a Ph.D. in Mathematics from University of California, San Diego in 1988.
-                                    </p>
+									<p>INFORMATION MISSING
+									</p>
 								</div>
 								<div class="tab-pane fade  " id="investment4">
-									<p>Speaker Four is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
-								</div>
-								<div class="tab-pane fade  " id="investment5">
-									<p>Speaker Five is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
-								</div>
-								<div class="tab-pane fade  " id="investment6">
-									<p>Speaker Six is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Savio TUNG</h4>
+									<h6>Founding Partners of Investcorp, CEO of Investcorp North America, Trustee Emeritus of Columbia University</h6>
+									<p>Mr. Savio Tung, founding partner and CEO of Investcorp North America, a company that provides investors with corporate, real estate, and hedge fund investment opportunities in North America and Western Europe.
+										<br>Mr. Tung received a bachelor of science degree in chemical engineering from Columbia University. He currently serves as a trustee emeritus of Columbia University and is on the board of the Columbia Investment Management Company.
+										<br>Mr. Tung started his career at Chase Manhattan Bank and worked at offices in New York, Bahrain, Abu Dhabi, and London. He was crucial in establishing the office in Bahrain and the marketing presence of the bank in the Gulf. After his tenure at Chase, he joined Investcorp in 1984, and has served as CEO of North America since 2011.
+										<br>In addition, Mr. Tung has served on a number of board positions, including Circle K, Saks Fifth Avenue, Simmons, Star Market, Committee of 100, and Tech Data Corporation. He is also a board member and treasurer of Aaron Diamond AIDS Research Center, an affiliate of Rockefeller University. Additionally, he is a member of the Council on Foreign Relations, and an independent non-executive director of Bank of China, Hong Kong.
 									</p>
 								</div>
 							</div>
@@ -521,23 +516,23 @@ zhenzhenqi@gmail.com
 
 				</div>
 				<!-----------investment panel ends --------------------------------------------------------------------------->
-                <!----------business panel info starts ----------------------------------------------------------------------->
+				<!----------business panel info starts ----------------------------------------------------------------------->
 				<div class="tab-pane fade in panel-content" id="business">
-				
-                    <div class="row text-center section-content" id="panel-top">
+
+					<div class="row text-center section-content" id="panel-top">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<h4>Chinese Enterprises: Its Path to Globalization</h4>
 							<div class="row">
 								<p class="english">Benefited from the rapid economic development and financial policies in China, Chinese enterprises have grown into giants in various industries during the past decades. The implication of the growth extends beyond trade and business, but also to China’s interaction with other major players around the world, among which U.S. is one of them. As one of the top universities and research institutions in the world, Columbia University should initiate a discussion around this topic and act as a thought leader in this field. Such discussion would not only promote the exchange of ideas between U.S. and China, but also benefit the students and scholars in the Columbia Community.
-                                </p>
-                                <p class="chinese">1978年，中国实行改革开放政策。经过三十年的经济腾飞，中国经济迈入了新的转型期。在经济下行期，市场对企业的约束增强，优胜劣汰作用强化，而企业各业务板块的矛盾也充分暴露。这为中国企业带来了调结构、转方式的重要挑战。三十年的发展，中国企业积累了强大的金融实力和丰富的管理经验，以及对海外市场和先进技术的迫切需求。在这样的大环境下，除了以政府为导向的国有企业外，民营企业越来越积极地参与“走出来”战略，并且完成了很多成功的并购案例。中国企业走向海外已然是一个大趋势。如今，全球经济步入后金融危机时代。 世界经济的转型、经济格局的重新洗牌和贸易保护主义的抬头，中国的“走出去”战略又该如何适应新的经济环境？当前中国企业进入国际市场的困境有哪些？在国际化的进程中，中国企业如何平衡国际化和本土化？而未来10年终海外并购的动力又何在？带着这些问题，让我们与中国企业家，金融专家和法律专家一起对话全球，聆听中国，描绘中国企业海外拓展的新时代蓝图。
-                                </p>
+								</p>
+								<p class="chinese">1978年，中国实行改革开放政策。经过三十年的经济腾飞，中国经济迈入了新的转型期。在经济下行期，市场对企业的约束增强，优胜劣汰作用强化，而企业各业务板块的矛盾也充分暴露。这为中国企业带来了调结构、转方式的重要挑战。三十年的发展，中国企业积累了强大的金融实力和丰富的管理经验，以及对海外市场和先进技术的迫切需求。在这样的大环境下，除了以政府为导向的国有企业外，民营企业越来越积极地参与“走出来”战略，并且完成了很多成功的并购案例。中国企业走向海外已然是一个大趋势。如今，全球经济步入后金融危机时代。 世界经济的转型、经济格局的重新洗牌和贸易保护主义的抬头，中国的“走出去”战略又该如何适应新的经济环境？当前中国企业进入国际市场的困境有哪些？在国际化的进程中，中国企业如何平衡国际化和本土化？而未来10年终海外并购的动力又何在？带着这些问题，让我们与中国企业家，金融专家和法律专家一起对话全球，聆听中国，描绘中国企业海外拓展的新时代蓝图。
+								</p>
 							</div>
 						</div>
 					</div>
-                    
-                    <div class="row text-center section-content" id="panel-bottom">
+
+					<div class="row text-center section-content" id="panel-bottom">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<!-- guest speaker tabs -->
@@ -547,34 +542,25 @@ zhenzhenqi@gmail.com
 									<ul class=" row text-center myTab" role="tablist">
 										<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#enterprises1" role="tab">
-												<img src="/static/img/speakers/Enterprises/hao_lu.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/enterprise/daniel_dusek/daniel%20dusek.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#enterprises2" role="tab">
-												<img src="/static/img/speakers/Enterprises/xin_he.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/enterprise/hao_lu/hao%20lu.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#enterprises3" role="tab">
-												<img src="/static/img/speakers/Enterprises/xin_he.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/enterprise/holly_hong_zheng/" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#enterprises4" role="tab">
-												<img src="/static/img/speakers/Enterprises/xin_he.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/enterprise/kathy_reiland/icon%0D" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
-										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-											<a href="#enterprises5" role="tab">
-												<img src="/static/img/speakers/Enterprises/xin_he.jpg" alt="" class="img-responsive">
-											</a>
-										</li>
-                                        <li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
-											<a href="#enterprises6" role="tab">
-												<img src="/static/img/speakers/Enterprises/xin_he.jpg" alt="" class="img-responsive">
-											</a>
-										</li>
+
 									</ul>
 
 								</div>
@@ -584,55 +570,54 @@ zhenzhenqi@gmail.com
 							<!--tab content starts here--->
 							<div class="tab-content">
 								<div class="tab-pane fade in active  " id="enterprises1">
-									<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Daniel Dusek</h4>
+									<h6>Partner of Skadden, Arps, Slate, Meagher & Flom LLP & Affiliates</h6>
+									<p>Daniel Dusek is a corporate partner concentrating in mergers and acquisitions, securities law and corporate matters. Mr. Dusek has represented public and private clients in a variety of corporate transactions, including acquisitions, dispositions, mergers, auctions, private equity and leveraged buyouts, going-private transactions, spin-offs, joint ventures and other corporate matters.
+										<br>Among the private equity sponsors that Mr. Dusek has advised are The Carlyle Group, Sequoia Capital, Actis Capital, The Capital Group Companies, Wasserstein & Co., First Reserve Corporation, Windward Capital Partners, Castle Harlan, Greenfield Partners and Quadrangle Group LLC.
 									</p>
 								</div>
 								<div class="tab-pane fade  " id="enterprises2">
-									<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Hao LU</h4>
+									<p>INFORMATION MISSING
 									</p>
 								</div>
 								<div class="tab-pane fade  " id="enterprises3">
-									<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<p>INFORMATION MISSING
 									</p>
 								</div>
 								<div class="tab-pane fade  " id="enterprises4">
-									<p>Speaker Four is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
+									<h4>Kathleen G. Reiland</h4>
+									<h6>Senior Managing Director of Evercore Capital Partners</h6>
+									<p>Ms. Kathleen G. Reiland is a Senior Managing Director, Chief Operating Officer, and Member of Investment Committee at Evercore Capital Partners. She joined the firm in February 1999. Previously, Ms. Reiland was a Principal and buy-side Equity Research Analyst with Sanford C. Bernstein & Co., Inc., where she was responsible for investments in both small capitalization and hedge fund portfolios. Ms. Reiland was a Consultant at Bain & Co., Inc. Before attending business school, she was an Associate at Bankers Trust Company in both New York and London. Ms. Reiland was involved in advising CBS Corporation on its merger with Viacom Inc. and Kmart Corporation on the investments by SOFTBANK Venture Capital and Yahoo! Inc. in its BlueLight.com subsidiary. She is a Director at Causeway Capital Management LLC, Diagnostic Imaging Group, and Continental Energy Services.</p>
 								</div>
-								<div class="tab-pane fade  " id="enterprises5">
-									<p>Speaker Five is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
-								</div>
-								<div class="tab-pane fade  " id="enterprises6">
-									<p>Speaker Six is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
-								</div>
+
 							</div>
 							<!--tab content ends here-->
 						</div>
 
 					</div>
 					<!--tab content bar ends here-->
-                    
+
 				</div>
 				<!----------business panel info ends ------------------------------------------------------------------------->
-					<!----------literature panel info starts --------------------------------------------------------------------->
+				<!----------literature panel info starts --------------------------------------------------------------------->
 				<div class="tab-pane fade in panel-content" id="literature">
-					
-                    <div class="row text-center section-content" id="panel-top">
+
+					<div class="row text-center section-content" id="panel-top">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<h4>The Struggle of Contemporary Chinese Literature</h4>
 							<div class="row">
-								<p class="english">China looks forward to more great writers who write in Chinese. The world also looks forward to more great writers who write in Chinese. This is because great writers and their works inspire minds of China and the world. Therefore, Columbia China Prospect Conference looks forward to creating a platform on which Chinese writers are to be heard by the world. <br>Questions to be covered in this section: Since the adoption of open and reform policies in the 1980s, what major difficulties has Chinese literature been facing in its development？Since 2000, is Chines literature’s market growing satisfactorily? Is the first PRC Nobel Literature prizewinner a new biggining of Chinese literature’s globalization? Does this help Chinese contemporary literature and writers draw more attention from outside? What is the future role of Chinese Contemporary literature in the world? What role does the Internet plays in today’s Chinese literature.
-                                </p>
-                                <p class="chinese">从二十世纪八十年代开始，中国大陆推行改革政策，使其文学、商业都得到了相对宽松、自由的发展环境。文学作品题材更加广泛，数量大大增加，创作者人数也直线上升。这三十多年来，尤其是二零零零年以后这十余年来，中文当代文学在艺术创作和商业运作两个方面，既探索出了新的路子，又不可避免的遭遇到了种种困境。同一时间，中国大陆也因为逐步对外开放，使得中文文学获得了更多的与外部展开接触的机会。部分中文作家获得了重要的国际奖项，一些优秀的中文作品被翻译成了多国文字，中文文学因此感受到了获取其他文化社群的关注和了解的重要性。此外，随着互联网时代的来临，网络文学的疯狂蔓延，使得中文文学的创作模式、传播模式以及阅读模式都发生了革命性的变化。在这三个向度上，当代中文学应该如何突破探索路上的困境？又应该如何顺应时代趋势、利用新的机遇? 当代中文文学的突围势在必行。二十世纪八十年代以来，不同题材当代中文文学的创作、发展主要困境有哪些？二零零零年以来，中国大陆以及海外中文文学的商业运作之路有哪些困境？当代中文文学有机会在世界文学舞台上获得更大的关注度和影响力么？中国作家获得国际认可是否意味着当代中文文学的成功？网络文学的疯狂蔓延是否推动了中文文学的发展？为了就以上问题展开富有建设性的讨论，我们将邀请当代中文文学突围之路上的先行者们，分享、对话、辨析，期盼着为中华民族下一次文艺复兴的来临筚路蓝缕。
-                                </p>
+								<p class="english">China looks forward to more great writers who write in Chinese. The world also looks forward to more great writers who write in Chinese. This is because great writers and their works inspire minds of China and the world. Therefore, Columbia China Prospect Conference looks forward to creating a platform on which Chinese writers are to be heard by the world.
+									<br>Questions to be covered in this section: Since the adoption of open and reform policies in the 1980s, what major difficulties has Chinese literature been facing in its development？Since 2000, is Chines literature’s market growing satisfactorily? Is the first PRC Nobel Literature prizewinner a new biggining of Chinese literature’s globalization? Does this help Chinese contemporary literature and writers draw more attention from outside? What is the future role of Chinese Contemporary literature in the world? What role does the Internet plays in today’s Chinese literature.
+								</p>
+								<p class="chinese">从二十世纪八十年代开始，中国大陆推行改革政策，使其文学、商业都得到了相对宽松、自由的发展环境。文学作品题材更加广泛，数量大大增加，创作者人数也直线上升。这三十多年来，尤其是二零零零年以后这十余年来，中文当代文学在艺术创作和商业运作两个方面，既探索出了新的路子，又不可避免的遭遇到了种种困境。同一时间，中国大陆也因为逐步对外开放，使得中文文学获得了更多的与外部展开接触的机会。部分中文作家获得了重要的国际奖项，一些优秀的中文作品被翻译成了多国文字，中文文学因此感受到了获取其他文化社群的关注和了解的重要性。此外，随着互联网时代的来临，网络文学的疯狂蔓延，使得中文文学的创作模式、传播模式以及阅读模式都发生了革命性的变化。在这三个向度上，当代中文学应该如何突破探索路上的困境？又应该如何顺应时代趋势、利用新的机遇? 当代中文文学的突围势在必行。二十世纪八十年代以来，不同题材当代中文文学的创作、发展主要困境有哪些？二零零零年以来，中国大陆以及海外中文文学的商业运作之路有哪些困境？当代中文文学有机会在世界文学舞台上获得更大的关注度和影响力么？中国作家获得国际认可是否意味着当代中文文学的成功？网络文学的疯狂蔓延是否推动了中文文学的发展？为了就以上问题展开富有建设性的讨论，我们将邀请当代中文文学突围之路上的先行者们，分享、对话、辨析，期盼着为中华民族下一次文艺复兴的来临筚路蓝缕。
+								</p>
 							</div>
 						</div>
 					</div>
-                    
-                    <div class="row text-center section-content" id="panel-bottom">
+
+					<div class="row text-center section-content" id="panel-bottom">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<!-- guest speaker tabs -->
@@ -642,19 +627,27 @@ zhenzhenqi@gmail.com
 									<ul class=" row text-center myTab" role="tablist">
 										<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#literature1" role="tab">
-												<img src="/static/img/speakers/Literature/dingjun_wang.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/literature/yu_wang/yu%20wang.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#literature2" role="tab">
-												<img src="/static/img/speakers/Literature/dingshan_dong.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/literature/ming_lu/ming%20lu.png" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#literature3" role="tab">
-												<img src="/static/img/speakers/Literature/dingshan_dong.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/literature/tingcwang/tingcwang.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
+
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#literature4" role="tab">
+												<img src="/static/img/speakers/literature/wei_su/wei%20su.jpg" alt="" class="img-responsive img-rounded">
+											</a>
+										</li>
+
+
 									</ul>
 
 								</div>
@@ -664,43 +657,63 @@ zhenzhenqi@gmail.com
 							<!--tab content starts here--->
 							<div class="tab-content">
 								<div class="tab-pane fade in active  " id="literature1">
-									<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
-									</p>
+									<h4>Yu WANG</h4>
+									<h6>Writer, Poet, Former Editor of China Daily News and Today</h6>
+									<p>1973, Founded Children Monthly in Taiwan, with the intention of encouraging children to write, especially to write poetry .
+										<br>1975-1989, editor of literary supplement section of China Daily News in New York.
+										<br>1991-2011, editor of the overseas literary journal Today.
+										<br>Over the years, editor of several anthologies of poems, very short stories and fictions authored by Chinese overseas students, published by Shanghai Literature and Art Publishing House.
+										<br>Translating into Chinese Greek Gods and Heroes, by Robert Graves, published by Shanghai Literature and Art Publishing House.</p>
 								</div>
 								<div class="tab-pane fade  " id="literature2">
-									<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Ming LU</h4>
+									<h6>Writer and Social Psychologist</h6>
+									<p>B.A. in Philosophy from Nankai University, MA & M.Philosophy (ABD) in Social Psychology from Columbia University. Have been working in financial industry since 1995. Currently works as a VP in NA Retail Banking of Citibank where he has worked for 15 years.
+										<br>Taught Chinese in high school, philosophy at college and psychology of management to adults before coming to the USA. Have been teaching Chinese at weekends for more than 10 years at NY.
+										<br>Poet and author of 4 books: a collection of essays, a novel, a collection of poems and a non-fiction book about soft skills.
+										<br>Love travelling around the world and photography. His photos have been selected for exhibitions.
 									</p>
 								</div>
 								<div class="tab-pane fade  " id="literature3">
-									<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Ting C WANG</h4>
+									<h6>Writer and Critic</h6>
+									<p>Ting C. Wang, a writer. Largely focusing on proses, he also writes poems, novels, play scripts, and criticism. Now living in New York City, Wang once taught in universities both in Republic of China and the United States of America, such as Chinese Culture University and Seton Hall University, and worked for television channels and news media, such as Broadcasting Corporation of China, China Television Corporation, and China Times. Over the past decades, his works are widely praised and awarded in the local and overseas Chinese literature community.
 									</p>
 								</div>
+
+								<div class="tab-pane fade  " id="literature4">
+									<h4>Wei SU</h4>
+									<h6>Writer and Critic</h6>
+									<p>Wei SU is a senior lector in Yale University , Department of East Asian Languages and Literatures. Also a writer and critic, his work has been widely published in China. He is the author of three novels: Dukou, you yi ge zaochen (“Another Morning at the Ferry,” 1982, Guangdong), Mi gu (“Lost Valley,” 1999, Taiwan; 2006, Beijing), and Mi diao (“Key of E,” included in the “Best Chinese Novels of the Year, 2004,” 2007, Guangdong); a collection of short stories, Yuan xing ren (“Sojourners,” 1987); a collection of academic essays, Xi yang jing yu (“Western Mirror, ” 1988, Zhejiang); and two collections of memoirs, Du zi mian dui (“Facing Myself,” 2003, Shanghai) ， Zhan zai Yelu de jiangtai shang (“At the Podium at Yale,” 2006, Taipei) Zou JinYelu（“Entering Yale, 2009, Beijing).</p>
+								</div>
+
+
 							</div>
 							<!--tab content ends here-->
 						</div>
 
 					</div>
 					<!--tab content bar ends here-->
-                    
+
 				</div>
-				<!----------literature panel info ends ----------------------------------------------------------------------->			
-                <!----------media panel info starts -------------------------------------------------------------------------->
+				<!----------literature panel info ends ----------------------------------------------------------------------->
+				<!----------media panel info starts -------------------------------------------------------------------------->
 				<div class="tab-pane fade in panel-content" id="media">
-					
-                    <div class="row text-center section-content" id="panel-top">
+
+					<div class="row text-center section-content" id="panel-top">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<h4>The Chinese Media: Its Role in the World</h4>
 							<div class="row">
 								<p class="english">As we all know, contemporary information dissemination becomes increasingly international. Both new media and traditional media help enhance the diversity and real-time effects of news. However, chaos and disorder also exist in this situation. In this particular historical circumstances, in what capacity and how can contemporary Chinese media make contributions with media all around the world? In the news media panel, we will provide perspectives from producers, managers and also investors to discuss the international conflicts of Internet and other media industry in the contemporary social context. For example, how can Chinese media obtain core information source and have a monopolistic say; how is China threat theory related to Chinese media outreach strategy; for sudden and catastrophic events coverage, should it be people-oriented or news-first, etc.
-                                </p>
-                                <p class="chinese">毋庸置疑，无论新媒体或是传统媒介，在信息传播日益国际化的今天，都为新闻多样化、即时性开辟了一条畅通无阻之道，然而新闻传播的混乱无序也伴随而至。当代中国媒体在此特殊的历史环境下，究竟该以何种身份与世界媒体共舞？在“新闻媒体”版块中，我们希望从制作者、管理者、投资者的角度，多方面研讨中国新闻、互联网等传媒产业在当代社会背景下的国际化矛盾。 核心问题一：媒体如何在国际重大事件获取信息源 如在以马航为代表的国际重大事件中，媒体如何能够在与国际事件的对接中，主动、有效地获取一手核心新闻源，避免信息传播的混乱和媒体失语的尴尬。 核心问题二：“数据外宣”战略与各国文化影响力 当今的文化娱乐圈天下已被美剧、韩剧、英剧、日剧瓜分天下，各国更是通过各种脍炙人口的综艺节目将本国软实力文化渗透到观众，传达到世界。在此，中美国家与地方是如何具体实施，应有哪些改进呢？ 核心问题三：恐怖事件报道中的有效舆论引导 针对“911”、昆明火车站等引发的强烈反恐情绪的重大事件，媒体应当如何避免煽动，正确引导民众情绪，理智反省、冷清客观地加以批判分析。 核心问题四：突发性事件报道，以人为本还是新闻至上 近年来，世界各地包括我国突发事件接连不断，如：汶川地震、日本海啸等，对此，媒体应当客观报道、提供灾民需求渠道；还是采取“人情”报道模式，调动受众情绪，增强关注度。 核心问题五：外媒对中国媒体的印象与期待 西方媒体完整成熟，架构体系历时长久；而中国媒体起步较晚，仍处在成长与探索阶段。在借鉴西方媒体优势的同时，中国希望开创出有自己特色的优质媒体资源。那么外媒对当今中国媒体有何固有印象，对其未来的表现又有着怎样的期待？
-                                </p>
+								</p>
+								<p class="chinese">毋庸置疑，无论新媒体或是传统媒介，在信息传播日益国际化的今天，都为新闻多样化、即时性开辟了一条畅通无阻之道，然而新闻传播的混乱无序也伴随而至。当代中国媒体在此特殊的历史环境下，究竟该以何种身份与世界媒体共舞？在“新闻媒体”版块中，我们希望从制作者、管理者、投资者的角度，多方面研讨中国新闻、互联网等传媒产业在当代社会背景下的国际化矛盾。 核心问题一：媒体如何在国际重大事件获取信息源 如在以马航为代表的国际重大事件中，媒体如何能够在与国际事件的对接中，主动、有效地获取一手核心新闻源，避免信息传播的混乱和媒体失语的尴尬。 核心问题二：“数据外宣”战略与各国文化影响力 当今的文化娱乐圈天下已被美剧、韩剧、英剧、日剧瓜分天下，各国更是通过各种脍炙人口的综艺节目将本国软实力文化渗透到观众，传达到世界。在此，中美国家与地方是如何具体实施，应有哪些改进呢？ 核心问题三：恐怖事件报道中的有效舆论引导 针对“911”、昆明火车站等引发的强烈反恐情绪的重大事件，媒体应当如何避免煽动，正确引导民众情绪，理智反省、冷清客观地加以批判分析。 核心问题四：突发性事件报道，以人为本还是新闻至上 近年来，世界各地包括我国突发事件接连不断，如：汶川地震、日本海啸等，对此，媒体应当客观报道、提供灾民需求渠道；还是采取“人情”报道模式，调动受众情绪，增强关注度。 核心问题五：外媒对中国媒体的印象与期待 西方媒体完整成熟，架构体系历时长久；而中国媒体起步较晚，仍处在成长与探索阶段。在借鉴西方媒体优势的同时，中国希望开创出有自己特色的优质媒体资源。那么外媒对当今中国媒体有何固有印象，对其未来的表现又有着怎样的期待？
+								</p>
 							</div>
 						</div>
 					</div>
-                    
-                     <div class="row text-center section-content" id="panel-bottom">
+
+					<div class="row text-center section-content" id="panel-bottom">
 						<div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-xs-10 col-xs-offset-1">
 
 							<!-- guest speaker tabs -->
@@ -710,19 +723,33 @@ zhenzhenqi@gmail.com
 									<ul class=" row text-center myTab" role="tablist">
 										<li class="active col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#media1" role="tab">
-												<img src="/static/img/speakers/media/lifen_zhang.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/media/lifen_zhang/zhang%20lifen.png" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#media2" role="tab">
-												<img src="/static/img/speakers/media/sean_callebs.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/media/changjian_jiang/changjian%20jiang.jpg" alt="" class="img-responsive img-rounded">
 											</a>
 										</li>
 										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
 											<a href="#media3" role="tab">
-												<img src="/static/img/speakers/media/tim_ferguson.jpg" alt="" class="img-responsive">
+												<img src="/static/img/speakers/media/patrick_lee/patrick%20lee.jpg" alt="" class="img-responsive  img-rounded">
 											</a>
 										</li>
+
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#media4" role="tab">
+												<img src="/static/img/speakers/media/sean_callebs/sean%20callebs.png" alt="" class="img-responsive img-rounded">
+											</a>
+										</li>
+
+
+										<li class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+											<a href="#media5" role="tab">
+												<img src="/static/img/speakers/media/jackie,_zhe_pang/jackie,%20zhe%20pang.jpg" alt="" class="img-responsive img-rounded">
+											</a>
+										</li>
+
 									</ul>
 
 								</div>
@@ -732,26 +759,48 @@ zhenzhenqi@gmail.com
 							<!--tab content starts here--->
 							<div class="tab-content">
 								<div class="tab-pane fade in active  " id="media1">
-									<p>Speaker One is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+
+									<h4>Lifen ZHANG</h4>
+									<h6>Associate Editor of Financial Times, and Founding Director for FTChinese.com</h6>
+									<p>Dr. Lifen ZHANG, Associate Editor, Financial Times, Editor-in-Chief, <a href="http://ftchinese.com/">FTChinese.com (FT’s Chinese language website).</a>
+										<br>Before joining the FT in 2003 to launch FTChinese.com, Lifen worked for 10 years as assistant producer for BBC TV, producer, senior producer, news/current affairs editor and senior journalism-production trainer for BBC World Service. Lifen graduated from Journalism Department of Fudan University, and obtained his PhD in Mass Communications at <a href="http://en.wikipedia.org/wiki/University_of_Leicester">University of Leicester</a>； Lifen had served as visiting professor of Taiwan National Chengchi University, Hong Kong Baptist University, and Fudan University.
 									</p>
 								</div>
 								<div class="tab-pane fade  " id="media2">
-									<p>Speaker Two is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Changjian JIANG</h4>
+									<h6>Host of “The Brain” (Scientific Talent Show)</h6>
+									<p>Changjian JIANG, Associate Professor, works at the School of International Relations and Public Affaris of Fudan University. He has years of researching and teaching experiences in IR field, including International Conflict/Cooperation, Mass Media and Foreign Policy. He began to study Political Science when he was a undergraduate student in An Hui Normal University, then he got Master and Ph.d Degree on same field in 1993 and in 1997. He joined Yale University as Fulbright scholar in 1998, and he also joined Vrije Universiteit Brussel, Science Po and Columbia University as visiting scholar in the later days. He is a member of surpervioser board of the France Political innovation Foundation.
 									</p>
 								</div>
 								<div class="tab-pane fade  " id="media3">
-									<p>Speaker Three is a Chinese business magnate. Presently, he is the Chairman of SOHO China, the largest prime office real estate developer in China acclaimed for developing iconic landmark buildings in Beijing and Shanghai. He co-founded SOHO China with his wife Zhang Xin in 1995. The couple has been described by The Times of London as "China’s most visible and flamboyant property tycoons”.
+									<h4>Patrick Lee</h4>
+									<p>Patrick Lee has been with CBS News for over a decade. As an award winning editor/producer for Sunday Morning, he has crafted pieces on Arthur Miller, Tim Burton, Larry Kramer, E. L. Doctorow and Giorgio Armani, as well as a new look on the biggest martial artist, Bruce Lee and a brief history on tea. In 2011, he joined the editing staff at Sixty Minutes. In 2010, he directed a short documentary on micro-finance in Kenya, Africa.
+										<br>In addition to news and documentaries experience, Patrick has written, directed and produced a half dozen works for the theater, two of which were later turned into educational films. One of these projects was a health initiative funded by the CDC about HIV/AIDS awareness. He holds a master’s degree from New York Institute of Technology, and is the recipient of both the Emmy and Edward Murrow awards.
 									</p>
 								</div>
+
+								<div class="tab-pane fade  " id="media4">
+									<p>INFORMATION MISSING
+									</p>
+								</div>
+
+
+
+								<div class="tab-pane fade  " id="media5">
+									<h4>Jackie Pang</h4>
+									<h6>Phoenix TV Senior Financial Correspondent, Founder of Wall Street Multimedia, CounterPoint Media Foundation</h6>
+									<p>2001 to current: Jackie Pang has been working for Hong Kong Phoenix Satellite TV New York Bureau as Senior Financial News correspondent, Producer and Host for the weekly special: A Passage to Wall Street. and Global Financial News Live. Jackie was the first Chinese reporter who reported Sept. 11 tragedy on the site of World Trade Center. Her reports helped Phoenix TV became the most trusted news source for Chinese audience in China during early 2001. Jackie was award one of the 10 most influence journalist in the same year by Beijing Youth Daily. Jackie had extensive experiences in interviews with senior financial experts and chief economists with major Wall Street Financial Institutions during financial crisis. Her reports and documentary films helped Chinese audiences understand and be timely informed on the turbulences and dramatic changes of the US financial history during that time period. In Early 2000, Jackie also co-founded: Wall Street Multimedia, Inc.(WSM). Until today, WSM remains a very professional financial news multimedia financial news content provider. It is currently providing stock market information, hot topic weekly shows, and documentary program to for Chinese speaking communities worldwide via internet, radio, and television broadcasting. It also providing English program to both Chinese viewers, and US investment communities. In early 2012, Jackie co founded CounterPoint Media, which is a multimedia platform for citizen diplomacy between US and China. She created and produced “Channel C” TV program to help facilitate communications and understandings between US and China.</p>
+								</div>
+
 							</div>
 							<!--tab content ends here-->
 						</div>
 
 					</div>
 					<!--tab content bar ends here-->
-                    
+
 				</div>
-				<!----------media panel info ends ---------------------------------------------------------------------------->
+				<!----------media panel info ends ---------------------->
 
 
 			</div>
@@ -835,7 +884,7 @@ zhenzhenqi@gmail.com
 											<td>INTERNATIONAL AFFAIRS BUILDING 417</td>
 										</tr>
 
-										<tr>
+										<tr class="danger">
 											<td>9:45AM</td>
 											<td>10:00AM</td>
 											<td>Coffee Break</td>
@@ -845,41 +894,45 @@ zhenzhenqi@gmail.com
 										<tr>
 											<td>10:00AM</td>
 											<td>12:00PM</td>
-											<td>Panel 1 <br>The Future of Trajectory of China’s Higher Education: <br> Liberal Arts Education vs. Specialized Education </td>
+											<td>Panel 1
+												<br>The Future of Trajectory of China’s Higher Education:
+												<br>Liberal Arts Education vs. Specialized Education</td>
 											<td>INTERNATIONAL AFFAIRS BUILDING 417</td>
 										</tr>
-                                        <tr>
-                                            <td>12:00PM</td>
+										<tr class="danger">
+											<td>12:00PM</td>
 											<td>1:30PM</td>
 											<td>Lunch Break</td>
 											<td>TBD</td>
 										</tr>
-                                        <tr>
-                                            <td>1:30PM</td>
+										<tr>
+											<td>1:30PM</td>
 											<td>2:00PM</td>
 											<td>Keynote</td>
 											<td>INTERNATIONAL AFFAIRS BUILDING 417</td>
 										</tr>
-                                        <tr>
-                                            <td>2:00PM</td>
+										<tr>
+											<td>2:00PM</td>
 											<td>4:00PM</td>
-											<td>Panel 2<br>Chinese Enterprises: Its PAth to Globalization</td>
+											<td>Panel 2
+												<br>Chinese Enterprises: Its PAth to Globalization</td>
 											<td>INTERNATIONAL AFFAIRS BUILDING 417</td>
 										</tr>
-                                        <tr>
-                                            <td>4:00PM</td>
+										<tr class="danger">
+											<td>4:00PM</td>
 											<td>4:15PM</td>
 											<td>Coffee Break</td>
 											<td>INTERNATIONAL AFFAIRS BUILDING 417</td>
 										</tr>
-                                        <tr>
-                                            <td>4:15PM</td>
+										<tr>
+											<td>4:15PM</td>
 											<td>6:15PM</td>
-											<td>Panel 3<br>The Breakthroughs of Chinese Literature</td>
+											<td>Panel 3
+												<br>The Breakthroughs of Chinese Literature</td>
 											<td>INTERNATIONAL AFFAIRS BUILDING 417</td>
 										</tr>
-                                        <tr>
-                                            <td>7:30PM</td>
+										<tr class="danger">
+											<td>7:30PM</td>
 											<td>9:30PM</td>
 											<td>VIP Dinner</td>
 											<td>TBD</td>
@@ -917,11 +970,12 @@ zhenzhenqi@gmail.com
 										<tr>
 											<td>9:00AM</td>
 											<td>11:00AM</td>
-											<td>Panel 4<br>The Chinese Economy: Investment Opportunities in the New Era</td>
+											<td>Panel 4
+												<br>The Chinese Economy: Investment Opportunities in the New Era</td>
 											<td>LERNER AUDITORIUM</td>
 										</tr>
 
-										<tr>
+										<tr class="danger">
 											<td>11:00AM</td>
 											<td>11:10AM</td>
 											<td>Coffee Break</td>
@@ -931,20 +985,22 @@ zhenzhenqi@gmail.com
 										<tr>
 											<td>11:10AM</td>
 											<td>1:10PM</td>
-											<td>Panel 5<br>Entrepreneurship in China: Integrating Technology and Market</td>
+											<td>Panel 5
+												<br>Entrepreneurship in China: Integrating Technology and Market</td>
 											<td>LERNER AUDITORIUM</td>
 										</tr>
 
-										<tr>
+										<tr class="danger">
 											<td>1:10PM</td>
 											<td>2:00PM</td>
 											<td>Lunch Break</td>
 											<td>TBD</td>
 										</tr>
-                                        <tr>
+										<tr>
 											<td>2:00PM</td>
 											<td>4:00PM</td>
-											<td>Panel 6<br>The Chinese Media:Its Role in the World</td>
+											<td>Panel 6
+												<br>The Chinese Media:Its Role in the World</td>
 											<td>LERNER AUDITORIUM</td>
 										</tr>
 									</tbody>
@@ -966,9 +1022,9 @@ zhenzhenqi@gmail.com
 					<h1>Tickets </h1>
 					<h4>Access to two-day conference & more
                     </h4>
-                    <a href="https://web.ovationtix.com/trs/pe/9730935">
-					   <button class="round-button" role="button">PURCHASE</button>
-                    </a>
+					<a target="_blank" href="http://www.cucssa.org/index.php?m=event&a=detail&id=11">
+						<button class="round-button" role="button">PURCHASE</button>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -1072,7 +1128,7 @@ zhenzhenqi@gmail.com
 				<i class="fa fa-wechat"></i><span class="wrap"></span> 
 				<i class="fa fa-weibo"></i><span class="wrap"></span> 
 			</div>
-			<img src="../static/img/qrcode.jpg" alt="">
+			<img src="../static/img/qr.png" alt="">
 			<h6> Scan to add us on Wechat</h6>
 		</section>
 		<!-- end pre-footer-->

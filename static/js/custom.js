@@ -1,70 +1,74 @@
 // calls functions when html is setup.
 $(document).ready(function () {
-
-
-    var s = skrollr.init();
-    //enable tooltip
-    $(".team-member").tooltip();
-    //	load google map API
-    var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
-    var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);
-
-    var mapOptions = {
-        zoom: 16,
-        center: new google.maps.LatLng(40.80735, -73.9615)
-    };
-
-    var map = new google.maps.Map(document.getElementById('map-canvas'),
-        mapOptions);
-
-    var marker = new google.maps.Marker({
-        position: myLatlng_LA,
-        map: map,
-        title: 'Lerner Auditorium'
-    });
-
-    var marker = new google.maps.Marker({
-        position: myLatlng_IAB,
-        map: map,
-        title: 'IAB 417'
-    });
-    
-
-    //agenda tabs and highlighted speakers tabs
-    $('.myTab a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
+	//videoembeder
+	vimeoEmbedder();
 
 
 
-    
-    var viewport_height = $(window).height();
-    
-    
-    $('#landing-page').css('height', viewport_height);
 
-    
-    //language switch buttons
-    $("#english-button").click(function () {
-        if ($(this).hasClass('o2')) {
-            $(this).toggleClass('o2');
-            $("#chinese-button").toggleClass('o1');
+	var s = skrollr.init();
+	//enable tooltip
+	$(".team-member").tooltip();
+	//	load google map API
+	var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
+	var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);
 
-            $('.english').css('display', 'block');
-            $('.chinese').css('display', 'none');
-        } else {}
-    });
+	var mapOptions = {
+		zoom: 16,
+		center: new google.maps.LatLng(40.80735, -73.9615)
+	};
 
-    $("#chinese-button").click(function () {
-        if ($(this).hasClass('o1')) {} else {
-            $(this).toggleClass('o1');
-            $("#english-button").toggleClass('o2');
+	var map = new google.maps.Map(document.getElementById('map-canvas'),
+		mapOptions);
 
-            $('.english').css('display', 'none');
-            $('.chinese').css('display', 'block');
-        }
-    });
+	var marker = new google.maps.Marker({
+		position: myLatlng_LA,
+		map: map,
+		title: 'Lerner Auditorium'
+	});
+
+	var marker = new google.maps.Marker({
+		position: myLatlng_IAB,
+		map: map,
+		title: 'IAB 417'
+	});
+
+
+	//agenda tabs and highlighted speakers tabs
+	$('.myTab a').click(function (e) {
+		e.preventDefault();
+		$(this).tab('show');
+	});
+
+
+
+
+	var viewport_height = $(window).height();
+
+
+	$('#landing-page').css('height', viewport_height);
+
+
+	//language switch buttons
+	$("#english-button").click(function () {
+		if ($(this).hasClass('o2')) {
+			$(this).toggleClass('o2');
+			$("#chinese-button").toggleClass('o1');
+
+			$('.english').css('display', 'block');
+			$('.chinese').css('display', 'none');
+		} else {}
+	});
+
+	$("#chinese-button").click(function () {
+		if ($(this).hasClass('o1')) {} else {
+			$(this).toggleClass('o1');
+			$("#english-button").toggleClass('o2');
+
+			$('.english').css('display', 'none');
+			$('.chinese').css('display', 'block');
+		}
+	});
 
 
 });
@@ -79,8 +83,8 @@ $(document).ready(function () {
 ////////////////////////////////////////////////event listeners start here
 
 $(window).resize(function () {
-    var viewport_height = $(window).height();
-    $('#landing-page').css('height', viewport_height);
+	var viewport_height = $(window).height();
+	$('#landing-page').css('height', viewport_height);
 });
 
 
@@ -121,21 +125,64 @@ animateWhenReachIn('footer', 'animate fadeInUp', '1s', 0, 0);
 
 //  function definitions start here 
 function animateWhenReachIn(selector, effect, duration, offset, delay) {
-    $(document).ready(function () {
-        $(selector).css('visibility', 'hidden');
-    });
-    $(window).scroll(function () {
-        if ($(window).scrollTop() > $(selector).offset().top - $(window).height() + offset) {
-            $(selector).css('-webkit-animation-duration', duration);
-            $(selector).css('-moz-animation-duration', duration);
-            $(selector).css('-ms-animation-duration', duration);
-            $(selector).css('-o-animation-duration', duration);
-            $(selector).css('-webkit-animation-delay', delay);
-            $(selector).css('-moz-animation-delay', delay);
-            $(selector).css('-ms-animation-delay', delay);
-            $(selector).css('-o-animation-delay', delay);
-            $(selector).css('visibility', 'visible');
-            $(selector).addClass(effect);
-        }
-    })
+	$(document).ready(function () {
+		$(selector).css('visibility', 'hidden');
+	});
+	$(window).scroll(function () {
+		if ($(window).scrollTop() > $(selector).offset().top - $(window).height() + offset) {
+			$(selector).css('-webkit-animation-duration', duration);
+			$(selector).css('-moz-animation-duration', duration);
+			$(selector).css('-ms-animation-duration', duration);
+			$(selector).css('-o-animation-duration', duration);
+			$(selector).css('-webkit-animation-delay', delay);
+			$(selector).css('-moz-animation-delay', delay);
+			$(selector).css('-ms-animation-delay', delay);
+			$(selector).css('-o-animation-delay', delay);
+			$(selector).css('visibility', 'visible');
+			$(selector).addClass(effect);
+		}
+	})
 };
+
+
+vimeoEmbedder = function () {
+
+	$("#video").each(function () {
+
+		var videoObj = $(this),
+			videoContainer = $(".video-container", this),
+			placeholderImg = videoObj.find(".placeholder"),
+			videoColour = "aaaaaa";
+
+		if ((placeholderImg.attr("height") / placeholderImg.attr("width")) > .57) $(".video-container", this).addClass("fourbythree");
+
+		if (videoObj.attr("vimeo-color")) videoColour = videoObj.attr("vimeo-color");
+
+		var videoHTML = '<iframe src="http://player.vimeo.com/video/' + videoObj.attr("vimeo-id") + '?title=0&amp;byline=0&amp;portrait=0&amp;color=' + videoColour + '&amp;autoplay=1&amp;api=1" width="' + placeholderImg.attr("width") + '" height="' + placeholderImg.attr("height") + '" width="' + placeholderImg.attr("width") + '" height="' + placeholderImg.attr("height") + '" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>';
+
+		$(".play", this).on("click", function (e) {
+			videoContainer.empty().append(videoHTML);
+		});
+
+	});
+
+	if ($("body").hasClass("home")) $("html").addClass("hideScroll");
+	else $("html").removeClass("hideScroll");
+
+}
+
+
+$(function () {
+	$('a[href*=#]:not([href=#])').click(function () {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html,body').animate({
+					scrollTop: target.offset().top
+				}, 1000);
+				return false;
+			}
+		}
+	});
+});

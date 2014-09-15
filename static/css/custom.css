@@ -1,65 +1,66 @@
 /* this is a custom css style sheet */
 
 body {
-    font-family: 'Karma', 'STSong', 'SimSun', serif;
-    width: 100%;
-    height: 100%;
-    line-height: normal;
-    background-color: white !important;
+	font-family: 'Karma', 'SimSun', serif;
+	width: 100%;
+	height: 100%;
+	line-height: normal;
+	background-color: white !important;
 }
-
 .section-name {
-    font-family: 'Averia Libre';
-    font-weight: 300;
+	font-family: 'Averia Libre';
+	font-weight: 300;
 }
-
 .chinese {
-    display: none;
+	font-family: 'STKaiti';
+	display: none;
+	font-weight: 100;
 }
-.english{
-    display: block;
+.english {
+	display: block;
 }
 p {
-    text-align: justify;
+	text-align: justify;
 }
 html {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
 #p5canvas {
-    position: absolute;
-    padding: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -1000;
+	position: absolute;
+	padding: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
 }
 .container {
-    margin-left: 0px;
-    margin-right: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 .section {
-    padding-bottom: 6%;
+	padding-bottom: 6%;
 }
 .sectionheader {
-    padding-bottom: 40px;
+	padding-bottom: 40px;
 }
 .subsection {
-    margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 .fa {
-    color: rgb(119, 119, 119);
+	color: rgb(119, 119, 119);
 }
 .panel-icons {
-    margin-top: 1.2%;
+	margin-top: 1.2%;
 }
 .iconbar {
-    background-color: rgb(216, 216, 216);
+	background-color: rgb(216, 216, 216);
 }
 .video-wrapper {
 	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
+	padding-bottom: 56.25%;
+	/* 16:9 */
 	padding-top: 25px;
 	height: 0;
 }
@@ -70,494 +71,461 @@ html {
 	width: 100%;
 	height: 100%;
 }
-
 /************************LANDING PAGE****************************/
+
 #landing-page {
-/*    background: url('/static/img/nyc.jpg') no-repeat center center;*/
-    background-size: cover;
-    position: relative;
-    color: white;
-    text-transform: uppercase;
+	/*    background: url('/static/img/nyc.jpg') no-repeat center center;*/
+	background-size: cover;
+	position: relative;
+	color: #fff;
+	text-transform: uppercase;
 }
 #landing-page-container {
-    padding: 14% 15%;
+	padding: 27vh 15%;
 }
-
-#landing-page-container button{
-    margin: 4em;
-    padding: 0.5em 2em 0.4em 2em;
+#landing-page i{
+	color: #fff;
+	font-size: 1.5em;
+	opacity: 0.8;
 }
-
+#landing-page-container button {
+	margin: 1em;
+	padding: 0.5em 2em 0.4em 2em;
+}
 #landing-page h1 {
-    font-size: 5em;
-    position: relative;
-    bottom: 5px;
+	font-size: 4.3em;
+	position: relative;
+	bottom: 5px;
+}
+#landing-page h2 {
+	font-size: 1em;
 }
 .round-button {
-    text-transform: uppercase;
-    padding: 0.5em 0.7em 0.4em 0.7em;
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    border: 1px solid white;
-    border-radius: 1em;
+	text-transform: uppercase;
+	padding: 0.5em 0.7em 0.4em 0.7em;
+	background: rgba(0, 0, 0, 0);
+	color: white;
+	border: 1px solid white;
+	border-radius: 1em;
 }
 .round-button:hover {
-    background: white !important;
-    color: black;
-    border: 1px solid rgba(0, 0, 0, 0);
+	background: white !important;
+	color: black;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
 video#bgvid {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -10000;
-    background-size: cover;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -10000;
+	background-size: cover;
 }
-
-
-
 /********************NAV BAR*******************************************/
 
 nav {
-    background-color: #1f282e !important;
-    border: none !important;
-    text-align: center;
+	background-color: #1f282e !important;
+	border: none !important;
+	text-align: center;
 }
-
-nav a{
+nav a {
 	color: white !important;
 }
 nav a:hover {
-    color: rgb(240, 247, 237) !important;
+	color: rgb(240, 247, 237) !important;
 }
 #nav-bar-logo {
-    max-width: 2em;
+	max-width: 2em;
 }
 .navbar-brand {
-    padding: 0.5em;
+	padding: 0.5em;
 }
 .navbar-brand:hover {
-    opacity: 0.8;
+	opacity: 0.8;
 }
 .navbar.center .navbar-inner .nav {
-    float: none;
-    display: inline-block;
+	float: none;
+	display: inline-block;
 }
 /********************THEME*********************************************/
+
 /********language switch button******/
-#chinese-english{
-    text-align: right;
-    padding-bottom: 1em;
+
+#chinese-english {
+	text-align: right;
+	padding-bottom: 1em;
 }
-
-#chinese-english img:hover{
-    opacity: 1;
+#chinese-english img:hover {
+	opacity: 1;
 }
-
-#chinese-button{
-    width: 50%;
-    opacity: 0.2;
+#chinese-button {
+	width: 50%;
+	opacity: 0.2;
 }
-
-#english-button{
-    width: 50%;
-    opacity: 1;
+#english-button {
+	width: 50%;
+	opacity: 1;
 }
-
-.o2{
-    opacity: 0.2 !important;
+.o2 {
+	opacity: 0.2 !important;
 }
-
-.o1{
-    opacity: 1 !important;
+.o1 {
+	opacity: 1 !important;
 }
-
-
-
-
-
-
 #THEME .section-brief {
-    padding: 5em 0 5em 0;
-    background-color: #af9f8a;
+	padding: 5em 0 5em 0;
+	background-color: #af9f8a;
 }
-
 #THEME .section-content {
-    padding: 0em 0 5em 0;
-    background: url('/static/img/green-bg.png') repeat;
+	padding: 0em 0 5em 0;
+	background: url('/static/img/green-bg.png') repeat;
 }
-
 #THEME .section-name {
-    background: url('/static/img/ink-circle.png') no-repeat center center;
-    background-size: 30%;
-    padding: 8em;
-    color: black;
+	background: url('/static/img/ink-circle.png') no-repeat center center;
+	background-size: 30%;
+	padding: 8em;
+	color: black;
 }
-
 #THEME ul {
-    list-style: none;
-    padding: 1em;
+	list-style: none;
+	padding: 1em;
 }
 #THEME .custom > li > a {
-    opacity: 0.6;
+	opacity: 0.6;
 }
 #THEME .custom > li > a:hover {
-    background-color: transparent;
-    opacity: 1;
+	background-color: transparent;
+	opacity: 1;
 }
 #THEME .custom > li.active > a {
-    opacity: 1;
-    background-color: transparent;
+	opacity: 1;
+	background-color: transparent;
 }
 #THEME h5 {
-    color: black;
-    padding: 4em 0 3em 0;
+	color: black;
+	padding: 4em 0 3em 0;
 }
-
 #THEME li a {
-    background-color: transparent;
-    color: rgb(153, 163, 126);
+	background-color: transparent;
+	color: rgb(153, 163, 126);
+}
+#THEME li {
+	opacity: 0.4;
+}
+#THEME li:hover,
+#THEME li.active {
+	opacity: 1;
 }
 
-#THEME li{
-    opacity: 0.4;
-}
-#THEME li:hover, 
-#THEME li.active  {
-    opacity: 1;
-}
 
-#PANELS img {
-    margin: auto;
-}
 /*******************PANELS*********************************************/
-
+#PANELS img {
+	margin: auto;
+}
 #PANELS .section-name {
-    background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
-    background-size: 60%;
-    padding: 15em;
-    color: black;
+	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
+	background-size: 60%;
+	padding: 15em;
+	color: black;
 }
 #PANELS ul {
-    list-style: none;
-    padding: 1em 0;
+	list-style: none;
+	padding: 1em 0;
 }
 #PANELS .section-content {
-    background: url('/static/img/green-bg.png') repeat;
+	background: url('/static/img/green-bg.png') repeat;
 }
 #panel-top {
-    padding-top: 3em;
+	padding-top: 3em;
 }
 #panel-bottom {
-    padding-bottom: 3em;
+	padding-bottom: 3em;
 }
 #PANELS li a {
-    background-color: transparent;
-    color: rgb(153, 163, 126);
+	background-color: transparent;
+	color: rgb(153, 163, 126);
 }
-
-#PANELS li{
-    opacity: 0.4;
+#PANELS li {
+	opacity: 0.4;
 }
-#PANELS li:hover, 
-#PANELS li.active  {
-    opacity: 1;
+#PANELS li:hover,
+#PANELS li.active {
+	opacity: 1;
 }
-
 #PANELS img {
-    margin: auto;
+	margin: auto;
 }
 .uppercase {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 /*********************AGENDA********************************************/
 
 #AGENDA .section-name {
-    background: url('/static/img/ink-upperstroke.png') no-repeat 50% 100%;
-    background-size: 50%;
-    padding: 7em 0em 7em 0em;
-    color: black;
+	background: url('/static/img/ink-upperstroke.png') no-repeat 50% 100%;
+	background-size: 50%;
+	padding: 7em 0em 7em 0em;
+	color: black;
 }
 #AGENDA .fa {
-    color: rgb(212, 212, 212);
+	color: rgb(212, 212, 212);
 }
 #AGENDA .fa:hover {
-    color: rgb(174, 183, 152);
+	color: rgb(174, 183, 152);
 }
 #AGENDA li.active .fa {
-    color: rgb(174, 183, 152);
+	color: rgb(174, 183, 152);
 }
 #AGENDA li a {
-    background-color: transparent;
+	background-color: transparent;
 }
 #AGENDA li a:hover {
-    background-color: transparent;
+	background-color: transparent;
 }
 #AGENDA .navpills-collapse.collapse {
-    display: block!important;
+	display: block!important;
 }
-
 #AGENDA li a h5 {
-    color: black;
-    white-space: nowrap;
+	color: black;
+	white-space: nowrap;
 }
 #AGENDA li a:hover h5 {
-    color: rgb(132, 57, 0);
+	color: rgb(132, 57, 0);
 }
 #AGENDA li.active h5 {
-    color: rgb(132, 57, 0);
+	color: rgb(132, 57, 0);
 }
 #AGENDA li {
-    opacity: 0.4;
+	opacity: 0.4;
 }
 #AGENDA li:hover {
-    opacity: 1;
+	opacity: 1;
 }
 #AGENDA li.active {
-    opacity: 1;
+	opacity: 1;
 }
 #agenda-icon {
-    margin: 0 auto;
+	margin: 0 auto;
 }
-
 #AGENDA img {
-    width: 120%;
+	width: 120%;
 }
-
 #AGENDA #one-two {
-    margin-bottom: 3em;
+	margin-bottom: 3em;
 }
 /********************ABOUT SECTION***********************************************/
 
 #ABOUT {
-    background: url('/static/img/cucampus.jpg') no-repeat top center;
-    background-size: 100%;
-    color: white;
-    opacity: 0.9;
+	background: url('/static/img/cucampus.jpg') no-repeat top center;
+	background-size: 100%;
+	color: white;
+	opacity: 0.9;
 }
 #ABOUT .in-parallax-text {
-    position: relative;
-    margin: 25% 0 20% 0;
-    text-align: right;
+	position: relative;
+	margin: 25% 0 20% 0;
+	text-align: right;
 }
 #ABOUT h4 {
-    padding: 0em 0em 2em 0em;
+	padding: 0em 0em 2em 0em;
 }
 /**************************TICKETS*************************************/
 
 #TICKETS {
-    background: url('/static/img/Roone.jpg') no-repeat top center;
-    background-size: cover;
-    opacity: 0.9;
-    color: white;
+	background: url('/static/img/Roone.jpg') no-repeat top center;
+	background-size: cover;
+	opacity: 0.9;
+	color: white;
 }
 #TICKETS .in-parallax-text {
-    position: relative;
-    margin: 25% 0 20% 0;
-    text-align: left;
+	position: relative;
+	margin: 25% 0 20% 0;
+	text-align: left;
 }
 #TICKETS h4 {
-    padding: 0em 0em 2em 0em;
+	padding: 0em 0em 2em 0em;
 }
 /**************************DIRECTION*************************************/
 
 #DIRECTIONS {
-    margin: 15em 0em;
+	margin: 15em 0em;
 }
 #DIRECTIOBS h1 {
-    padding-top: 0;
+	padding-top: 0;
 }
 address {
-    padding: 0 6em 0 6em;
+	padding: 0 6em 0 6em;
 }
 #map-canvas {
-    height: 400px;
-    width: 600px;
-    margin: 0 auto;
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
 }
 #address-bar {
-    padding: 2em 0 1em 0;
+	padding: 2em 0 1em 0;
 }
 #DIRECTIONS .round-button {
-    text-transform: uppercase;
-    padding: 0.5em 0.7em 0.4em 0.7em;
-    background: rgba(0, 0, 0, 0);
-    color: black;
-    border: 1px solid black;
-    border-radius: 1em;
+	text-transform: uppercase;
+	padding: 0.5em 0.7em 0.4em 0.7em;
+	background: rgba(0, 0, 0, 0);
+	color: black;
+	border: 1px solid black;
+	border-radius: 1em;
 }
 #DIRECTIONS .round-button:hover {
-    background: black !important;
-    color: white;
-    border: 1px solid rgba(0, 0, 0, 0);
+	background: black !important;
+	color: white;
+	border: 1px solid rgba(0, 0, 0, 0);
 }
 #DIRECTIONS h4 {
-    padding-right: 0em;
-    text-align: justify;
+	padding-right: 0em;
+	text-align: justify;
 }
 /************************SPONSORSHIP***********************************/
 
 #SPONSORSHIP {
-    margin: 20em 0;
+	margin: 20em 0;
 }
-
 #SPONSORSHIP .fa {
-    color: black;
+	color: black;
 }
 #SPONSORSHIP h2 {
-    padding-bottom: 3em;
+	padding-bottom: 3em;
 }
 /***********************PRE_FOOTER************************************/
 
 #pre-footer {
-    color: white;
-    text-align: center;
-    background-color: rgb(32, 125, 174);
-    height: 400px;
+	color: white;
+	text-align: center;
+	background-color: rgb(32, 125, 174);
+	height: 400px;
 }
 #pre-footer .fa {
-    color: white;
+	color: white;
 }
 #pre-footer img {
-    margin: auto;
-    width: 80px;
-    padding-bottom: 0.5em;
+	margin: auto;
+	width: 80px;
+	padding-bottom: 0.5em;
 }
 #pre-footer p {
-    padding: 1%;
+	padding: 1%;
 }
 #pre-footer .wrap {
-    padding-left: 5px;
-    padding-right: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 #pre-footer div {
-    padding: 6% 0 6% 0;
+	padding: 6% 0 6% 0;
 }
 /***********************FOOTER******************************************/
 
 footer {
-    padding: 0 0 0 0;
-    margin: 0 0 0 0;
-    text-align: center;
-    height: 200px;
-    background-color: #212121;
-    color: #fff
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	text-align: center;
+	height: 200px;
+	background-color: #212121;
+	color: #fff
 }
 footer div {
-    padding: 4% 0% 4% 0%;
+	padding: 4% 0% 4% 0%;
 }
 /***********************About Page******************************************/
 
 #ABOUTPAGE .section-name {
-    background: url('/static/img/ink-circle.png') no-repeat center center;
-    background-size: 30%;
-    padding: 8em;
-    color: black;
+	background: url('/static/img/ink-circle.png') no-repeat center center;
+	background-size: 30%;
+	padding: 8em;
+	color: black;
 }
-
-#ABOUTPAGE #TEAM{
-    padding: 15em 0;
+#ABOUTPAGE #TEAM {
+	padding: 15em 0;
 }
-
 #ABOUTPAGE .team-member {
-    float: left;
-    width: 100%;
-    opacity: 0.4;
-    border: none;
+	float: left;
+	width: 100%;
+	opacity: 0.4;
+	border: none;
 }
-
-
-#photo-wall span{
-    border: none;
-    display: block;
-    float: left;
-    width: 10%;
-/*    display: inline-block;*/
-    background: rgb(155, 42, 53);
+#photo-wall span {
+	border: none;
+	display: block;
+	float: left;
+	width: 10%;
+	/*    display: inline-block;*/
+	background: rgb(155, 42, 53);
 }
-
 #ABOUTPAGE .team-member:hover {
-    border: none;
-    opacity: 1;
-/*
+	border: none;
+	opacity: 1;
+	/*
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
     -webkit-transition: opacity .25s ease-in-out;
 */
 }
-
 #ABOUTPAGE .section-brief {
-    padding: 5em 0 5em 0;
-    background-color: #af9f8a;
+	padding: 5em 0 5em 0;
+	background-color: #af9f8a;
 }
-
 #ABOUTPAGE .section-content {
-    padding: 5em 0;
-    background: url('/static/img/green-bg.png') repeat;
+	padding: 5em 0;
+	background: url('/static/img/green-bg.png') repeat;
 }
-
 #ABOUTPAGE .section-name {
-    background: url('/static/img/ink-circle.png') no-repeat center center;
-    background-size: 30%;
-    padding: 8em;
-    color: black;
+	background: url('/static/img/ink-circle.png') no-repeat center center;
+	background-size: 30%;
+	padding: 8em;
+	color: black;
 }
-
 #ABOUTPAGE a {
-    color: #6c6c6c;
+	color: #6c6c6c;
 }
-
 .tooltip-inner {
-    width: 100%; 
-    border-radius: 0px;
-    margin-bottom: 0px;
-    background-color: rgb(155, 42, 53);
+	width: 100%;
+	border-radius: 0px;
+	margin-bottom: 0px;
+	background-color: rgb(155, 42, 53);
 }
-
-.tooltip.top .tooltip-arrow{
-    display: none;
+.tooltip.top .tooltip-arrow {
+	display: none;
 }
-
 /************************* Directions Page **************************/
 
 #directions-content h5 {
-    font-size: 2em;
+	font-size: 2em;
 }
 #directions-content .section-name {
-    background: url('/static/img/ink-stroke.png') no-repeat 40% 60%;
-    background-size: 60%;
-    padding: 8em;
-    color: black;
+	background: url('/static/img/ink-stroke.png') no-repeat 40% 60%;
+	background-size: 60%;
+	padding: 8em;
+	color: black;
 }
 .chi-hong {
-    color: rgb(255, 0, 8);
+	color: rgb(255, 0, 8);
 }
 /************************ mobile layout ****************************/
 
 @media (max-width: 768px) {
-    .section-name {
-        background: rgba(255, 0, 8, 0) !important;
-        background-size: auto;
-        padding: 0 !important;
-    }
-    .cali-list img {
-        display: none;
-    }
-    
-    #ABOUTPAGE .team-member {
-        diplay: none;
-    }
-    
-
-@media (max-width: 992px) { 
-    #ABOUTPAGE span{
-        width: 16.66%;
-    }
-    
-
-    
-    
+	#landing-page-container {
+		padding: 10vh 15%;
+	}
+	.section-name {
+		background: rgba(255, 0, 8, 0) !important;
+		background-size: auto;
+		padding: 0 !important;
+	}
+	.cali-list img {
+		display: none;
+	}
+	#ABOUTPAGE .team-member {
+		display: none;
+	}
+	@media (max-width: 992px) {
+		#ABOUTPAGE span {
+			width: 16.66%;
+		}
+		
