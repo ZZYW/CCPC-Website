@@ -92,29 +92,27 @@ $(window).resize(function () {
 
 
 
+if (viewportWidth > 992) {
+	animateWhenReachIn('#THEME .section-name', 'animate fadeIn', '5s', 300, 0);
+	animateWhenReachIn('#THEME .section-brief', 'animate fadeInUp', '1s', 0, 0);
+	animateWhenReachIn('#THEME .section-content', 'animate fadeInUp', '1s', 0, 0);
+	animateWhenReachIn('#PANELS .section-name', 'animate fadeIn', '5s', 300, 0);
+	animateWhenReachIn('#PANELS .cali-list', 'animate fadeIn', '4s', 0, 0);
+	animateWhenReachIn('#PANELS .panel-content', 'animate fadeInUp', '1s', 0, 0);
+	animateWhenReachIn('#AGENDA .section-name', 'animate fadeIn', '3s', 300, 0);
+	animateWhenReachIn('#AGENDA .cali-list', 'animate fadeIn', '3s', 0, 0);
+	animateWhenReachIn('#AGENDA table', 'animate fadeInUp', '1s', 0, 0);
+	animateWhenReachIn('#TICKETS .in-parallax-text', 'animate fadeInLeft', '1s', 0, 0);
+	animateWhenReachIn('#DIRECTIONS', 'animate fadeIn', '2s', 200, 0);
+	animateWhenReachIn('#map-canvas', 'animate fadeInRight', '2s', 200, 0);
+	animateWhenReachIn('#address-info', 'animate fadeInLeft', '2s', 200, 0);
+	animateWhenReachIn('#ABOUT .in-parallax-text', 'animate fadeInRight', '1s', 0, 0);
+	animateWhenReachIn('#SPONSORSHIP h3', 'animate zoomIn', '2s', 0, 0);
+	animateWhenReachIn('#SPONSORSHIP img', 'animate zoomIn', '0.5s', 0, 0);
+	animateWhenReachIn('#pre-footer', 'animate fadeInUp', '1s', 0, 0);
+	animateWhenReachIn('footer', 'animate fadeInUp', '1s', 0, 0);
 
-
-
-animateWhenReachIn('#THEME .section-name', 'animate fadeIn', '5s', 300, 0);
-animateWhenReachIn('#THEME .section-brief', 'animate fadeInUp', '1s', 0, 0);
-animateWhenReachIn('#THEME .section-content', 'animate fadeInUp', '1s', 0, 0);
-animateWhenReachIn('#PANELS .section-name', 'animate fadeIn', '5s', 300, 0);
-animateWhenReachIn('#PANELS .cali-list', 'animate fadeIn', '4s', 0, 0);
-animateWhenReachIn('#PANELS .panel-content', 'animate fadeInUp', '1s', 0, 0);
-animateWhenReachIn('#AGENDA .section-name', 'animate fadeIn', '3s', 300, 0);
-animateWhenReachIn('#AGENDA .cali-list', 'animate fadeIn', '3s', 0, 0);
-animateWhenReachIn('#AGENDA table', 'animate fadeInUp', '1s', 0, 0);
-animateWhenReachIn('#TICKETS .in-parallax-text', 'animate fadeInLeft', '1s', 0, 0);
-animateWhenReachIn('#DIRECTIONS', 'animate fadeIn', '2s', 200, 0);
-animateWhenReachIn('#map-canvas', 'animate fadeInRight', '2s', 200, 0);
-animateWhenReachIn('#address-info', 'animate fadeInLeft', '2s', 200, 0);
-animateWhenReachIn('#ABOUT .in-parallax-text', 'animate fadeInRight', '1s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP h3', 'animate zoomIn', '2s', 0, 0);
-animateWhenReachIn('#SPONSORSHIP img', 'animate zoomIn', '0.5s', 0, 0);
-animateWhenReachIn('#pre-footer', 'animate fadeInUp', '1s', 0, 0);
-animateWhenReachIn('footer', 'animate fadeInUp', '1s', 0, 0);
-
-
+}
 
 
 

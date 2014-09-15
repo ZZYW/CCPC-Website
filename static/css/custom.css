@@ -521,6 +521,12 @@ footer div {
 /************************ tablet layout ****************************/
 
 @media (max-width: 992px) {
+	#landing-page {
+		background: url('/static/img/mobilelandingpagebackgroundpic.jpg') no-repeat center center;
+		background-size: cover;
+		font-size: 80%;
+	}
+	
 	#ABOUTPAGE span {
 		width: 16.66%;
 	}
@@ -533,7 +539,6 @@ footer div {
 		background-size: cover;
 		font-size: 80%;
 	}
-	
 	#landing-page video {
 		display: none;
 	}
