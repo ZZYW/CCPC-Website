@@ -537,7 +537,7 @@ footer div {
 		text-align: left;
 	}
 	.section-name {
-		/*	font-family: 'Averia Libre';*/
+		font-family: 'Karma', 'SimSun', serif;
 		font-weight: 300;
 	}
 	#landing-page {
