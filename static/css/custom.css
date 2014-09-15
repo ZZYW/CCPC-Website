@@ -8,7 +8,6 @@ body {
 	background-color: white !important;
 	font-size: 12px;
 }
-
 .section-name {
 	font-family: 'Averia Libre';
 	font-weight: 300;
@@ -76,14 +75,14 @@ html {
 /************************LANDING PAGE****************************/
 
 #landing-page {
-	background: rgba(0,0,0,0);
-/*	background: url('/static/img/xKNCBEgSTUGbgBoYgJ90_Skyline.jpg') no-repeat center center;*/
-/*	background-size: cover;*/
+	background: rgba(0, 0, 0, 0);
+	/*	background: url('/static/img/xKNCBEgSTUGbgBoYgJ90_Skyline.jpg') no-repeat center center;*/
+	/*	background-size: cover;*/
 	position: relative;
 	color: #fff;
 	text-transform: uppercase;
 }
-#landing-page #overlay{
+#landing-page #overlay {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -92,7 +91,7 @@ html {
 #landing-page-container {
 	padding: 27vh 15%;
 }
-#landing-page i{
+#landing-page i {
 	color: #fff;
 	font-size: 1.5em;
 	opacity: 0.8;
@@ -228,13 +227,11 @@ nav a:hover {
 #THEME li.active {
 	opacity: 1;
 }
-
-
 /*******************PANELS*********************************************/
+
 #PANELS img {
 	margin: auto;
 }
-
 #PANELS .section-name {
 	background: url('/static/img/ink-stroke.png') no-repeat 20% 50%;
 	background-size: 60%;
@@ -242,8 +239,8 @@ nav a:hover {
 	color: black;
 }
 #PANELS h4 {
-	text-transform:lowercase;
-	text-transform:capitalize;
+	text-transform: lowercase;
+	text-transform: capitalize;
 }
 #PANELS ul {
 	list-style: none;
@@ -521,14 +518,22 @@ footer div {
 .chi-hong {
 	color: rgb(255, 0, 8);
 }
+/************************ tablet layout ****************************/
+
+@media (max-width: 992px) {
+	#ABOUTPAGE span {
+		width: 16.66%;
+	}
+}
 /************************ mobile layout ****************************/
 
 @media (max-width: 768px) {
-
-	
 	#landing-page-container {
 		padding: 10vh 15%;
 	}
+	#ABOUTPAGE, #directions-content{
+		margin-top: 100px;
+	} 
 	.section-name {
 		background: rgba(255, 0, 8, 0) !important;
 		background-size: auto;
@@ -540,8 +545,4 @@ footer div {
 	#ABOUTPAGE .team-member {
 		display: none;
 	}
-	@media (max-width: 992px) {
-		#ABOUTPAGE span {
-			width: 16.66%;
-		}
-		
+}
