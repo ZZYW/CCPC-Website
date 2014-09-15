@@ -528,12 +528,21 @@ footer div {
 /************************ mobile layout ****************************/
 
 @media (max-width: 768px) {
+	#landing-page {
+		background: url('/static/img/mobilelandingpagebackgroundpic.jpg') no-repeat center center;
+		background-size: cover;
+		font-size: 80%;
+	}
+	#landing-page video {
+		display: none;
+	}
 	#landing-page-container {
 		padding: 10vh 15%;
 	}
-	#ABOUTPAGE, #directions-content{
+	#ABOUTPAGE,
+	#directions-content {
 		margin-top: 100px;
-	} 
+	}
 	.section-name {
 		background: rgba(255, 0, 8, 0) !important;
 		background-size: auto;
