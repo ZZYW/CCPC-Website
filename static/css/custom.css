@@ -238,6 +238,10 @@ nav a:hover {
 	padding: 15em;
 	color: black;
 }
+#PANELS h4 {
+	text-transform:lowercase;
+	text-transform:capitalize;
+}
 #PANELS ul {
 	list-style: none;
 	padding: 1em 0;
