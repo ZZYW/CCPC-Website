@@ -45,9 +45,9 @@ $(document).ready(function () {
 	});
 
 
-
-	$('#landing-page').css('height', viewportHeight);
-
+	if (viewportHeight > 600) {
+		$('#landing-page').css('height', viewportHeight);
+	}
 
 	//language switch buttons
 	$("#english-button").click(function () {
@@ -85,8 +85,9 @@ $(document).ready(function () {
 $(window).resize(function () {
 	viewportHeight = $(window).height();
 	viewportWidth = $(window).width();
-	$('#landing-page').css('height', viewportHeight);
-
+	if (viewportHeight > 600) {
+		$('#landing-page').css('height', viewportHeight);
+	}
 
 });
 
