@@ -1,11 +1,11 @@
 /* this is a custom css style sheet */
 
 body {
-	font-family: 'Karma', 'SimSun', serif;
+	font-family: 'Karma', serif;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	line-height: normal;
-	background-color: white !important;
+	background-color: #fff !important;
 	font-size: 12px;
 }
 .section-name {
@@ -60,7 +60,7 @@ html {
 }
 .video-wrapper {
 	position: relative;
-	padding-bottom: 56.25%;
+	padding-bottom: 52.25%;
 	/* 16:9 */
 	padding-top: 25px;
 	height: 0;
@@ -85,9 +85,8 @@ html {
 #landing-page i {
 	color: #fff;
 	font-size: 1.5em;
-	
 }
-#landing-page i:hover{
+#landing-page i:hover {
 	color: #007bc7;
 }
 #landing-page #overlay {
@@ -434,18 +433,38 @@ address {
 #pre-footer div {
 	padding: 6% 0 6% 0;
 }
+#contact {
+	font-size: 1.4em;
+	margin: 40px 0;
+}
 /***********************FOOTER******************************************/
 
 footer {
+	/*	overflow: hidden;*/
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 	text-align: center;
-	height: 200px;
 	background-color: #212121;
 	color: #fff
 }
 footer div {
 	padding: 4% 0% 4% 0%;
+}
+#credits {
+	/*	opacity: 0.7;*/
+	margin-top: 3em;
+	padding: 0;
+}
+#credits h6 {
+	/*	font-size: 12px;*/
+}
+#theBottom {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	border: solid rgba(0, 0, 0, 0);
 }
 /***********************About Page******************************************/
 
@@ -524,7 +543,6 @@ footer div {
 /************************ tablet layout ****************************/
 
 @media (max-width: 992px) {
-
 	#ABOUTPAGE span {
 		width: 16.66%;
 	}
