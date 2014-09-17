@@ -417,6 +417,13 @@ address {
 }
 #pre-footer .fa {
 	color: white;
+	padding: 0 4px;
+}
+#pre-footer a:hover {
+	opacity: 0.8;
+}
+#pre-footer a {
+	font-size: 1.5em;
 }
 #pre-footer img {
 	margin: auto;
