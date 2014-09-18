@@ -338,6 +338,7 @@ nav a:hover {
 #AGENDA #one-two {
 	margin-bottom: 3em;
 }
+
 /********************ABOUT SECTION***********************************************/
 
 #ABOUT {
@@ -413,9 +414,9 @@ address {
 }
 
 
-#SPONSORSHIP #ys {
+#SPONSORSHIP img {
 	margin: 0 auto;
-	max-width: 150px;
+	max-width: 150px !important;
 }
 #SPONSORSHIP h2 {
 	padding-bottom: 3em;
