@@ -6,12 +6,21 @@ body {
 	height: auto;
 	line-height: normal;
 	background-color: #fff !important;
-	font-size: 12px;
+	font-size: 13px;
+	 overflow-x: hidden;
+}
+
+p {
+	font-size: 14px;
 }
 .section-name {
 	font-family: 'Averia Libre';
 	font-weight: 300;
 	text-transform: uppercase;
+}
+.overflow-fix {
+	margin-left: 15px;
+	margin-right: 15px;
 }
 .chinese {
 	font-family: 'STKaiti';
@@ -402,8 +411,11 @@ address {
 #SPONSORSHIP {
 	margin: 20em 0;
 }
-#SPONSORSHIP .fa {
-	color: black;
+
+
+#SPONSORSHIP #ys {
+	margin: 0 auto;
+	max-width: 150px;
 }
 #SPONSORSHIP h2 {
 	padding-bottom: 3em;
