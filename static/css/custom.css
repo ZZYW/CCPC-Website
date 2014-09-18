@@ -106,7 +106,7 @@ html {
 	background-color: rgba(0, 0, 0, 0.7);
 }
 #landing-page-container {
-	padding: 27vh 15%;
+	padding: 180px 0;
 }
 #landing-page-container button {
 	margin: 1em;
@@ -586,7 +586,7 @@ footer div {
 		display: none;
 	}
 	#landing-page-container {
-		padding: 10vh 15%;
+		padding: 45px 0;
 	}
 	#ABOUTPAGE,
 	#directions-content {
