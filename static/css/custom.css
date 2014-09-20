@@ -415,12 +415,13 @@ address {
 
 
 #SPONSORSHIP img {
+	opacity: 1;
 	display: inline-block;
 	margin: 0 auto;
-	max-width: 150px !important;
+	max-width: 130px !important;
 }
-#SPONSORSHIP h2 {
-	padding-bottom: 3em;
+#SPONSORSHIP h3 {
+	padding-bottom: 2em;
 }
 /***********************PRE_FOOTER************************************/
 
