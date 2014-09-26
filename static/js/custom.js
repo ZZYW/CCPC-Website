@@ -8,9 +8,8 @@ $(document).ready(function () {
 	viewportHeight = $(window).height();
 	viewportWidth = $(window).width();
 
-	if (viewportWidth > 992) {
-		var s = skrollr.init();
-	}
+	var s = skrollr.init();
+	
 	//enable tooltip
 	$(".team-member").tooltip();
 	//	load google map API
