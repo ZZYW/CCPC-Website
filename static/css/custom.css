@@ -616,7 +616,7 @@ footer div {
 	.cali-list img {
 		display: none;
 	}
-	#ABOUTPAGE .team-member {
+	#ABOUTPAGE #photo-wall .team-member {
 		display: none;
 	}
 }
