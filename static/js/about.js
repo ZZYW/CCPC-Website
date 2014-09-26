@@ -4,9 +4,9 @@ $(document).ready(function () {
     $('nav').removeAttr('data-0');
     $('nav').removeAttr('data-600');
 
-
+if (viewportWidth > 992) {
     var s = skrollr.init();
-   
+   }
     //enable tooltip
     $(".team-member").tooltip();
 
