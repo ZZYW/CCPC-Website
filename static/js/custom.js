@@ -8,7 +8,7 @@ $(document).ready(function () {
 
 	if($('#directions-content').length || $('#ABOUTPAGE').length){
 		console.log("get rid of nav skroll effect");
-		  $('nav').removeAttr('data-0');
+		 $('nav').removeAttr('data-0');
    		 $('nav').removeAttr('data-600');
 	}
 
