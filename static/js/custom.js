@@ -7,7 +7,8 @@ $(document).ready(function () {
 	vimeoEmbedder();
 
 	if($('#directions-content').length || $('#ABOUTPAGE').length){
-		    $('nav').removeAttr('data-0');
+		console.log("get rid of nav skroll effect");
+		  $('nav').removeAttr('data-0');
    		 $('nav').removeAttr('data-600');
 	}
 
@@ -23,7 +24,7 @@ $(document).ready(function () {
 	//enable tooltip
 	$(".team-member").tooltip();
 	$(".panel-advisor").tooltip();
-	
+
 	//	load google map API
 	var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
 	var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);
