@@ -497,7 +497,7 @@ footer div {
 	padding: 8em;
 	color: black;
 }
-#ABOUTPAGE #TEAM {
+#ABOUTPAGE #TEAM,#panel-advisors-section {
 	padding: 15em 0;
 }
 #ABOUTPAGE .team-member {
@@ -505,6 +505,14 @@ footer div {
 	width: 100%;
 	opacity: 0.4;
 	border: none;
+}
+
+#advisors-wall span{
+	border: none;
+	display: block;
+	width: 20%;
+	float: left;
+	background: #1C2429;
 }
 #photo-wall span {
 	border: none;
@@ -514,6 +522,7 @@ footer div {
 	/*    display: inline-block;*/
 	background: rgb(155, 42, 53);
 }
+
 #ABOUTPAGE .team-member:hover {
 	border: none;
 	opacity: 1;
@@ -548,6 +557,10 @@ footer div {
 }
 .tooltip.top .tooltip-arrow {
 	display: none;
+}
+
+#advisors-wall .tooltip-inner {
+	background-color: #1F282E;
 }
 /************************* Directions Page **************************/
 
@@ -603,7 +616,7 @@ footer div {
 	.cali-list img {
 		display: none;
 	}
-	#ABOUTPAGE .team-member {
+	#ABOUTPAGE #photo-wall .team-member {
 		display: none;
 	}
 }

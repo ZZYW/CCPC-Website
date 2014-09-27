@@ -1,18 +1,30 @@
 var viewportWidth, viewportHeight;
 // calls functions when html is setup.
 $(document).ready(function () {
+
+
 	//videoembeder
 	vimeoEmbedder();
 
+	if($('#directions-content').length || $('#ABOUTPAGE').length){
+		console.log("get rid of nav skroll effect");
+		 $('nav').removeAttr('data-0');
+   		 $('nav').removeAttr('data-600');
+	}
 
 	viewportHeight = $(window).height();
 	viewportWidth = $(window).width();
 
 	if (viewportWidth > 992) {
 		var s = skrollr.init();
+	}else{
+		console.log("this is mobile/tablet, disable skrollr.js");
 	}
+
 	//enable tooltip
 	$(".team-member").tooltip();
+	$(".panel-advisor").tooltip();
+
 	//	load google map API
 	var myLatlng_LA = new google.maps.LatLng(40.807092, -73.963984);
 	var myLatlng_IAB = new google.maps.LatLng(40.807762, -73.959725);

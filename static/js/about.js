@@ -1,26 +1,19 @@
 // calls functions when html is setup.
 $(document).ready(function () {
     
-    $('.section-name').addClass("animated fadeIn");
-    $('.section-name').css('-moz-animation-duration', '10s');
-    $('.section-name').css('-ms-animation-duration', '10s');
-    $('.section-name').css('-o-animation-duration', '10s');
-    
-    $('.section-content').addClass("animated fadeIn");
-    $('.section-content').css('-moz-animation-duration', '20s');
-    $('.section-content').css('-ms-animation-duration', '20s');
-    $('.section-content').css('-o-animation-duration', '20s');
+    $('nav').removeAttr('data-0');
+    $('nav').removeAttr('data-600');
 
 
-    var s = skrollr.init();
-   
     //enable tooltip
     $(".team-member").tooltip();
 
 
     var viewport_height = $(window).height();
-
-
+    var viewportWidth = $(window).width();
+if (viewportWidth > 992) {
+    var s = skrollr.init();
+   }
 
 
     //language switch buttons
@@ -47,13 +40,6 @@ $(document).ready(function () {
 
 });
 
-
-
-
-
-
-
-
 ////////////////////////////////////////////////event listeners start here
 
 $(window).resize(function () {
@@ -62,10 +48,6 @@ $(window).resize(function () {
 
 
 
-
-animateWhenReachIn('#team', 'animated fadeIn', '2s', 200, 0);
-animateWhenReachIn('#photo-wall', 'animated fadeInUp', '1s', 0, 0);
-animateWhenReachIn('footer', 'animated fadeInUp', '1s', 0, 0);
 
 
 
