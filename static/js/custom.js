@@ -49,7 +49,7 @@ $(document).ready(function () {
 		title: 'IAB 417'
 	});
 
-
+	centerHeadline();
 	//agenda tabs and highlighted speakers tabs
 	$('.myTab a').click(function (e) {
 		e.preventDefault();
@@ -97,6 +97,7 @@ $(document).ready(function () {
 $(window).resize(function () {
 	viewportHeight = $(window).height();
 	viewportWidth = $(window).width();
+	centerHeadline();
 	if (viewportHeight > 600) {
 		$('#landing-page').css('height', viewportHeight);
 	}
@@ -129,7 +130,9 @@ if (viewportWidth > 992) {
 
 
 
-
+function centerHeadline(){
+	$('#landing-page-container').css('margin-top',viewportHeight/2 - $('#landing-page-container').height()/2);
+}
 
 
 //  function definitions start here 
